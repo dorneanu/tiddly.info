@@ -1,0 +1,12 @@
+author: Mohammad Rahmani
+core-version: 4.1.17
+created: 20181108134227799
+creator: Mohammad
+description: Shiraz
+list: readme tutorial license release acknowledgements
+modified: 20190911081949987
+modifier: Mohammad
+plugin-type: plugin
+title: $:/plugins/.mr/shiraz
+type: application/json
+version: 1.0.2
