@@ -1,0 +1,109 @@
+created: 20140715213034210
+creator: Alberto Molina Pérez
+modified: 20191128165529960
+modifier: Alberto Molina Pérez
+tags: $:/tags/Stylesheet
+title: $:/_tw-scholars/css/buttons
+type: text/vnd.tiddlywiki
+
+<pre>
+.agenda td button {
+	padding: 10%;
+	margin: 0px 0px;
+	width: 100%;
+	height: 100%;
+	border: none;
+	text-align: center;
+	background: #FFFFDD;
+}
+
+.tc-btn-touch-courses {
+	height: 6em;
+	width: 6em;
+	background: none;
+	color: #999999;
+	border: none;
+	font-size: 1.2em;
+	line-height: 1.4em;
+}
+
+.tc-btn-touch-courses-down {
+	padding: 0px;
+	margin: 4px 8px 4px 8px;
+	height: 6em;
+	width: 6em;
+	background: none;
+	color: #333333;
+	border: none;
+	font-size: 1.2em;
+	line-height: 1.4em;
+}
+
+.tc-btn-touch-courses:hover {
+	color: <<couleur btn-courses-hover>>;
+}
+
+.tc-btn-sidebar {
+	height: 6em;
+	width: 6em;
+	margin: 0px -10px 0px 0px;
+	background: none;
+	color: <<color sidebar-controls-foreground>>;
+	border: none;
+	font-size: 1em;
+	line-height: 1.2em;
+}
+
+.tc-btn-sidebar-down {
+	height: 6em;
+	width: 6em;
+	margin: 0px -10px 0px 0px;
+	background: none;
+	color: <<color sidebar-controls-foreground-hover>>;
+	border: none;
+	font-size: 1em;
+	line-height: 1.4em;
+}
+
+.tc-btn-sidebar:hover {
+	color: <<color sidebar-controls-foreground-hover>>;
+}
+
+.tc-btn-sidebar-down:hover {
+	color: <<color sidebar-controls-foreground>>;
+}
+
+.tc-btn-newHere-sidebar {
+	background: none;
+	color: #FFFFFF;
+	border: 1px solid white;
+	font-size: 1.2em;
+	font-weight:bold;
+	line-height: 1.6em;
+	
+}
+
+
+.tc-btn-big {
+	padding: 8px;
+	margin: 0px 8px 4px 0px;
+	color: <<colour download-foreground>>;
+	fill: <<colour download-foreground>>;
+	border: none;
+	font-size: 1.2em;
+	font-weight: bold;
+	line-height: 1.4em;
+}
+
+.tc-btn-big.grey {
+	background: grey;
+}
+
+.tc-btn-big.green {
+	background: <<colour download-background>>;
+}
+
+.tc-btn-big.red {
+	background: red;
+}
+</pre>

@@ -1,0 +1,52 @@
+created: 20140826222048380
+modified: 20191128165529168
+title: $:/_BreadcrumbsMenu
+type: text/vnd.tiddlywiki
+
+<!-- 
+\define get_title(l)
+$l$$(title)$]]
+\end
+
+\define tagme() Bla [[$(tagx)$]]
+
+\define newNote()
+<$set name="title" value={{!!title}}>
+<$set name=tagx value={{!!title}}>
+<$action-sendmessage $message="tm-new-tiddler"
+   title=<<now "YYYY-0MM-0DD 0hh:0mm:0ss">> 
+   tags=<<tagme>>
+   text="$(title)$"
+/>
+</$set>
+</$set>
+\end
+
+<!--
+<div class="gifftoolbar"><span class="indent2"><span class="mediumgray"><$button popup=<<qualify "$:/state/popup/parents">> class="btn-invisible">&#9650;</$button><$reveal state=<<qualify "$:/state/popup/parents">> type="popup" position="below" animate="yes"><div class="tw-drop-down"><$list filter="[is[current]tags[]!is[system]!is[shadow]!tiddler[$:/TOC]sort[title]]"/></div></$reveal> (<$count filter="[is[current]tags[]!is[system]!is[shadow]!tiddler[$:/TOC]sort[title]]"/>) <span class="white">ppp</span><$button popup=<<qualify "$:/state/popup/children">> class="btn-invisible">&#9660;</$button><$reveal state=<<qualify "$:/state/popup/children">> type="popup" position="below" animate="yes"><div class="tw-drop-down"><$list filter="[is[current]tagging[]!is[system]!is[shadow]!tag[$:/Note]sort[title]]"/></div></$reveal> (<$count filter="[is[current]tagging[]!is[system]!is[shadow]!tag[$:/Note]sort[title]]"/>) 
+</span><span class="white">ppp</span><$set name="title" value={{!!title}}>
+<$set name="tags" value=<<get_title "[[">>>
+<$newtiddler class="btn-invisible" title=<<dateTime "YYYY-0MM-0DD 0hh:0mm:0ss">> skeleton="$:/Template/NewTOC">{{$:/Image/newindex.svg}}</$newtiddler>
+<span class="white">pp</span><$set name="title" value={{!!title}}>
+<$set name="tags" value=<<get_title "[[">>>
+<$newtiddler class="btn-invisible" title=<<dateTime "YYYY-0MM-0DD 0hh:0mm:0ss">> skeleton="$:/Template/NewNote">{{$:/core/images/new-button}}</$newtiddler>
+<span class="white">p</span>
+</$set>
+-->
+
+
+<div class="gifftoolbar">
+<!-- Parents -->
+<$button popup=<<qualify "$:/state/popup/parents">> class="btn-invisible">&#9650;</$button><$reveal state=<<qualify "$:/state/popup/parents">> type="popup" position="below" animate="yes"><div class="tw-drop-down"><$list filter="[is[current]tags[]!is[system]!is[shadow]!tiddler[$:/TOC]sort[title]]"/></div></$reveal> (<$count filter="[is[current]tags[]!is[system]!is[shadow]!tiddler[$:/TOC]sort[title]]"/>)
+
+<!-- Children -->
+<$button popup=<<qualify "$:/state/popup/children">> class="btn-invisible">&#9660;</$button><$reveal state=<<qualify "$:/state/popup/children">> type="popup" position="below" animate="yes"><div class="tw-drop-down"><$list filter="[is[current]tagging[]!is[system]!is[shadow]!tag[$:/Note]sort[title]]"/></div></$reveal> (<$count filter="[is[current]tagging[]!is[system]!is[shadow]!tag[$:/Note]sort[title]]"/>) 
+
+<!-- New note -->
+<$button class="btn-invisible" actions=<<newNote>> >
+{{$:/core/images/new-button}}
+</$button>
+
+</div>
+
+

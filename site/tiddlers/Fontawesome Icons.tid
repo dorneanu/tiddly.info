@@ -1,0 +1,143 @@
+created: 20150709103412470
+creator: Florian Wanders
+modified: 20191128165536091
+modifier: Florian Wanders
+tags: general $:/tags/Macro
+title: Fontawesome Icons
+type: text/vnd.tiddlywiki
+
+\define icon-padding() 15px;
+\define icon-padding-small() 22px;
+
+\define nostar()
+<i class="far fa-star" style="color:#FFBF00; padding-right:$(icon-padding)$"></i>
+\end
+
+\define star()
+<i class="fas fa-star" style="color:#FFBF00; padding-right:$(icon-padding)$"></i>
+\end
+
+\define unread()
+<i class="fa fa-envelope-o" style="color:#FFBF00; padding-right:$(icon-padding)$"></i>
+\end
+
+\define rq()
+<i class="fa fa-cogs" style="color:#8F00FF; padding-right:$(icon-padding)$"></i>
+\end
+
+\define h()
+<i class="fa fa-cog" style="color:#8F00FF; padding-right:$(icon-padding)$"></i> 
+\end
+
+\define d()
+<i class="fa fa-book" style="color:#8F00FF; padding-right:$(icon-padding)$"></i>  
+\end
+
+\define t()
+<i class="fa fa-university fa-fw" style="color:#8F00FF; padding-right:$(icon-padding-small)$"></i>  
+\end
+
+\define m()
+<i class="fa fa-wrench" style="color:#F79938; padding-right:$(icon-padding)$"></i>
+\end
+
+\define r()
+<i class="fa fa-flask" style="color:#CC0000; padding-right:$(icon-padding)$"></i> 
+\end
+
+\define p()
+<i class="fa fa-bolt" style="color:#CC0000; padding-right:$(icon-padding)$"></i> 
+\end
+
+\define co()
+<i class="fa fa-legal" style="color:#CC0000; padding-right:$(icon-padding)$"></i> 
+\end
+
+\define x()
+<i class="fa fa-check" style="color:#007F00; padding-right:$(icon-padding)$"></i> 
+\end
+
+\define i()
+<i class="fa fa-exclamation-triangle" style="color:#CC0000; padding-right:$(icon-padding)$"></i>
+\end
+
+\define f()
+<i class="fa fa-paper-plane" style="color:#007F00; padding-right:$(icon-padding)$"></i> 
+\end
+
+\define c()
+<i class="fa fa-comment" style="color:#9ACD32; padding-right:$(icon-padding)$"></i>
+\end
+
+\define q()
+<i class="fa fa-question-circle" style="color:#9ACD32; padding-right:$(icon-padding)$"></i>
+\end
+
+\define pot()
+<i class="fa fa-newspaper-o" style="color:#F79938; padding-right:$(icon-padding)$"></i>
+\end
+
+\define fig()
+<i class="fa fa-picture-o"></i>
+\end
+
+\define tab()
+<i class="fa fa-table"></i>
+\end
+
+\define ra()
+<i class="fas fa-chevron-right" style="color:#000; padding-right:$(icon-padding-small)$"></i> 
+\end
+
+\define la()
+<i class="fas fa-chevron-left" style="color:#000; padding-right:$(icon-padding-small)$"></i> 
+\end
+
+\define s()
+<span style="color:#CC0000"; font-weight="bolder">$$\Sigma$$</span>
+\end
+
+\define .()
+<i class="fas fa-tasks" style="color:#000; padding-right:$(icon-padding)$"></i> 
+\end
+
+\define bd()
+<i class="fas fa-birthday-cake" style="color:#9ACD32; padding-right:$(icon-padding)$"></i> 
+\end
+
+\define o()
+<i class="far fa-calendar" style="color:#9ACD32; padding-right:$(icon-padding)$"></i> 
+\end
+
+<!-- Above: Definitions for shorthands. Required for making use of the shorthands. -->
+<!-- Below: Visualization of shorthands. Not needed for functioning, but handy. -->
+
+<<nostar>> <font size="1"> $$<<nostar>>$$ </font> Relevant but potentially poor quality &nbsp;&nbsp;
+<<star>> <font size="1"> $$<<star>>$$ </font> Relevant and high quality &nbsp;&nbsp;
+<<unread>> <font size="1"> $$<<unread>>$$ </font> Unread but interesting &nbsp;&nbsp;
+
+<<rq>> <font size="1"> $$<<rq>>$$ </font> Research question &nbsp;&nbsp;
+<<h>> <font size="1"> $$<<h>>$$ </font> Hypothesis &nbsp;&nbsp;&nbsp;
+<<d>> <font size="1"> $$<<d>>$$ </font> Definition &nbsp;&nbsp;&nbsp;
+<<t>> <font size="1"> $$<<t>>$$ </font> Theory &nbsp;&nbsp;&nbsp;
+
+<<m>> <font size="1"> $$<<m>>$$ </font> Methods &nbsp;&nbsp;&nbsp;
+<<r>> <font size="1"> $$<<r>>$$ </font> Results &nbsp;&nbsp;&nbsp;
+<<p>> <font size="1"> $$<<p>>$$ </font> Problem &nbsp;&nbsp;&nbsp;
+<<co>> <font size="1"> $$<<co>>$$ </font> Conclusion &nbsp;&nbsp;&nbsp;
+
+<<check>> <font size="1"> $$<<check>>$$ </font> Check &nbsp;&nbsp;&nbsp;
+<<i>> <font size="1"> $$<<i>>$$ </font> Important &nbsp;&nbsp;&nbsp;
+<<f>> <font size="1"> $$<<f>>$$ </font> Future research &nbsp;&nbsp;&nbsp;
+
+<<c>> <font size="1"> $$<<c>>$$ </font> Comment &nbsp;&nbsp;&nbsp;
+<<q>> <font size="1"> $$<<q>>$$ </font> Question &nbsp;&nbsp;&nbsp;
+
+<<pot>> <font size="1"> $$<<pot>>$$ </font> Potentially interesting source &nbsp;&nbsp;&nbsp;
+
+<<fig>> <font size="1"> $$<<fig>>$$ </font> Figure &nbsp;&nbsp;&nbsp;
+<<tab>> <font size="1"> $$<<tab>>$$ </font> Table &nbsp;&nbsp;&nbsp;
+<<ra>> <font size="1"> $$<<ra>>$$ </font> Right arrow &nbsp;&nbsp;&nbsp;
+<<s>> <font size="1"> $$<<s>>$$ </font> Summary
+<<.>> alles klar
+<<x>> Task is done

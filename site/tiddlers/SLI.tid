@@ -1,0 +1,14 @@
+created: 20190828071227744
+modified: 20191128165539635
+tags: SRE
+title: SLI
+tmap.id: 7a83f7d7-d25b-44de-80db-f5d7872764d9
+type: text/vnd.tiddlywiki
+
+; Service Level Indicator
+: An SLI is a Service Level Indicator. It is a quantifiable measurement of reliability for a specific service capability. Example of common SLIs are: request latency, error rate, throughput. Those measurements are often aggregated to form rates, averages or percentiles.
+
+```
+X should be ...
+```
+Example: Request served in less than 400 ms

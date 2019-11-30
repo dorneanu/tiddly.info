@@ -1,0 +1,11 @@
+created: 20190115110626707
+creator: boru
+modified: 20191128165534676
+modifier: boru
+name: cfiles
+note: A ncurses file manager written in C with vim like keybindings
+tags: Unix Tool Bookmark
+title: cfiles
+tmap.id: c0582d6b-1efd-4f5f-b9e9-0a4ad34e6d36
+type: text/vnd.tiddlywiki
+url: https://github.com/mananapr/cfiles

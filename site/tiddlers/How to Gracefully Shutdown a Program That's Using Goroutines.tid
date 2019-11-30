@@ -1,0 +1,9 @@
+created: 20191015134952415
+modified: 20191128165535544
+name: How to Gracefully Shutdown a Program That's Using Goroutines
+note: A simple example of goroutine-based worker pools and how to gracefully shut them down using context-based cancellation, WaitGroups and producer-side closing of channels.
+tags: Golang Bookmark
+title: How to Gracefully Shutdown a Program That's Using Goroutines
+tmap.id: 26a152e7-9a88-475e-b4dc-09fb887793ee
+type: text/vnd.tiddlywiki
+url: https://callistaenterprise.se/blogg/teknik/2019/10/05/go-worker-cancellation/

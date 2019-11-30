@@ -1,0 +1,11 @@
+created: 20190207131313974
+creator: boru
+modified: 20191128165536432
+modifier: boru
+name: minchao/smsender
+note: A Go server for sending SMS through various providers | Also clean architecture
+tags: Golang Bookmark
+title: minchao/smsender
+tmap.id: 147fcb4f-ec5b-4261-aa91-db09db3bd4c4
+type: text/vnd.tiddlywiki
+url: https://github.com/minchao/smsender

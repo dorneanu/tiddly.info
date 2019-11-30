@@ -1,0 +1,70 @@
+created: 20140618232534313
+modified: 20191128165529573
+title: $:/_tw-scholars/newHere/chapter/button
+type: text/vnd.tiddlywiki
+
+\define newChapterButton(source,authors_title,publication_date,chapter_title,order,page_alpha,page_omega,about,description,text,tags,edit:"show",label:"add")
+
+<$setfield set="!!icon" setTo="$:/_images/chapter">
+<$setfield set="!!order" setTo="$order$">
+<$setfield set="!!page_alpha" setTo="$page_alpha$">
+<$setfield set="!!page_omega" setTo="$page_omega$">
+
+<$setfield set="!!chapter_title" setTo="$chapter_title$">
+<$setfield set="$:/temp/chapter!!chapter_title" setTo="">
+<$setfield set="!!source" setTo="[[$source$]]">
+<$setfield set="!!text" setTo="$text$">
+<$setfield set="$:/temp/chapter!!text" setTo="">
+
+<$setfield set="!!about" setTo="$about$">
+<$setfield set="$:/temp/chapter!!about" setTo="">
+
+<$setfield set="!!description" setTo="$description$">
+<$setfield set="$:/temp/chapter!!description" setTo="">
+
+<$setfield set="!!tabs" setTo="$:/_tw-scholars/tabs!!chapter">
+
+<$setfield set="$:/temp/chapter!!tags" setTo="">
+<$setfield set="$:/temp/chapter!!order" setTo="">
+<$setfield set="$:/temp/chapter!!page_alpha" setTo="">
+<$setfield set="$:/temp/chapter!!page_omega" setTo="">
+
+<$maketid  title="$authors_title$ $publication_date$: chap. $order$" tags="$:/_type/chapter $tags$" template="$:/_template/chapter" edit="$edit$" message="tm-set-field">
+<$button message="tm-new-tiddler"><<trad "$label$">></$button>
+</$maketid>
+
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+\end
+
+\define newChapter(label:"add")
+<$macrocall $name="newChapterButton" 
+   source={{!!title}}
+   authors_title={{!!authors_title}} 
+   publication_date={{!!publication_date}}
+   order={{$:/temp/chapter!!order}} 
+   chapter_title={{$:/temp/chapter!!chapter_title}} 
+   about={{$:/temp/chapter!!about}} 
+   description={{$:/temp/chapter!!description}} 
+   text={{$:/temp/chapter!!text}} 
+   tags={{$:/temp/chapter!!tags}} 
+   page_alpha={{$:/temp/chapter!!page_alpha}} 
+   page_omega={{$:/temp/chapter!!page_omega}} 
+   edit={{$:/temp/chapter!!edit}} 
+   label=$label$/> 
+\end
+
+<<newChapter>>

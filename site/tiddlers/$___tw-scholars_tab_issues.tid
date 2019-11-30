@@ -1,0 +1,19 @@
+caption: <span title="Issues">{{$:/_images/bug}}</span>
+created: 20140717011226814
+creator: Alberto Molina Pérez
+modified: 20191128165530801
+modifier: Alberto Molina Pérez
+tags: $:/_type/tab
+title: $:/_tw-scholars/tab/issues
+type: text/vnd.tiddlywiki
+
+<div class="tc-tab-content">
+
+!{{$:/_images/bug}}<<trad "Known issues">>
+
+* Using double quotes `"` in tiddler titles can breack things. Prefer typographical quotes like `« »` and `“ ”`.
+* Changing the UI language gives an error message, but it doesn't seem to breack anything.
+* The new note button in the sidebar creates the fields chapter and pages.
+* Lots of things
+
+</div>

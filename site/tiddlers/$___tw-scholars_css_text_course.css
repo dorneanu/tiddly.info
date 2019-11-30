@@ -1,0 +1,11 @@
+.course-title {
+	font-size: 3em;
+	font-weight: bold;
+}
+
+.course-subtitle {
+	font-size: 1.8em;
+	color: #c0c0c0;
+	font-weight: 300;
+	line-height: 2.5em;
+}

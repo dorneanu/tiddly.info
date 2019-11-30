@@ -1,0 +1,9 @@
+caption: Custom Locator
+created: 20190109213701491
+list-before: $:/core/ui/SideBar/Open
+modified: 20191128165531101
+tags: [[ $:/tags/SideBar]]
+title: $:/dorneanu/sidebar/locator/locator-view
+type: text/vnd.tiddlywiki
+
+<<locator-view baseTitle:"TableOfContents">>

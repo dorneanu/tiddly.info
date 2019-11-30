@@ -1,0 +1,40 @@
+created: 20180810071750527
+creator: boru
+modified: 20191128165535341
+modifier: boru
+tags: [[Cloud Data Security]]
+title: Data Loss Prevention
+tmap.id: 5cbbb537-bae3-47e7-bdd2-f13258f373fd
+type: text/vnd.tiddlywiki
+
+; DLP
+: describes the controls put in place by an org to ensure that certain types of data remain under org controls, in line with policies, standards and procedures
+
+! Components
+
+* Discovery and classification
+* Monitoring
+* Enforcement
+
+! Architecture
+
+* Data in motion (DIM)
+** network-based or GW DLP
+** monitor outgoing protocols such as HTTP(s)/SMTP/FTP
+** SSL decryption should be enabled
+* Data at rest (DAR)
+** storage-based DLP
+* Data in use (DIU)
+** client- or endpoint-based DLP
+** DLP application is installed on a user's workstation and endpoint devices
+
+! Leading practices
+
+* What kind of data is permitted to be stored in the cloud?
+* Where can the data be stored (legal stuff)?
+* How should it be stored? Encryption and storage access consideration.
+* What kind of data access is permitted?
+* Which devices and what networks?
+* Which applications?
+* Which tunnel?
+* Under what conditions is data allowed to leave the cloud?

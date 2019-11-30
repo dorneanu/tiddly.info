@@ -1,0 +1,11 @@
+created: 20190326142059223
+creator: boru
+modified: 20191128165535079
+modifier: boru
+name: DynamoDB Guide
+note: An open guide that walks through the basic concepts and advanced features of the DynamoDB NoSQL database provided by AWS.
+tags: AWS Bookmark
+title: DynamoDB Guide
+tmap.id: 695ff0c4-556d-451e-8059-cf925f13cdd3
+type: text/vnd.tiddlywiki
+url: www.dynamodbguide.com

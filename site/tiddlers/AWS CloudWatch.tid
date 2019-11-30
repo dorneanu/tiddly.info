@@ -1,0 +1,21 @@
+created: 20180926141346421
+creator: boru
+modified: 20191128165533237
+modifier: boru
+tags: [[AWS Monitoring]]
+title: AWS CloudWatch
+tmap.id: 77ad9049-4653-4484-b3e5-891c52a56e9e
+type: text/vnd.tiddlywiki
+
+; Monitor cloud infrastructure
+
+Which metrics are available (by default)
+
+* CPU related
+* disk related
+* network related
+* status check
+** at host/instance level
+
+Standard Monitoring: 5 min
+Detailed Monitoring: 1min

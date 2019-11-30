@@ -1,0 +1,12 @@
+created: 20191126101840037
+fa-default-style: fas
+fa-label: Newspaper
+fa-style-classes: fas far
+fa-styles: solid regular
+fa-unicode: f1ea
+modified: 20191128165532479
+tags: article editorial headline journal journalism news press solid regular
+title: $:/fontawesome/glyph/newspaper
+type: text/vnd.tiddlywiki
+
+<i class='far fa-newspaper'></i>

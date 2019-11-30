@@ -1,0 +1,26 @@
+created: 20140628180423312
+creator: Alberto Molina Pérez
+icon: $:/_images/system
+modified: 20191128165529712
+modifier: Alberto Molina Pérez
+tags: $:/tags/Macro
+title: $:/_tw-scholars/macros/language
+type: text/vnd.tiddlywiki
+
+\define trad(data)
+\define trad2(language) <$reveal type="nomatch" state="$language$/myTabs##$data$" text="">{{$language$/myTabs##$data$}}</$reveal><$reveal type="match" state="$language$/myTabs##$data$" text="">$data$</$reveal>
+
+<$reveal type="match" state="$:/language" text="$:/languages/en-GB">
+    $data$
+</$reveal>
+<$reveal type="nomatch" state="$:/language" text="$:/languages/en-GB">
+    <$reveal type="match" state={{$:/language}} text="">
+        $data$
+    </$reveal>
+    <$reveal type="nomatch" state={{$:/language}} text="">
+        <$macrocall $name="trad2" language={{$:/language}}/>
+    </$reveal>
+</$reveal>
+\end
+
+<<trad "This is a translation macro">>

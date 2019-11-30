@@ -1,0 +1,44 @@
+created: 20180709142308877
+creator: boru
+modified: 20191128165534112
+modifier: boru
+tags: TableOfContents
+title: Bookmarks
+tmap.id: dfec7fba-0503-4b35-9c9a-9dfa8149f2f2
+type: text/vnd.tiddlywiki
+
+<$reveal
+    type='match'
+    state='$:/state/reveal/Bookmarks/AddBookmark'
+    text='show'
+>
+    <$button
+        set='$:/state/reveal/Bookmarks/AddBookmark'
+        setTo='hide'
+    >
+        Done
+    </$button>
+    <br>
+
+    <$transclude
+        tiddler='$:/plugins/inmysocks/Bookmarks/Add Bookmark'
+    />
+
+</$reveal>
+<$reveal
+    type='nomatch'
+    state='$:/state/reveal/Bookmarks/AddBookmark'
+    text='show'
+>
+    <$button
+        set='$:/state/reveal/Bookmarks/AddBookmark'
+        setTo='show'
+    >
+        New Bookmark
+    </$button>
+</$reveal>
+
+<$macrocall $name="tabs" tabsList="[[$:/plugins/inmysocks/Bookmarks/Bookmarks List]]
+[[$:/plugins/inmysocks/Bookmarks/Bookmarks by Tags]]
+[[$:/plugins/inmysocks/Bookmarks/Add Bookmark]]
+[[$:/plugins/inmysocks/Bookmarks/Bookmarks Settings]]" default="$:/plugins/inmysocks/Bookmarks/Bookmarks List" />

@@ -1,0 +1,9 @@
+created: 20190516103359528
+modified: 20191128165540099
+name: widdly
+note: A self-hosted minimal TiddlyWiki (TiddlyWeb) server
+tags: widdly Golang Bookmark
+title: widdly
+tmap.id: 891ba245-bdb4-45a9-989f-e56d16ff4dff
+type: text/vnd.tiddlywiki
+url: https://gitlab.com/opennota/widdly

@@ -1,0 +1,14 @@
+created: 20190702090013502
+modified: 20191128165533251
+tags: [[AWS Management & Governance]] AWS
+title: AWS Cloudformation
+tmap.id: f44cc2d6-19d5-4355-b594-5415b1d825bf
+type: text/vnd.tiddlywiki
+
+!! StackSets
+
+[img[https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/stack_set_conceptual_sv.png]]
+
+!! Stack instances
+
+[img[https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/stack_sets_operations_stacks_sv.png]]

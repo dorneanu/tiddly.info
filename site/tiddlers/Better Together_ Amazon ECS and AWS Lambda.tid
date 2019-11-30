@@ -1,0 +1,11 @@
+created: 20181203135821030
+creator: boru
+modified: 20191128165532911
+modifier: boru
+name: Better Together: Amazon ECS and AWS Lambda
+note: See how you can get more out of Lambda by using it to start ECS tasks and how you can turn your ECS cluster into a dynamic fleet of container workers that react to any event supported by Lambda.
+tags: AWS Bookmark
+title: Better Together: Amazon ECS and AWS Lambda
+tmap.id: 84240ca5-617d-4f3d-ba79-8ebeaeb006e1
+type: text/vnd.tiddlywiki
+url: https://aws.amazon.com/de/blogs/compute/better-together-amazon-ecs-and-aws-lambda/

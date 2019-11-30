@@ -1,0 +1,35 @@
+created: 20180926140631277
+creator: boru
+modified: 20191128165533266
+modifier: boru
+tags: AWS
+title: AWS AMI
+tmap.id: f8d3f14d-0e65-44d4-b488-9aca0334ceb4
+type: text/vnd.tiddlywiki
+
+AMI selection based on:
+
+* region/AZ
+* OS
+* ARCH (32/64)
+* launch permissions
+* storage for the root device:
+** instance store (''ephemeral'' storage)
+** EBS backed volumes
+
+! Types
+
+* EBS
+** root device is an Amazon EBS volume created from an Amazon EBS snapshot
+** ''can'' be stopped (without losing data)
+
+* Instance Store
+** you cannot stop the instance
+** less durability than EBS
+** if underlying host fails, you will lose data
+
+
+''Important'':
+
+* by default root volumes will be deleted on termination
+* but you can keep EBS volumes

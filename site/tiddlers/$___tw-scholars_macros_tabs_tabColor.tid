@@ -1,0 +1,10 @@
+created: 20140721120912987
+creator: Alberto Molina Pérez
+icon: $:/_images/system
+modified: 20191128165529608
+modifier: Alberto Molina Pérez
+tags: $:/tags/Macro
+title: $:/_tw-scholars/macros/tabs/tabColor
+type: text/vnd.tiddlywiki
+
+\define tabColor() 

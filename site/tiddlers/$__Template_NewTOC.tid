@@ -1,0 +1,8 @@
+created: 20140816155741746
+list: 
+modified: 20191128165532007
+tags: $(tags)$ $:/TOC
+title: $:/Template/NewTOC
+type: text/vnd.tiddlywiki
+
+<ul><$list filter="[is[current]tagging[]!is[system]!is[shadow]!tag[$:/Note]sort[title]]"><li><$link><$view field="title"/></$link></li></$list></ul>

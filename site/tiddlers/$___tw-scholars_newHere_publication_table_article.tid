@@ -1,0 +1,8 @@
+created: 20140625091720010
+modified: 20191128165530963
+title: $:/_tw-scholars/newHere/publication/table/article
+type: text/vnd.tiddlywiki
+
+|>|!Title |<<input "publication" "title" "60">>|<|<|<|<|<|<|<|
+|>|!Journal |<<input "publication" "journal" "60">>|<|<|<|<|<|<|<|
+|>|!Volume          |<<input "publication" "volume" "3">>| !Issue|<<input "publication" "issue" "3">>| !Date|<<input "publication" "date" "3">>| !pages|<<page "publication" "alpha" "3" "first">>|<<page "publication" "omega" "3" "last">>|

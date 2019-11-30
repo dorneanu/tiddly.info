@@ -1,0 +1,25 @@
+created: 20191128121843507
+modified: 20191128165532575
+tags: 
+title: $:/vd/templates/xlist-topics
+type: text/vnd.tiddlywiki
+
+<dd><i>
+<!--
+<$view field="created" format="date" template="YYYY-0MM-0DD"/>
+-->
+</i>
+<a href={{!!url}}>{{!!title}}</a>
+
+<!--
+<span style="float:right">
+<$list filter="[all[current]tags[]]" template="$:/core/ui/ViewTemplate/tags"/>
+</span>
+
+@@.tb-links.list-tags: <$view field="created" format="date" template="YYYY-0MM-0DD"/>
+@@
+-->
+<br/>
+<$view field="note"/>
+</dd>
+<br>

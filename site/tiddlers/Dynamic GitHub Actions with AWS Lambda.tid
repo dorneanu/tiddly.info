@@ -1,0 +1,11 @@
+created: 20181126100437076
+creator: boru
+modified: 20191128165535098
+modifier: boru
+name: Dynamic GitHub Actions with AWS Lambda
+note: GitHub webhooks allow you to easily generate notifications whenever certain actions occur. One built-in webhook is Amazon Simple Notification Service (SNS), which can transmit these messages to a variety of endpoints…including AWS Lambda, which means you can now easily run JavaScript code in response to something happening in a GitHub repository. In this post we’ll make a simple issue responder bot using a Lambda function, but you could use the same technique to trigger deployments or other actions.
+tags: AWS Lambda Bookmark
+title: Dynamic GitHub Actions with AWS Lambda
+tmap.id: 97111646-bb77-4095-a9fd-5e6f9efc2bc6
+type: text/vnd.tiddlywiki
+url: https://aws.amazon.com/de/blogs/compute/dynamic-github-actions-with-aws-lambda/

@@ -1,0 +1,31 @@
+created: 20140606183128475
+creator: Alberto Molina Pérez
+footer: <$button message="tw-close-tiddler" class="btn btn-primary">Close</$button>
+modified: 20191128165530641
+modifier: Alberto Molina Pérez
+subtitle: 
+title: $:/_tw-scholars/ui/SideBar/newPerson/table
+type: text/vnd.tiddlywiki
+
+\define person_name(type:"person") <$edit-text tiddler="$:/temp/$type$" field="person_name" placeholder="Name" class="tc-edit-texteditor" size="20"/>
+
+\define person_surname(type:"person") <$edit-text tiddler="$:/temp/$type$" field="person_surname" placeholder="Surname" class="tc-edit-texteditor" size="20"/>
+
+\define inputperson(type:"person",field,size:"8",placeholder) <$edit-text  tiddler="$:/temp/$type$" field="$field$" size="$size$" placeholder="$placeholder$" class="tc-edit-texteditor"/>
+
+<div>
+
+|invisible|k
+| |||
+|<$tiddler tiddler="$:/temp/person"><$radio field="person_type" value="author"> author</$radio>       <$radio field="person_type" value="student"> student</$radio></$tiddler>|<|<|
+| |<|<|
+|<<person_name>>|<<person_surname>>|<|
+| |<|<|
+|<<inputperson "person" "birthplace" "20" "birth place">>|<<inputperson "person" "birthdate" "8" "birth date">> | {{$:/_tw-scholars/ui/SideBar/newHere/person/button}}|
+|<<inputperson "person" "deathplace" "20" "death place">>|<<inputperson "person" "deathdate" "8" "death date">> |~|
+| |<|<|
+|<<inputperson "person" "picture_file" "33" "picture's location">> |<|<|
+| |<|<|
+| <<trad "Edit tiddler">>:   <<editSelector "person">>|<|<|
+
+</div>

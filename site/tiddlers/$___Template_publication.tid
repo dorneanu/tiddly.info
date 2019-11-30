@@ -1,0 +1,7 @@
+created: 20191108205051146
+modified: 20191128165530055
+tags: 
+title: $:/_Template/publication
+type: text/vnd.tiddlywiki
+
+<<i>> <$link><$view field="caption"/></$link><br/>

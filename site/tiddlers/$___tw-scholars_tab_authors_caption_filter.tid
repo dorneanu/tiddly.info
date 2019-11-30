@@ -1,0 +1,8 @@
+created: 20140805223227506
+creator: Alberto Molina Pérez
+modified: 20191128165530899
+modifier: Alberto Molina Pérez
+title: $:/_tw-scholars/tab/authors/caption/filter
+type: text/vnd.tiddlywiki
+
+[all[current]listed[authors]] [all[current]listed[parent]] [all[current]listed[about]] [all[current]tagging[]] +[tag[$:/_type/person]!has[draft.of]!is[system]]

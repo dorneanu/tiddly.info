@@ -1,0 +1,132 @@
+created: 20140718150221654
+creator: Alberto Molina Pérez
+edit: 
+modified: 20191128165530004
+modifier: Alberto Molina Pérez
+title: $:/_tw-scholars/courses/agenda
+type: text/vnd.tiddlywiki
+
+\define cell(XY)
+<$reveal type="match" state="!!edit" text="agenda">
+    <$edit-text tiddler="$:/_tw-scholars/courses/agenda/data" field="$XY$" class="tc-edit-texteditor" size="8"/>
+</$reveal>
+<$reveal type="nomatch" state="!!edit" text="agenda">
+    <$tiddler tiddler="$:/_tw-scholars/courses/agenda/data">
+        <$reveal type="nomatch" state="!!$XY$" text="">
+            <$button to={{!!$XY$}}>
+                <$view field="$XY$"/>
+            </$button>
+        </$reveal>
+    </$tiddler>
+</$reveal>
+\end
+\define button()
+<$reveal type="nomatch" state="!!edit" text="agenda">
+    <$button set="!!edit" setTo="agenda" class="tc-btn-invisible">{{$:/_images/edit-2x}}</$button>
+</$reveal>
+<$reveal type="match" state="!!edit" text="agenda">
+    <$button set="!!edit" setTo="" class="tc-btn-invisible">{{$:/_images/done-2x}}</$button>
+</$reveal>
+\end
+
+<div class="agenda" >
+            <table >
+                <tr>
+                    <th>
+                        <<button>>
+                    </th>
+                    <td >
+                        <<trad "Monday">>
+                    </td>
+                    <td >
+                          <<trad "Tuesday">>  
+                    </td>
+                    <td>
+                        <<trad "Wednesday">>
+                    </td>
+                    <td >
+                          <<trad "Thursday">>  
+                    </td>
+                    <td>
+                        <<trad "Friday">>
+                    </td>
+                </tr>
+      <tr>
+         <th>10h</th>
+         <td><<cell "l10">></td>
+         <td><<cell "m10">></td>
+         <td><<cell "x10">></td>
+         <td><<cell "j10">></td>
+         <td><<cell "v10">></td>
+      </tr>
+      <tr>
+         <th>11h</th>
+         <td><<cell "l11">></td>
+         <td><<cell "m11">></td>
+         <td><<cell "x11">></td>
+         <td><<cell "j11">></td>
+         <td><<cell "v11">></td>
+      </tr>
+      <tr>
+         <th>12h</th>
+         <td><<cell "l12">></td>
+         <td><<cell "m12">></td>
+         <td><<cell "x12">></td>
+         <td><<cell "j12">></td>
+         <td><<cell "v12">></td>
+      </tr>
+      <tr>
+         <th>13h</th>
+         <td><<cell "l13">></td>
+         <td><<cell "m13">></td>
+         <td><<cell "x13">></td>
+         <td><<cell "j13">></td>
+         <td><<cell "v13">></td>
+      </tr>
+      <tr>
+         <th rowspan="2" colspan="6"> </th>
+      </tr>
+      <tr>
+      </tr>
+      <tr>
+         <th>16h</th>
+         <td><<cell "l16">></td>
+         <td><<cell "m16">></td>
+         <td><<cell "x16">></td>
+         <td><<cell "j16">></td>
+         <td><<cell "v16">></td>
+      </tr>
+      <tr>
+         <th>17h</th>
+         <td><<cell "l17">></td>
+         <td><<cell "m17">></td>
+         <td><<cell "x17">></td>
+         <td><<cell "j17">></td>
+         <td><<cell "v17">></td>
+      </tr>
+      <tr>
+         <th>18h</th>
+         <td><<cell "l18">></td>
+         <td><<cell "m18">></td>
+         <td><<cell "x18">></td>
+         <td><<cell "j18">></td>
+         <td><<cell "v18">></td>
+      </tr>
+      <tr>
+         <th>19h</th>
+         <td><<cell "l19">></td>
+         <td><<cell "m19">></td>
+         <td><<cell "x19">></td>
+         <td><<cell "j19">></td>
+         <td><<cell "v19">></td>
+      </tr>
+      <tr>
+         <th>20h</th>
+         <td><<cell "l20">></td>
+         <td><<cell "m20">></td>
+         <td><<cell "x20">></td>
+         <td><<cell "j20">></td>
+         <td><<cell "v20">></td>
+      </tr>
+</table>
+</div>

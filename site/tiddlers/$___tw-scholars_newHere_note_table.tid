@@ -1,0 +1,25 @@
+created: 20140624095422282
+creator: Alberto Molina Pérez
+modified: 20191128165529537
+modifier: Alberto Molina Pérez
+tags: $:/_type/table $:/tags/Macro
+title: $:/_tw-scholars/newHere/note/table
+type: text/vnd.tiddlywiki
+
+\define noPubMacro_editTitle(type:"note",placeholder)
+<$edit-text tiddler="$:/temp/$type$" field="note_title" tag="input" placeholder="$placeholder$"  class="tc-edit-texteditor" size="60"/>
+\end
+
+\define noPubMacro(tiddlerTitle,type:"note") <<noPubMacro_editTitle "$type$" "$tiddlerTitle$ - $type$ (default title)">>
+
+\define newHere_table(type:"note")
+|!<br><<trad "Source">><br>  |{{!!title}}|<|<|<|<|<|
+|!<<trad "$type$ title">> |<$macrocall $name="noPubMacro" tiddlerTitle={{!!title}} type="$type$"/>|<|<|<|<|<|
+|!<<trad "Description">> |<$edit-text tiddler="$:/temp/$type$" field="description" tag="input" class="tc-edit-texteditor" size="60"/>|<|<|<|<|<|
+|!<<trad "About">> |<$edit-text tiddler="$:/temp/$type$" field="about" tag="input" placeholder="[[tag name]]" class="tc-edit-texteditor" size="60"/>|<|<|<|<|<|
+|!<<trad "Tags">> |<$tiddler tiddler="$:/temp/$type$">{{||$:/core/ui/EditTemplate/tags}}</$tiddler>|<|<|<|<|<|
+|!<<trad "Text">> |<$edit-text tiddler="$:/temp/$type$" class="tc-edit-texteditor" tag="textarea"/>|<|<|<|<|<|
+|>| !<<trad "Edit tiddler">>:   <<editSelector "$type$">>|<|<|<|<|<|
+\end
+
+<<newHere_table>>

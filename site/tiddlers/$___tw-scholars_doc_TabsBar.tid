@@ -1,0 +1,12 @@
+about: tabs
+created: 20140719121535701
+creator: Alberto Molina Pérez
+description: Tabs bar
+modified: 20191128165529746
+modifier: Alberto Molina Pérez
+parent: $:/_tw-scholars/tab/features
+tags: $:/_type/doc
+title: $:/_tw-scholars/doc/TabsBar
+type: text/vnd.tiddlywiki
+
+The main feature of //~TiddlyWiki for Scholars// is its tabs bar at the bottom of each tiddler. Each tab shows relevant information related to the current tiddler. And the list of tabs is specific to each tiddler's contents type. For example, "note tiddlers" and "quote tiddlers" have different lists of tabs. Several predefined tabs allow an easy and fast creation of new tiddlers related to the current one.

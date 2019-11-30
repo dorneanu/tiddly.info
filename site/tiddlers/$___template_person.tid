@@ -1,0 +1,21 @@
+alias: 
+birthdate: 
+birthplace: 
+color: #ff8383
+created: 20140421100256527
+creator: Alberto Molina
+deathdate: 
+deathplace: 
+icon: $:/_images/person
+modified: 20191128165530066
+modifier: Alberto Molina
+person_name: 
+person_surname: 
+person_type: 
+picture_caption: 
+picture_file: 
+picture_source: 
+picture_tooltip: 
+tags: $:/_type/person
+title: $:/_template/person
+type: text/vnd.tiddlywiki

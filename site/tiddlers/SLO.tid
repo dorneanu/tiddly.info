@@ -1,0 +1,55 @@
+created: 20190828071213384
+modified: 20191128165539627
+tags: TODO SRE
+title: SLO
+tmap.id: cbbc23b8-84cd-4f1c-b84b-116865508fbd
+type: text/vnd.tiddlywiki
+
+; Service Level Objectives
+: An SLO is a Service Level Objective. It is a reliability target value for an SLI.
+
+* enable data driven conversation
+* increase transparency
+
+```
+Y proportion of the time
+```
+
+Example: During 99.9% of the time
+
+!! Advantages
+
+<$details summary="What will we use them for"> 
+
+1. To enable a data-driven conversation around reliability vs new product features
+
+The most important feature of any service is its reliability. Finding the right balance between investing in reliability or new product features is difficult. SLOs allow the teams to make data-driven decisions about the right balance of investment between reliability and new product features. It helps determine what engineering work to prioritize. It also treats reliability as first-class citizens.
+
+2. To define reliability from a user perspective
+
+An SLO sets a target level of reliability for the service. Above this threshold, the user experience should match the expectations of the service. Below this threshold, users are likely to start complaining or to stop using the service. Ultimately, usability is what matters: when users have a pleasant experience using the service, they generate revenue, place low demands on customer support teams and recommend the service to their friends. We keep our services reliable to keep our users happy.
+
+3. To define service criticality
+
+With SLOs the team can reason about service criticality just by looking at its target values. An SLO with a target of 99,9% is more critical than one with a target of 99%. This also allows having different criticalities for different capabilities within the same service.
+
+4. To reduce alert fatigue
+
+Alert fatigue occurs when a large frequent number of alerts exists and a team starts to ignore them. By using an SLO-based alerting strategy, the team is only alerted when there's a real problem affecting users.
+
+5. To increase transparency around incidents
+
+Since SLOs are measurable and represent the most important service capabilities for your users, teams may decide to automatically declare incidents based on SLO breaches. This makes declaring an incident less subjective. Going further, its possible to automatically create incident channels on Slack, invite relevant people (team members), show relevant metrics (the SLIs), etc.
+
+</$details>
+
+!! Framework
+
+
+# Understand your users
+# Set a plain English service definition
+# Define capabilities exposed by the service
+# Define SLIs for each capability
+# List service dependencies and their SLOs (if existing)
+# Define SLO targets (per SLI or per capability)
+# Iterate and tune

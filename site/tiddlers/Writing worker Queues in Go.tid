@@ -1,0 +1,11 @@
+created: 20181203135821030
+creator: boru
+modified: 20191128165540040
+modifier: boru
+name: Writing worker Queues in Go
+note: Consumer Pattern (work queue, dispatcher, worker queue, workers) in Golang
+tags: Golang Patterns Bookmark
+title: Writing worker Queues in Go
+tmap.id: e65bbbb4-a409-4044-9b4b-7603c761024a
+type: text/vnd.tiddlywiki
+url: http://nesv.github.io/golang/2014/02/25/worker-queues-in-go.html

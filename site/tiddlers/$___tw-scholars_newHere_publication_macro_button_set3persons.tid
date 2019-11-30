@@ -1,0 +1,17 @@
+created: 20140625111832241
+modified: 20191128165530990
+title: $:/_tw-scholars/newHere/publication/macro/button/set3persons
+type: text/vnd.tiddlywiki
+
+<$setfield set="""!!person1_name""" setTo={{!!person_name}}>
+<$setfield set="""!!person1_surname""" setTo={{!!person_surname}}>
+
+<$setfield set="""!!person2_name""" setTo={{$:/temp/publication!!person2_name}}>
+<$setfield set="""!!person2_surname""" setTo={{$:/temp/publication!!person2_surname}}>
+<$setfield set="""$:/temp/publication!!person2_name""" setTo="""""">
+<$setfield set="""$:/temp/publication!!person2_surname""" setTo="""""">
+
+<$setfield set="""!!person3_name""" setTo={{$:/temp/publication!!person3_name}}>
+<$setfield set="""!!person3_surname""" setTo={{$:/temp/publication!!person3_surname}}>
+<$setfield set="""$:/temp/publication!!person3_name""" setTo="""""">
+<$setfield set="""$:/temp/publication!!person3_surname""" setTo="""""">

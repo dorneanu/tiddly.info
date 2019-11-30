@@ -1,0 +1,12 @@
+created: 20140725100504586
+creator: Alberto Molina Pérez
+modified: 20191128165529558
+modifier: Alberto Molina Pérez
+title: $:/_tw-scholars/newHere/journal/table
+type: text/vnd.tiddlywiki
+
+| |<|<|<|<|<|<|<|<|<|h
+|>|!<<trad "Description">> |<$edit-text tiddler="$:/temp/journal" field="description" placeholder="a short description of the journal entry" class="tc-edit-texteditor" size="60"/>|<|<|<|<|<|<|<|
+|>|!<<trad "Tags">> |<$tiddler tiddler="$:/temp/journal">{{||$:/core/ui/EditTemplate/tags}}</$tiddler>|<|<|<|<|<|<|<|
+|>|!<<trad "Text">> |<$edit-text tiddler="$:/temp/journal" class="tc-edit-texteditor" tag="textarea"/>|<|<|<|<|<|<|<|
+|>| !<<trad "Edit tiddler">>:   <<editSelector "journal">>|<|<|<|<|<|<|<|<|

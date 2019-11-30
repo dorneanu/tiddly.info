@@ -1,0 +1,46 @@
+created: 20140725155352618
+creator: Alberto Molina Pérez
+edit: 
+icon: $:/_images/education
+modified: 20191128165530675
+modifier: Alberto Molina Pérez
+parent: $:/_tw-scholars/ui/SideBar/Menu
+show: concept
+tabs_color: red
+tags: $:/_hide/tabs
+title: $:/_tw-scholars/ui/SideBar/newHere
+type: text/vnd.tiddlywiki
+
+\define button(content,icon:"")
+<$reveal type="nomatch" state="!!show" text="$content$">
+    <$button set="!!show" setTo="$content$" class="tc-btn-sidebar">
+        $icon$<<trad "$content$">>
+    </$button>
+</$reveal>
+<$reveal type="match" state="!!show" text="$content$">
+    <$button set="!!show" setTo="" class="tc-btn-sidebar-down">
+        $icon$<<trad "$content$">>
+    </$button>
+</$reveal>
+\end
+<div class="sidebar-menu newHere">
+<<button "person" "{{$:/_images/person-button}} +<br>">><<button "note" "{{$:/_images/note-button}}+<br>">><<button "idea" "{{$:/_images/idea-button}}+<br>">><<button "concept" "{{$:/_images/concept-button}}+<br>">><<button "theory" "{{$:/_images/theory-button}}+<br>">>
+
+<div>
+<$reveal type="match" state="!!show" text="person">
+    {{$:/_tw-scholars/ui/SideBar/newPerson}}<br><br>
+</$reveal>
+<$reveal type="match" state="!!show" text="note">
+    {{$:/_tw-scholars/ui/SideBar/newNote}}<br><br>
+</$reveal>
+<$reveal type="match" state="!!show" text="idea">
+    {{$:/_tw-scholars/ui/SideBar/newIdea}}<br><br>
+</$reveal>
+<$reveal type="match" state="!!show" text="concept">
+    {{$:/_tw-scholars/ui/SideBar/newConcept}}<br><br>
+</$reveal>
+<$reveal type="match" state="!!show" text="theory">
+    {{$:/_tw-scholars/ui/SideBar/newTheory}}<br><br>
+</$reveal>
+</div>
+</div>

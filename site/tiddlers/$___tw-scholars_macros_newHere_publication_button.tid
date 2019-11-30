@@ -1,0 +1,184 @@
+created: 20140626172029845
+creator: Alberto Molina Pérez
+modified: 20191128165529689
+modifier: Alberto Molina Pérez
+tags: $:/tags/Macro
+title: $:/_tw-scholars/macros/newHere/publication/button
+type: text/vnd.tiddlywiki
+
+\define button1(setpersons,setpersonsEnd,authors_list,authors_title,setPubInfo,setPubInfoEnd,setCommonInfo,setCommonInfoEnd,title,tags,icon,label,template,edit)
+
+<$setfield set="!!icon" setTo="$icon$">
+
+<$setfield set="!!authors" setTo="$authors_list$">
+
+<$setfield set="!!authors_title" setTo="$authors_title$">
+
+
+$setpersons$
+
+$setPubInfo$
+
+$setCommonInfo$
+
+;$title$
+
+<$maketid  title="$title$" tags="[[$:/_type/publication]] $tags$" template="$template$" edit="$edit$" message="tm-set-field">
+<$button message="tm-new-tiddler">$label$</$button>
+</$maketid>
+
+
+$setCommonInfoEnd$
+
+$setPubInfoEnd$
+
+$setpersonsEnd$
+
+</$setfield>
+
+</$setfield>
+
+</$setfield>
+\end
+
+
+\define button2(type,number,title,authors_title,authors_list,publication_date,publication_title,label:"add")
+<$macrocall $name="button1"
+   setpersons={{$:/_tw-scholars/newHere/publication/macro/button/set$number$persons}}
+   setpersonsEnd={{$:/_tw-scholars/newHere/publication/macro/button/set$number$personsEnd}}
+   setPubInfo={{$:/_tw-scholars/newHere/publication/macro/button/pubInfo/$type$}}
+   setPubInfoEnd={{$:/_tw-scholars/newHere/publication/macro/button/pubInfoEnd/$type$}}
+   setCommonInfo={{$:/_tw-scholars/newHere/publication/macro/button/commonInfo}}
+   setCommonInfoEnd={{$:/_tw-scholars/newHere/publication/macro/button/commonInfoEnd}}
+   authors_title="$authors_title$"
+   authors_list="$authors_list$"
+   title="$authors_title$$publication_date$: $publication_title$"
+   tags={{$:/temp/publication!!tags}}
+   icon="$:/_images/$type$"
+   label="$label$"
+   template="$:/_template/$type$"
+   edit={{$:/temp/publication!!edit}}
+/>
+\end
+
+
+\define article_title(type,number,authors_title,authors_list,publication_title,publication_date,label)
+<$macrocall $name="button2"
+   type="$type$"
+   authors_title="$authors_title$"
+   authors_list="$authors_list$"
+   publication_date=" ($publication_date$)"
+   publication_title="“$publication_title$”"
+   number="$number$"
+   label="$label$"/>
+\end
+
+
+\define book_title(type,number,authors_title,authors_list,publication_title,publication_date,label)
+<$macrocall $name="button2"
+   type="$type$"
+   authors_title="$authors_title$"
+   authors_list="$authors_list$"
+   publication_date=" ($publication_date$)"
+   publication_title="$publication_title$"
+   number="$number$"
+   label="$label$"
+/>
+\end
+
+\define 1persons_title(type,person1_name,person1_surname,label)
+<$macrocall $name="$type$_title"
+   type="$type$"
+   number="1" 
+   authors_title="$person1_surname$" 
+   authors_list="[[$person1_name$ $person1_surname$]]" 
+   publication_title={{$:/temp/publication!!publication_title}} 
+   publication_date={{$:/temp/publication!!publication_date}}
+   label="$label$"/>
+\end
+
+\define 2persons_title(type,person1_name,person1_surname,person2_name,person2_surname,label)
+<$macrocall $name="$type$_title"
+   type="$type$"
+   number="2" 
+   authors_title="$person1_surname$ & $person2_surname$" 
+   authors_list="[[$person1_name$ $person1_surname$]] [[$person2_name$ $person2_surname$]]" 
+   publication_title={{$:/temp/publication!!publication_title}} 
+   publication_date={{$:/temp/publication!!publication_date}}
+   label="$label$"/>
+\end
+
+\define 3persons_title(type,person1_name,person1_surname,person2_name,person2_surname,person3_name,person3_surname,label)
+<$macrocall $name="$type$_title"
+   type="$type$"
+   number="3" 
+   authors_title="$person1_surname$, $person2_surname$ & $person3_surname$" 
+   authors_list="[[$person1_name$ $person1_surname$]] [[$person2_name$ $person2_surname$]] [[$person3_name$ $person3_surname$]]" 
+   publication_title={{$:/temp/publication!!publication_title}} 
+   publication_date={{$:/temp/publication!!publication_date}}
+   label="$label$"/>
+\end
+
+\define 4persons_title(type,person1_name,person1_surname,person2_name,person2_surname,person3_name,person3_surname,person4_name,person4_surname,label)
+<$macrocall $name="$type$_title"
+   type="$type$"
+   number="4" 
+   authors_title="$person1_surname$ et al." 
+   authors_list="[[$person1_name$ $person1_surname$]] [[$person2_name$ $person2_surname$]] [[$person3_name$ $person3_surname$]] [[$person4_name$ $person4_surname$]]" 
+   publication_title={{$:/temp/publication!!publication_title}} 
+   publication_date={{$:/temp/publication!!publication_date}}
+   label="$label$"/>
+\end
+
+\define authors_title(type,number,label:"add")
+<$macrocall $name="$number$persons_title" 
+   type="$type$"
+   person1_name={{!!person_name}} 
+   person1_surname={{!!person_surname}} 
+   person2_name={{$:/temp/publication!!person2_name}} 
+   person2_surname={{$:/temp/publication!!person2_surname}} 
+   person3_name={{$:/temp/publication!!person3_name}} 
+   person3_surname={{$:/temp/publication!!person3_surname}}  
+   person4_name={{$:/temp/publication!!person4_name}} 
+   person4_surname={{$:/temp/publication!!person4_surname}} 
+   label="$label$"/>
+\end
+
+
+\define listFilters(type,label)
+<$set name="thisTiddler" value=<<currentTiddler>> >
+ <$list filter="[all[current]!person_surname[]]">
+        <$list filter="[[$:/temp/publication]person2_surname[]person3_surname[]person4_surname[]]">
+            <$tiddler tiddler=<<thisTiddler>> >
+                <<authors_title "$type$" "1" "$label$">>
+            </$tiddler>
+        </$list>
+        <$list filter="[[$:/temp/publication]!person2_surname[]person3_surname[]person4_surname[]]">
+            <$tiddler tiddler=<<thisTiddler>> >
+                <<authors_title "$type$" "2" "$label$">>
+            </$tiddler>
+        </$list>
+        <$list filter="[[$:/temp/publication]!person2_surname[]!person3_surname[]person4_surname[]]">
+            <$tiddler tiddler=<<thisTiddler>> >
+                <<authors_title "$type$" "3" "$label$">>
+            </$tiddler>
+         </$list>
+        <$list filter="[[$:/temp/publication]!person2_surname[]!person3_surname[]!person4_surname[]]">
+            <$tiddler tiddler=<<thisTiddler>> >
+                <<authors_title "$type$" "4" "$label$">>
+            </$tiddler>
+        </$list>
+    </$list>
+</$set>
+\end
+
+
+\define newHere_pubButton(type,label)
+<$reveal type="nomatch" state="$:/temp/publication!!publication_title" text="">
+<<listFilters "$type$" "$label$">>
+</$reveal>
+\end
+
+
+
+<<newHere_pubButton "article" "add article">>

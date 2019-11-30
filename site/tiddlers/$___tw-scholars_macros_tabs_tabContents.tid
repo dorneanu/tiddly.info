@@ -1,0 +1,62 @@
+created: 20140628105045594
+creator: Alberto Molina Pérez
+icon: $:/_images/system
+modified: 20191128165529601
+modifier: Alberto Molina Pérez
+tags: $:/tags/Macro
+title: $:/_tw-scholars/macros/tabs/tabContents
+type: text/vnd.tiddlywiki
+
+\define tabContents2(type,heading,tags:"[all[current]list[!!about]] [all[current]list[!!parent]] [all[current]list[!!source]]",class:"",this:"")
+
+<h1><$reveal type="nomatch" state="$:/_images/$type$" text="">{{$:/_images/$type$}} </$reveal><<trad "$heading$">></h1>
+
+<$list filter=<<tabFilter "$type$">> emptyMessage="none">
+
+<h2><$link to={{!!title}}><$view field="title"/></$link></h2>
+
+<h3><$transclude field="description"/></h3>
+
+<$list filter="$tags$ -[title[$this$]]" template="tag"/><$list filter="[all[current]tags[]!is[system]]" template="tag"/>
+
+<<<$class$
+
+{{!!text}}
+
+<<<
+
+<br>
+
+</$list>
+
+
+<h1><$reveal type="nomatch" state="$:/_images/$type$" text="">{{$:/_images/$type$}} </$reveal><<trad "Related $heading$">></h1>
+
+<$list filter="[all[current]tagging[]] [all[current]listed[source]listed[about]] [all[current]listed[source]listed[source]] [all[current]listed[source]listed[parent]] [all[current]listed[source]tagging[]] [all[current]listed[about]listed[about]] [all[current]listed[about]listed[parent]] [all[current]listed[about]tagging[]] [all[current]listed[parent]listed[about]] [all[current]listed[parent]listed[parent]] [all[current]listed[parent]tagging[]] +[tag[$:/_type/$type$]!title{!!title}!is[system]!has[draft.of]]" emptyMessage="none">
+
+<h2><$link to={{!!title}}><$view field="title"/></$link></h2>
+
+<h3><$transclude field="description"/></h3>
+
+<$list filter="$tags$ -[title[$this$]]" template="tag"/><$list filter="[all[current]tags[]!is[system]]" template="tag"/>
+
+<<<$class$
+
+{{!!text}}
+
+<<<
+
+<br>
+
+</$list>
+
+\end
+
+\define tabContents(type,heading,tags:"[all[current]list[!!about]] [all[current]list[!!parent]] [all[current]list[!!source]]",class:"")
+<$macrocall $name="tabContents2" 
+   type="$type$" 
+   heading="$heading$" 
+   tags="$tags$" 
+   class="$class$" 
+   this={{!!title}} />
+\end

@@ -1,0 +1,83 @@
+created: 20140606174700983
+creator: Alberto Molina Pérez
+modified: 20191128165529645
+modifier: Alberto Molina Pérez
+tags: $:/tags/Macro
+title: $:/_tw-scholars/macros/SideBar/newPerson/button
+type: text/vnd.tiddlywiki
+
+\define newPerson_button2(person_type,person_name,person_surname,birthdate,birthplace,deathdate,deathplace,picture_file,edit:"show",tags,label,class,language,color)
+
+<$setfield set="!!icon" setTo="$:/_images/person">
+
+<$setfield set="!!color" setTo="$color$">
+
+<$setfield set="!!person_type" setTo="$person_type$">
+
+<$setfield set="!!person_name" setTo="$person_name$">
+<$setfield set="$:/temp/person!!person_name" setTo="">
+
+<$setfield set="!!person_surname" setTo="$person_surname$">
+<$setfield set="$:/temp/person!!person_surname" setTo="">
+
+<$setfield set="!!birthdate" setTo="$birthdate$">
+<$setfield set="$:/temp/person!!birthdate" setTo="">
+
+<$setfield set="!!birthplace" setTo="$birthplace$">
+<$setfield set="$:/temp/person!!birthplace" setTo="">
+
+<$setfield set="!!deathdate" setTo="$deathdate$">
+<$setfield set="$:/temp/person!!deathdate" setTo="">
+
+<$setfield set="!!deathplace" setTo="$deathplace$">
+<$setfield set="$:/temp/person!!deathplace" setTo="">
+
+<$setfield set="!!picture_file" setTo={{$:/temp/person!!picture_file}}>
+<$setfield set="$:/temp/person!!picture_file" setTo="">
+
+<$set name="label" value={{$language$/myTabs##$label$}} >
+
+    <$maketid  title="$person_name$ $person_surname$" tags="$:/_type/person $tags$" edit="$edit$" message="tm-set-field">
+        <$button message="tm-new-tiddler" class="$class$"><<trad "$label$">></$button>
+    </$maketid>
+
+</$set>
+
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+\end
+
+\define newPerson_button(label:"add",class:"",color:"#ff8383")
+<$macrocall $name="newPerson_button2" 
+person_type={{$:/temp/person!!person_type}} 
+person_name={{$:/temp/person!!person_name}} 
+person_surname={{$:/temp/person!!person_surname}} 
+birthdate={{$:/temp/person!!birthdate}} 
+birthplace={{$:/temp/person!!birthplace}} 
+deathdate={{$:/temp/person!!deathdate}} 
+deathplace={{$:/temp/person!!deathplace}} 
+picture_file={{$:/temp/person!!picture_file}} 
+edit={{$:/temp/person!!edit}} 
+tags={{$:/temp/person!!tags}} 
+label="$label$" 
+class="$class$" 
+language={{$:/language}}
+color="$color$"/>
+\end
+
+<<newPerson_button>>

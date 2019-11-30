@@ -1,0 +1,9 @@
+created: 20190605102824100
+modified: 20191128165536460
+name: merlin
+note: Merlin is a cross-platform post-exploitation HTTP/2 Command & Control server and agent written in golang.
+tags: Golang [[Security Tool]] Bookmark
+title: merlin
+tmap.id: b26e377a-5094-4460-8f14-ff023bc4b1b6
+type: text/vnd.tiddlywiki
+url: https://github.com/Ne0nd0g/merlin/

@@ -1,0 +1,28 @@
+created: 20140804204335443
+creator: Alberto Molina Pérez
+footer: <$button message="tw-close-tiddler" class="btn btn-primary">Close</$button>
+modified: 20191128165530682
+modifier: Alberto Molina Pérez
+subtitle: 
+title: $:/_tw-scholars/ui/SideBar/newConcept/table
+type: text/vnd.tiddlywiki
+
+<div>
+
+|invisible|k
+| |
+| ''New concept'' |
+| |
+|<$edit-text tiddler="$:/temp/concept" field="concept_name" placeholder="Name of the concept" class="tc-edit-texteditor" tag="input" size="44"/>|
+| |
+|<$edit-text tiddler="$:/temp/concept" field="description" placeholder="Description" class="tc-edit-texteditor" tag="input" size="44"/> |
+|<$edit-text tiddler="$:/temp/concept" field="authors" placeholder="[[Author Name]]" class="tc-edit-texteditor" tag="input" size="44"/>|
+|<$edit-text tiddler="$:/temp/concept" field="source" placeholder="[[Source of the concept]] (book, paper…)" class="tc-edit-texteditor" tag="input" size="44"/>|
+| |
+|<$edit-text tiddler="$:/temp/concept" field="parent" placeholder="Parent concepts and theories" class="tc-edit-texteditor" tag="input" size="44"/>|
+|<$tiddler tiddler="$:/temp/concept">{{||$:/core/ui/EditTemplate/tags}}</$tiddler>|
+|<$edit-text tiddler="$:/temp/concept" field="text" placeholder="Content" class="tc-edit-texteditor" tag="textarea"/>|
+| |
+| <<trad "Edit tiddler">>:   <<editSelector "concept">>|
+
+</div>

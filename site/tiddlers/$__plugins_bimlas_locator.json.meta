@@ -1,0 +1,12 @@
+author: bimlas
+core-version: >=5.1.18
+created: 20191105064308141
+dependents: 
+description: Locator: Discover and search by context
+list: README/README README/view README/search README/tags README/TIPS README/CHANGELOG
+modified: 20191128165532419
+plugin-type: plugin
+source: https://gitlab.com/bimlas/tw5-locator
+title: $:/plugins/bimlas/locator
+type: application/json
+version: 1.5.0

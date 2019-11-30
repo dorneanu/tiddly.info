@@ -1,0 +1,27 @@
+created: 20140430191530914
+creator: Alberto Molina
+list-after: $:/_tw-scholars/ViewTemplate/subtitle/custom
+list-before: $:/core/ui/ViewTemplate/body
+modified: 20191128165530513
+modifier: Alberto Molina Pérez
+tags: $:/tags/ViewTemplate MyMark
+title: $:/_tw-scholars/ViewTemplate/tags
+type: text/vnd.tiddlywiki
+
+<div class="tc-tags-wrapper">
+
+<!-- Make tag out of field authors -->
+<$list filter="[all[current]!is[system]list[!!authors]]" template="$:/core/ui/TagTemplate" storyview="pop"/>
+
+<!-- Don't show source as tag
+<$list filter="[all[current]!is[system]list[!!source]] [all[current]!is[system]list[!!parent]]" template="$:/core/ui/TagTemplate" storyview="pop"/>
+-->
+
+<!-- List field about as tags -->
+<$list filter="[all[current]!is[system]list[!!about]]" template="$:/core/ui/TagTemplate" storyview="pop"/>
+
+<!--
+<$list filter="[all[current]!is[system]tags[]!is[system]sort[title]] [all[current]is[system]tags[]]" template="$:/core/ui/TagTemplate" storyview="pop"/>
+-->
+
+</div>

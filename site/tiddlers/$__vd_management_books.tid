@@ -1,0 +1,9 @@
+created: 20191126154931148
+list: publication_title publication_type isbn authors description status
+mode: 
+modified: 20191128165532603
+tags: MyMark
+title: $:/vd/management/books
+type: text/vnd.tiddlywiki
+
+<<fields2table "[tag[$:/_type/publication]]>>

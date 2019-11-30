@@ -1,0 +1,15 @@
+created: 20140627012924058
+creator: Alberto Molina
+list-after: $:/_tw-scholars/ViewTemplate/tags
+list-before: $:/core/ui/ViewTemplate/body
+modified: 20191128165530587
+modifier: Alberto Molina Pérez
+tags: $:/tags/ViewTemplate
+title: $:/_tw-scholars/ViewTemplate/description
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]!is[system]!tag[$:/_hide/description]!description[]]">
+
+!!{{!!description}}
+
+</$list>

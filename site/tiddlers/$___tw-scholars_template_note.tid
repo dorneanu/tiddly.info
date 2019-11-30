@@ -1,0 +1,6 @@
+{{||$:/_tw-scholars/ViewTemplate/tags}}
+> {{!!text}}
+> <$link>{{!!title}}</$link>
+
+
+

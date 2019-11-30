@@ -1,0 +1,30 @@
+created: 20140628104742425
+creator: Alberto Molina Pérez
+icon: $:/_images/system
+modified: 20191128165529587
+modifier: Alberto Molina Pérez
+tags: $:/tags/Macro
+title: $:/_tw-scholars/macros/tabs/tabSlider
+type: text/vnd.tiddlywiki
+
+\define tabSlider(type,header,addLabel:"add",addTooltip:"add a new tiddler",cancelTooltip:"Cancel adding new tiddler.",cancelLabel:{{$:/core/images/cancel-button}})
+<$reveal type="nomatch" state="!!slider" text="show">
+<span title="$addTooltip$" style="float:right;position:relative;top:10px;"  class="tc-tiddler-controls">
+<$button set="!!slider" setTo="show" class="tc-btn-invisible">{{$:/core/images/new-button}}</$button>
+</span>
+</$reveal>
+
+<$reveal type="match" state="!!slider" text="show">
+
+<span title="$cancelTooltip$" style="float:right;position:relative;top:10px;"><$button class="tc-btn-invisible" set="!!slider" setTo="hide"><<trad "$cancelLabel$">></$button></span>
+
+!<<trad "$header$">>
+
+<<newHere_table "$type$">>
+
+<<newHere_button "$type$" "$addLabel$" "$addClass$">>
+
+<br><br><br><hr>
+
+</$reveal>
+\end

@@ -1,0 +1,17 @@
+created: 20140718084624588
+creator: Alberto Molina Pérez
+list-before: $:/core/ui/ViewTemplate/body
+modified: 20191128165530598
+modifier: Alberto Molina Pérez
+tags: $:/tags/ViewTemplate
+title: $:/_tw-scholars/ViewTemplate/course/title
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]tag[$:/_type/course]]">
+<div class="course-title">
+Cours de {{!!course}}
+</div>
+<div class="course-subtitle">
+Niveau {{!!course_level}}
+</div>
+</$list>

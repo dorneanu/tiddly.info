@@ -1,0 +1,80 @@
+authors: 
+color: #ee82ee
+created: 20140805171200207
+creator: Alberto Molina Pérez
+description: 
+icon: $:/_images/theory
+modified: 20191128165529638
+modifier: Alberto Molina Pérez
+parent: 
+source: 
+tags: $:/tags/Macro
+title: $:/_tw-scholars/macros/SideBar/newTheory/button
+type: text/vnd.tiddlywiki
+
+\define newTheory_button2(theory_name,description,authors,source,parent,tags,text,label,edit,class,language,color)
+
+<$setfield set="!!icon" setTo="$:/_images/theory">
+
+<$setfield set="!!color" setTo="$color$">
+
+<$setfield set="$:/temp/theory!!theory_name" setTo="">
+
+<$setfield set="$:/temp/theory!!tags" setTo="">
+
+<$setfield set="!!description" setTo="$description$">
+<$setfield set="$:/temp/theory!!description" setTo="">
+
+<$setfield set="!!authors" setTo="$authors$">
+<$setfield set="$:/temp/theory!!authors" setTo="">
+
+<$setfield set="!!source" setTo="$source$">
+<$setfield set="$:/temp/theory!!source" setTo="">
+
+<$setfield set="!!parent" setTo="$parent$">
+<$setfield set="$:/temp/theory!!parent" setTo="">
+
+<$setfield set="!!text" setTo="$text$">
+<$setfield set="$:/temp/theory!!text" setTo="">
+
+<$set name="label" value={{$language$/myTabs##$label$}} >
+
+    <$maketid  title="$theory_name$" tags="$:/_type/theory $tags$" edit="$edit$" message="tm-set-field">
+        <$button message="tm-new-tiddler" class="$class$"><<trad "$label$">></$button>
+    </$maketid>
+
+</$set>
+
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+\end
+
+\define newTheory_button(label:"add",class:"",color:"#ee82ee",edit:"show")
+<$macrocall $name="newTheory_button2" 
+theory_name={{$:/temp/theory!!theory_name}} 
+description={{$:/temp/theory!!description}} 
+authors={{$:/temp/theory!!authors}} 
+source={{$:/temp/theory!!source}} 
+parent={{$:/temp/theory!!parent}} 
+edit={{$:/temp/theory!!edit}} 
+tags={{$:/temp/theory!!tags}} 
+text={{$:/temp/theory!!text}} 
+label="$label$" 
+class="$class$" 
+language={{$:/language}}
+color="$color$"/>
+\end
+
+<<newTheory_button>>

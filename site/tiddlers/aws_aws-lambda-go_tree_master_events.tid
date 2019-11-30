@@ -1,0 +1,11 @@
+created: 20190109080226477
+creator: boru
+modified: 20191128165532971
+modifier: boru
+name: aws/aws-lambda-go/tree/master/events
+note: This package provides input types for Lambda functions that process AWS events.
+tags: AWS Golang Bookmark
+title: aws/aws-lambda-go/tree/master/events
+tmap.id: 03735566-687f-48ef-9dd1-1c749b8a406e
+type: text/vnd.tiddlywiki
+url: https://github.com/aws/aws-lambda-go/tree/master/events

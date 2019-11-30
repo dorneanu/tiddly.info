@@ -1,0 +1,11 @@
+created: 20190207131313974
+creator: boru
+modified: 20191128165532957
+modifier: boru
+name: banzaicloud/pipeline
+note: Pipeline enables developers to go from commit to scale in minutes by turning Kubernetes into a feature rich application platform integrating CI/CD, centralized logging, monitoring, enterprise-grade security, autoscaling and more.
+tags: Tool Golang Bookmark
+title: banzaicloud/pipeline
+tmap.id: 98d381be-163d-48e2-b260-7b60314c6cb7
+type: text/vnd.tiddlywiki
+url: https://github.com/banzaicloud/pipeline

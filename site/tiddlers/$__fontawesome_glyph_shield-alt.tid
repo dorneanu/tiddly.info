@@ -1,0 +1,12 @@
+created: 20191126092357102
+fa-default-style: fas
+fa-label: Alternate Shield
+fa-style-classes: fas
+fa-styles: solid
+fa-unicode: f3ed
+modified: 20191128165532458
+tags: achievement award block defend security winner solid
+title: $:/fontawesome/glyph/shield-alt
+type: text/vnd.tiddlywiki
+
+<i class='fas fa-shield-alt'></i>

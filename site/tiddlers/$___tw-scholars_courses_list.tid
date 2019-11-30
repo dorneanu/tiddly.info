@@ -1,0 +1,37 @@
+created: 20140718153617875
+creator: Alberto Molina Pérez
+modified: 20191128165529986
+modifier: Alberto Molina Pérez
+title: $:/_tw-scholars/courses/list
+type: text/vnd.tiddlywiki
+
+<hr>
+<div class="tc-btn-big green"><<trad "started">></div>
+<$list filter="[tag[$:/_type/course]has[date_alpha]!date_alpha[]date_omega[]each[course]]" emptyMessage=<<trad "none">>>
+    <span style="text-transform:capitalize;">
+    <h1><$view field="course"/></h1>
+    </span>
+    <$list filter="[course{!!course}has[date_alpha]!date_alpha[]date_omega[]]">
+        <h2><$link><$view field="title"/></$link></h2>
+    </$list>   
+</$list>
+
+<div class="tc-btn-big grey"><<trad "not started">></div>
+<$list filter="[tag[$:/_type/course]date_alpha[]each[course]]" emptyMessage=<<trad "none">>>
+    <span style="text-transform:capitalize;">
+    <h1><$view field="course"/></h1>
+    </span>
+    <$list filter="[course{!!course}date_alpha[]]">
+        <h2><$link><$view field="title"/></$link></h2>
+    </$list>   
+</$list>
+
+<div class="tc-btn-big red"><<trad "ended">></div>
+<$list filter="[tag[$:/_type/course]!date_omega[]each[course]]" emptyMessage=<<trad "none">> >
+    <span style="text-transform:capitalize;">
+    <h1><$view field="course"/></h1>
+    </span>
+    <$list filter="[course{!!course}!date_omega[]]">
+        <h2><$link><$view field="title"/></$link></h2>
+    </$list>   
+</$list>

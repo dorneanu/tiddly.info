@@ -1,0 +1,11 @@
+created: 20191126091903970
+fa-default-style: fas
+fa-label: bookmark
+fa-style-classes: fas far
+fa-styles: solid regular
+fa-unicode: f02e
+modified: 20191128165531086
+title: $:/fontawesome/glyph/bookmark
+type: text/vnd.tiddlywiki
+
+<i class='fas fa-bookmark'></i>

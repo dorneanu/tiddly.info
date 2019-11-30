@@ -1,0 +1,11 @@
+created: 20190131070557756
+creator: boru
+modified: 20191128165536396
+modifier: boru
+name: msgqueue
+note: Implement Queue with interface{}
+tags: Golang Bookmark
+title: msgqueue
+tmap.id: 7ec8c010-7234-4d21-8fb8-a41b687d8c49
+type: text/vnd.tiddlywiki
+url: https://github.com/go-msgqueue/msgqueue/

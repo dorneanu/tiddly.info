@@ -1,0 +1,12 @@
+created: 20191128123821435
+modified: 20191128165532616
+tags: $:/tags/Macro
+title: $:/vd/macros/xlist-topics
+type: text/vnd.tiddlywiki
+
+\define xlist-topics(topic)
+<<xlist
+filter:"[tag[$topic$]]"
+groups:"[tag[Topics]]"
+template:[[$:/vd/templates/xlist-topics]]>>
+\end

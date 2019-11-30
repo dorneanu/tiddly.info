@@ -1,0 +1,24 @@
+created: 20140722102748963
+creator: Alberto Molina Pérez
+description: Create a new content type
+modified: 20191128165529811
+modifier: Alberto Molina Pérez
+order: 3
+parent: $:/_tw-scholars/tab/howTo
+tags: $:/_type/doc
+title: $:/_tw-scholars/doc/howTo/newContentType
+type: text/vnd.tiddlywiki
+
+The type of contents of a tiddler (different from its `type` field) is defined by a tag prefixed `$:/_type/`, as in `$:/_type/quote` and `$:/_type/comment`.
+
+''Adding a new content type'' is as simple as tagging a tiddler with the type you want. For example, if you want tiddlers dedicated to videogames: 
+
+# first, create a new tiddler tagged `$:/_type/videogame`; 
+# then, edit [[$:/_tw-scholars/tabs]], add the field `videogame` and fill it with your list of tags;
+# done! (all the tiddlers tagged `$:/_type/videogame` will display the tabs listed in [[$:/_tw-scholars/tabs]].
+
+''Defining subtypes'' is easy too. If you want different lists of tabs for different types of videogames:
+
+# add to your tiddlers the field `videogame_type` with the subtypes as values: strategy, arcade, RPG, shoot 'em up…
+#  edit [[$:/_tw-scholars/tabs]], add the fields `arcade`, `strategy`, etc., and fill them with your lists of tags;
+# done!

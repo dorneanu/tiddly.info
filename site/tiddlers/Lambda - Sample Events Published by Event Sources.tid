@@ -1,0 +1,11 @@
+created: 20190109080226477
+creator: boru
+modified: 20191128165536763
+modifier: boru
+name: Lambda - Sample Events Published by Event Sources
+note: The following is a list of example events published by the supported AWS services
+tags: AWS Bookmark
+title: Lambda - Sample Events Published by Event Sources
+tmap.id: 6d1db55e-0801-483c-b89a-cc1157f5fd46
+type: text/vnd.tiddlywiki
+url: https://docs.aws.amazon.com/lambda/latest/dg/eventsources.html

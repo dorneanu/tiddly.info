@@ -1,0 +1,9 @@
+created: 20190603082916792
+modified: 20191128165535971
+name: GitHub Token Scanning
+note: GitHub scans public repositories for known token formats to prevent fraudulent use of credentials that were committed accidentally.
+tags: GitHub SDLC Bookmark
+title: GitHub Token Scanning
+tmap.id: 590195ac-a144-493a-b9cd-54ff1f37200a
+type: text/vnd.tiddlywiki
+url: https://developer.github.com/partnerships/token-scanning/

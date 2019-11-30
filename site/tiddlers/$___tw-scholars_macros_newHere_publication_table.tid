@@ -1,0 +1,50 @@
+created: 20140606165352983
+creator: Alberto Molina Pérez
+modified: 20191128165529682
+modifier: Alberto Molina Pérez
+table_state: 
+tags: $:/tags/Macro
+title: $:/_tw-scholars/macros/newHere/publication/table
+type: text/vnd.tiddlywiki
+
+\define person_name(number,default,placeholder:"prénom") <$edit-text tiddler="$:/temp/publication" field="person$number$_name" default=$default$ placeholder=$default$ class="tc-edit-texteditor" size="10"/>
+
+\define person_surname(number,default) <$edit-text tiddler="$:/temp/publication" field="person$number$_surname" default=$default$ placeholder=$default$ class="tc-edit-texteditor" size="10"/>
+
+\define newHere_pubTable2(type,invariable)
+<$reveal type="match" state="!!table_state" text="">
+
+|!<br>person<br>  |<|{{!!person_name}}|<|{{!!person_surname}}|<|<|<|<| <$button set="!!table_state" setTo="show person 2" class="tc-btn-invisible"> + </$button> |
+$type$
+$invariable$
+
+</$reveal>
+<$reveal type="match" state="!!table_state" text="show person 2">
+
+|^!<br>authors<br>  |! <br>1<br>  |{{!!person_name}}|<|{{!!person_surname}}|<|<|<|<| <$button set="!!table_state" setTo="show person 3" class="tc-btn-invisible">+</$button> |
+|~|! 2 |<<person_name "2" "prénom">>|<|<<person_surname "2" "nom">>|<|<|<|<| <$button set="!!table_state" setTo="" class="tc-btn-invisible">–</$button> |
+$type$
+$invariable$
+
+</$reveal>
+<$reveal type="match" state="!!table_state" text="show person 3">
+
+|^!<br>authors<br>  |!<br>1<br>  |{{!!person_name}}|<|{{!!person_surname}}|<|<|<|<| <$button set="!!table_state" setTo="show person 4" class="tc-btn-invisible">+</$button> |
+|~|! 2 |<<person_name "2" "prénom">>|<|<<person_surname "2" "nom">>|<|<|<|<| <$button set="!!table_state" setTo="show person 2" class="tc-btn-invisible">–</$button> |
+|~|! 3 |<<person_name "3" "prénom">>|<|<<person_surname "3" "nom">>|<|<|<|<|~|
+$type$
+$invariable$
+
+</$reveal>
+<$reveal type="match" state="!!table_state" text="show person 4">
+
+|^!<br>authors<br>  |!<br>1<br>  |{{!!person_name}}|<|{{!!person_surname}}|<|<|<|<| <$button set="!!table_state" setTo="show person 3" class="tc-btn-invisible">–</$button> |
+|~|! 2 |<<person_name "2" "prénom">>|<|<<person_surname "2" "nom">>|<|<|<|<|~|
+|~|! 3 |<<person_name "3" "prénom">>|<|<<person_surname "3" "nom">>|<|<|<|<|~|
+|~|! 4 |<<person_name "4" "prénom">>|<|<<person_surname "4" "nom">>|<|<|<|<|~|
+$type$
+$invariable$
+</$reveal>
+\end
+
+\define newHere_pubTable(type) <$macrocall $name="newHere_pubTable2" type={{$:/_tw-scholars/newHere/publication/table/$type$}} invariable={{$:/_tw-scholars/newHere/publication/table/invariable}}/>

@@ -1,0 +1,27 @@
+.logo {
+	border: none;
+	float: right;
+	margin: 4em 0em 1em 1em;
+}
+
+.logo th, .logo tr, .logo td {
+	border: none;
+}
+
+.logo-picture {
+	width: 156px;
+	border: none;
+	margin: 0em 0em 0.5em 0em;
+}
+
+.logo caption {
+	border: none;
+	text-align: center;
+	font-style: italic;
+	font-size: 0.9em;
+	color: #c0c0c0;
+	font-weight: 300;
+	text-indent: 0;
+	padding: 10px;
+	margin: -10px 0px 0px 0px;
+}

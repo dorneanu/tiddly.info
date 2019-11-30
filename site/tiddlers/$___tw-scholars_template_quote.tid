@@ -1,0 +1,25 @@
+<!-- Tags -->
+<!-- {{||$:/_tw-scholars/ViewTemplate/tags}} -->
+{{||$:/core/ui/ViewTemplate/tags }}
+
+<div class="cit">
+{{||$:/vd/templates/tagging}}
+<div align='right'>
+<!-- Edit buttons -->
+<$button class='tc-btn-invisible tc-tiddlylink tc-edit-link' action="action-sendmessage" message="tm-edit-tiddler" tooltip="Edit this Tab">{{$:/core/images/edit-button}}</$button>    
+
+<!-- Delete button -->
+<$button message="tm-delete-tiddler" param=<<currentTiddler>> class='tc-btn-invisible tc-tiddlylink'>{{$:/core/images/delete-button}}</$button> 
+
+<$checkbox tiddler=<<currentTiddler>> field="status" checked="done" unchecked="open" default="open"></$checkbox>
+<!-- /Edit buttons -->
+</div>
+
+
+
+{{!!text}}
+
+<cite>
+<$link>{{!!title}}</$link>
+</cite>
+</div>

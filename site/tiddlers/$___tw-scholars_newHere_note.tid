@@ -1,0 +1,13 @@
+caption: {{$:/_images/quote}} +
+created: 20191113193249194
+modified: 20191128165529551
+tags: 
+title: $:/_tw-scholars/newHere/note
+type: text/vnd.tiddlywiki
+
+\define page_omega() <$list filter="[[$:/temp/newQuote]!page_omega[]]">-{{!!page_omega}}</$list>
+
+<h1><<trad "New note">></h1>
+
+{{||$:/_tw-scholars/newHere/note/table}}
+{{||$:/_tw-scholars/newHere/note/button}}

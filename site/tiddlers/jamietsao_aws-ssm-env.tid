@@ -1,0 +1,11 @@
+created: 20190114101350480
+creator: boru
+modified: 20191128165536846
+modifier: boru
+name: jamietsao/aws-ssm-env
+note: Simple utility to help export parameters from Amazon EC2 Systems Manager Parameter Store as environment variables
+tags: Golang AWS Bookmark
+title: jamietsao/aws-ssm-env
+tmap.id: 80cc8b26-4181-483a-9418-257fba292406
+type: text/vnd.tiddlywiki
+url: https://github.com/jamietsao/aws-ssm-env

@@ -1,0 +1,22 @@
+caption: <<trad "Menu">>
+created: 20140422134401062
+creator: Alberto Molina
+list-before: 
+modified: 20191128165530705
+modifier: Alberto Molina Pérez
+title: $:/_tw-scholars/ui/SideBar/Menu
+type: text/vnd.tiddlywiki
+
+{{$:/_tw-scholars/ui/SideBar/newHere}}
+
+
+<br>
+<div class="tc-menu-list-subitem">
+{{$:/language/SideBar/Open/Caption}}
+<div class="tc-menu-list-subitem">
+{{$:/core/ui/SideBar/Open}}
+</div>
+</div>
+<br>
+
+{{$:/_tw-scholars/ui/SideBar/Menu/Recent}}

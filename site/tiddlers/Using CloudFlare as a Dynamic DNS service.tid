@@ -1,0 +1,11 @@
+created: 20181211090049261
+creator: boru
+modified: 20191128165540243
+modifier: boru
+name: Using CloudFlare as a Dynamic DNS service
+note: Using the Cloudflare API and some bash script
+tags: Unix DNS Bookmark
+title: Using CloudFlare as a Dynamic DNS service
+tmap.id: 828ea7e3-07bf-41d7-9a68-c702e3c260d9
+type: text/vnd.tiddlywiki
+url: https://medium.com/coding-code/using-cloudflare-as-a-dynamic-dns-service-c0d797f32794

@@ -1,0 +1,209 @@
+created: 20140701151337910
+creator: Alberto Molina Pérez
+icon: $:/_images/system
+modified: 20191128165529630
+modifier: Alberto Molina Pérez
+tags: $:/tags/Macro
+title: $:/_tw-scholars/macros/slider+accordion
+type: text/vnd.tiddlywiki
+
+\define text(body,alt-body)
+
+$alt-body$
+
+$body$
+
+\end
+\define tiddler(body,alt-body)
+
+$alt-body$
+
+<$transclude tiddler="$body$"/>
+
+\end
+\define sliderCode(bodyType,stateText,topoi,caption,body,heading:"h1",retain:"no",animate:"no",btn-class:"tc-btn-invisible",btn-pressed-class:"tc-btn-invisible",btn-style:"",btn-pressed-style:"",body-class:"",body-style:"",btn-tooltip:"Click to show the contents of this slider",btn-pressed-tooltip:"Click to hide",link-tooltip,link,filter,alt-body)
+<$reveal type="nomatch" state=<<qualify '$:/state$topoi$'>> text="$stateText$">
+    <$heading$>
+        <span title="$btn-tooltip$">
+                <$button set=<<qualify '$:/state$topoi$'>> setTo="$stateText$" class="$btn-class$" style="$btn-style$">
+                    <small><small>{{$:/core/images/right-arrow}}</small></small> $caption$
+                </$button>
+        </span>
+    </$heading$>
+</$reveal>
+<$reveal type="match" state=<<qualify '$:/state$topoi$'>> text="$stateText$">
+    <$heading$>
+        <span title="$btn-pressed-tooltip$">
+                <$button set=<<qualify '$:/state$topoi$'>> setTo="" class="$btn-pressed-class$" style="$btn-pressed-style$">
+                    <small>{{$:/core/images/down-arrow}}</small>$caption$
+                </$button><$link to='$body$'>$link$</$link>
+        </span>
+    </$heading$>
+</$reveal>
+<$reveal type="match" state=<<qualify '$:/state$topoi$'>> text="$stateText$" retain="$retain$" animate="$animate$">
+<div class="$body-class$">
+<span style="$body-style$">
+
+    <<$bodyType$ "$body$" "$alt-body$">>
+
+</span>
+</div>
+</$reveal>
+
+\end
+
+
+
+
+\define slider(caption,body,heading,retain:"no",animate:"no",btn-class:"tc-btn-invisible",btn-pressed-class:"tc-btn-invisible",btn-style:"",btn-pressed-style:"",body-class:"",body-style:"",btn-tooltip,btn-pressed-tooltip,format:"",template:"",link,link-tooltip:"Open this section",alt-body)
+<$reveal type="nomatch" state="$body$!!modified" text="">
+    <$reveal type="match" state="$body$!!$caption$" text="">
+        <$macrocall $name="sliderCode" 
+            bodyType="tiddler" 
+            stateText={{!!modified}}  
+            topoi={{!!modified}}
+            caption="$caption$" 
+            body="$body$"
+            heading="$heading$"
+            retain="$retain$"
+            animate="$animate$"
+            btn-class="$btn-class$"
+            btn-pressed-class="$btn-pressed-class$"
+            btn-style="$btn-style$"
+            btn-pressed-style="$btn-pressed-style$"
+            body-class="$body-class$"
+            body-style="$body-style$"
+            btn-tooltip="$btn-tooltip$"
+            btn-pressed-tooltip="$btn-pressed-tooltip$"
+            link="$link$"
+            link-tooltip="$link-tooltip$" 
+            alt-body="$alt-body$" 
+        />
+    </$reveal>
+    <$reveal type="nomatch" state="$body$!!$caption$" text="">
+        <$macrocall $name="sliderCode" 
+            bodyType="tiddler" 
+            stateText={{!!modified}}  
+            topoi={{!!modified}}
+            caption="<$view tiddler='$body$' field='$caption$' format='$format$' template='$template$'/>"
+            body="$body$"
+            body="$body$"
+            heading="$heading$"
+            retain="$retain$"
+            animate="$animate$"
+            btn-class="$btn-class$"
+            btn-pressed-class="$btn-pressed-class$"
+            btn-style="$btn-style$"
+            btn-pressed-style="$btn-pressed-style$"
+            body-class="$body-class$"
+            body-style="$body-style$"
+            btn-tooltip="$btn-tooltip$"
+            btn-pressed-tooltip="$btn-pressed-tooltip$"
+            link="$link$"
+            link-tooltip="$link-tooltip$" 
+            alt-body="$alt-body$" 
+        />
+    </$reveal>
+</$reveal>
+<$reveal type="match" state="$body$!!modified" text="">
+    <$macrocall $name="sliderCode" 
+        bodyType="text" 
+        stateText="$caption$"  
+        topoi="/$caption$"
+        caption="$caption$" 
+            body="$body$"
+            heading="$heading$"
+            retain="$retain$"
+            animate="$animate$"
+            btn-class="$btn-class$"
+            btn-pressed-class="$btn-pressed-class$"
+            btn-style="$btn-style$"
+            btn-pressed-style="$btn-pressed-style$"
+            body-class="$body-class$"
+            body-style="$body-style$"
+            btn-tooltip="$btn-tooltip$"
+            btn-pressed-tooltip="$btn-pressed-tooltip$"
+            alt-body="$alt-body$" 
+    />
+</$reveal>
+\end
+
+
+\define accordion(caption,body,heading,retain:"no",animate:"no",btn-class:"tc-btn-invisible",btn-pressed-class:"tc-btn-invisible",btn-style:"",btn-pressed-style:"",body-class:"",body-style:"",btn-tooltip,btn-pressed-tooltip,format:"",template:"",link:"<small><small> …</small></small>",link-tooltip:"Open this section",alt-body)
+
+<$reveal type="nomatch" state="$body$!!modified" text="">
+    <$reveal type="match" state="$body$!!$caption$" text="">
+
+        <$macrocall $name="sliderCode" 
+            bodyType="tiddler" 
+            stateText={{!!modified}}  
+            topoi=""
+            caption="$caption$" 
+            body="$body$"
+            heading="$heading$"
+            retain="$retain$"
+            animate="$animate$"
+            btn-class="$btn-class$"
+            btn-pressed-class="$btn-pressed-class$"
+            btn-style="$btn-style$"
+            btn-pressed-style="$btn-pressed-style$"
+            body-class="$body-class$"
+            body-style="$body-style$"
+            btn-tooltip="$btn-tooltip$"
+            btn-pressed-tooltip="$btn-pressed-tooltip$"
+            link="$link$"
+            link-tooltip="$link-tooltip$" 
+            alt-body="$alt-body$"
+        />
+
+    </$reveal>
+    <$reveal type="nomatch" state="$body$!!$caption$" text="">
+
+        <$macrocall $name="sliderCode" 
+            bodyType="tiddler" 
+            stateText={{!!modified}}  
+            topoi=""
+            caption="<$view tiddler='$body$' field='$caption$' format='$format$' template='$template$'/>"
+            body="$body$"
+            heading="$heading$"
+            retain="$retain$"
+            animate="$animate$"
+            btn-class="$btn-class$"
+            btn-pressed-class="$btn-pressed-class$"
+            btn-style="$btn-style$"
+            btn-pressed-style="$btn-pressed-style$"
+            body-class="$body-class$"
+            body-style="$body-style$"
+            btn-tooltip="$btn-tooltip$"
+            btn-pressed-tooltip="$btn-pressed-tooltip$"
+            link="$link$"
+            link-tooltip="$link-tooltip$" 
+            alt-body="$alt-body$"
+        />
+
+    </$reveal>
+</$reveal>
+
+<$reveal type="match" state="$body$!!modified" text="">
+
+    <$macrocall $name="sliderCode" 
+        bodyType="text" 
+        stateText="$caption$"  
+        topoi=""
+        caption="$caption$" 
+            body="$body$"
+            heading="$heading$"
+            retain="$retain$"
+            animate="$animate$"
+            btn-class="$btn-class$"
+            btn-pressed-class="$btn-pressed-class$"
+            btn-style="$btn-style$"
+            btn-pressed-style="$btn-pressed-style$"
+            body-class="$body-class$"
+            body-style="$body-style$"
+            btn-tooltip="$btn-tooltip$"
+            btn-pressed-tooltip="$btn-pressed-tooltip$"
+            alt-body="$alt-body$"
+    />
+</$reveal>
+\end

@@ -1,0 +1,28 @@
+created: 20191125162549979
+modified: 20191128165536324
+origin: https://stackoverflow.com/questions/5189232/how-to-auto-register-a-class-when-its-defined/50099920#50099920
+tags: HowTo Python
+title: Implement a plugin architecture in Python
+type: text/vnd.tiddlywiki
+
+```python
+class PluginBase:
+    plugins = []
+
+    def __init_subclass__(cls, **kwargs):
+        super().__init_subclass__(**kwargs)
+        cls.plugins.append(cls)
+
+class Plugin(PluginBase):
+    def start(self):
+        print("1")
+
+class Plugin2(PluginBase):
+    def start(self):
+        print("2")
+
+for p in PluginBase.plugins:
+    p().start()
+```
+
+In this example, `PluginBase.plugins` will contain a plain list of all subclasses in the entire inheritance tree. 

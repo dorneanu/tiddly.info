@@ -1,0 +1,14 @@
+author: JD
+core-version: >=5.1.17
+created: 20180516113203734
+creator: jd
+dependents: $:/themes/tiddlywiki/vanilla
+description: A theme that tries to get out of your way
+list: readme contents
+modified: 20191128165531787
+modifier: jd
+name: Spartan
+plugin-type: theme
+title: $:/themes/jd/Spartan
+type: application/json
+version: 0.0.33

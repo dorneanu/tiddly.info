@@ -1,0 +1,8 @@
+created: 20140805213758134
+creator: Alberto Molina Pérez
+modified: 20191128165530741
+modifier: Alberto Molina Pérez
+title: $:/_tw-scholars/tab/quotes/related/filter
+type: text/vnd.tiddlywiki
+
+[all[current]listed[]] [all[current]listed[about]] [all[current]tagging[]] [all[current]listed[source]listed[about]] [all[current]listed[source]listed[parent]] [all[current]listed[source]tagging[]] [all[current]listed[about]listed[about]] [all[current]listed[about]listed[parent]] [all[current]listed[about]tagging[]] [all[current]listed[parent]listed[about]] [all[current]listed[parent]listed[parent]] [all[current]listed[parent]tagging[]] +[tag[$:/_type/quote]!has[draft.of]nsort[page_alpha]]

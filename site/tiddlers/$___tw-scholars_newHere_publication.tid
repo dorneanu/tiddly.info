@@ -1,0 +1,21 @@
+add: book
+caption: {{$:/_images/book}} +
+created: 20140616093109411
+modified: 20191128165529530
+title: $:/_tw-scholars/newHere/publication
+type: text/vnd.tiddlywiki
+
+<$radio field="add" value="book"> {{$:/_images/book}} Book</$radio>&nbsp;&nbsp;&nbsp;&nbsp;
+<$radio field="add" value="article"> {{$:/_images/article}} Article</$radio><br>
+
+<$reveal type="match" state="!!add" text="book">
+
+{{||$:/_tw-scholars/newHere/publication/book}}
+
+</$reveal>
+
+<$reveal type="match" state="!!add" text="article">
+
+{{||$:/_tw-scholars/newHere/publication/article}}
+
+</$reveal>

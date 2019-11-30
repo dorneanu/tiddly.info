@@ -1,0 +1,21 @@
+created: 20191107210251243
+modified: 20191128165532197
+tags: 
+title: $:/plugins/TWaddle/LeftBar/Menu
+type: text/vnd.tiddlywiki
+
+<span class="graytoc">
+
+{{$:/core/ui/Buttons/close-all}}<span class="grayhide">ppp</span><$button class=<<tv-config-toolbar-class>>>
+<$action-sendmessage $message="tm-new-tiddler" tags="tocentry" />
+<span class="">{{$:/core/images/new-button}}</span>
+</$button>
+
+<b>Table of contents</b>
+
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "tocentry">>
+</div>
+
+</span>
+

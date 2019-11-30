@@ -1,0 +1,19 @@
+created: 20191120111033349
+modified: 20191128165532589
+tags: $:/tags/ViewTemplate
+title: $:/vd/templates/show-origin
+type: text/vnd.tiddlywiki
+
+<!-- Copyright: '$:/bimlas/show-origin/template`-->
+
+<$list filter="[all[current]has[origin]]">
+  <hr/>
+  Origin of information:
+  <ul>
+    <$list filter="[all[current]enlist{!!origin}]" variable="link">
+      <li>
+        <<link>>
+      </li>
+    </$list>
+  </ul>
+</$list>

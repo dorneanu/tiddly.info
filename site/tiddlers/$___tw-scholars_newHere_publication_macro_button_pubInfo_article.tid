@@ -1,0 +1,28 @@
+created: 20140625113752270
+modified: 20191128165531044
+title: $:/_tw-scholars/newHere/publication/macro/button/pubInfo/article
+type: text/vnd.tiddlywiki
+
+<$setfield set="!!publication_title" setTo={{$:/temp/publication!!publication_title}}>
+<$setfield set="$:/temp/publication!!publication_title" setTo="">
+
+<$setfield set="!!publication_journal" setTo={{$:/temp/publication!!publication_journal}}>
+<$setfield set="$:/temp/publication!!publication_journal" setTo="">
+
+<$setfield set="!!publication_volume" setTo={{$:/temp/publication!!publication_volume}}>
+<$setfield set="$:/temp/publication!!publication_volume" setTo="">
+
+<$setfield set="!!publication_issue" setTo={{$:/temp/publication!!publication_issue}}>
+<$setfield set="$:/temp/publication!!publication_issue" setTo="">
+
+<$setfield set="!!publication_date" setTo={{$:/temp/publication!!publication_date}}>
+<$setfield set="$:/temp/publication!!publication_date" setTo="">
+
+<$setfield set="!!publication_type" setTo="article">
+<$setfield set="$:/temp/publication!!publication_type" setTo="">
+
+<$setfield set="!!page_alpha" setTo={{$:/temp/publication!!page_alpha}}>
+<$setfield set="$:/temp/publication!!page_alpha" setTo="">
+
+<$setfield set="!!page_omega" setTo={{$:/temp/publication!!page_omega}}>
+<$setfield set="$:/temp/publication!!page_omega" setTo="">

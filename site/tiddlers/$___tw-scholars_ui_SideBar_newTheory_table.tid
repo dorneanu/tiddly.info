@@ -1,0 +1,28 @@
+created: 20140805170932175
+creator: Alberto Molina Pérez
+footer: <$button message="tm-close-tiddler" class="btn btn-primary">Close</$button>
+modified: 20191128165530625
+modifier: Alberto Molina Pérez
+subtitle: 
+title: $:/_tw-scholars/ui/SideBar/newTheory/table
+type: text/vnd.tiddlywiki
+
+<div>
+
+|invisible|k
+| |
+| ''New theory'' |
+| |
+|<$edit-text tiddler="$:/temp/theory" field="theory_name" placeholder="Name of the theory" class="tc-edit-texteditor" tag="input" size="44"/>|
+| |
+|<$edit-text tiddler="$:/temp/theory" field="description" placeholder="Description" class="tc-edit-texteditor" tag="input" size="44"/> |
+|<$edit-text tiddler="$:/temp/theory" field="authors" placeholder="[[Author Name]]" class="tc-edit-texteditor" tag="input" size="44"/>|
+|<$edit-text tiddler="$:/temp/theory" field="source" placeholder="[[Source of the theory]] (book, paper…)" class="tc-edit-texteditor" tag="input" size="44"/>|
+| |
+|<$edit-text tiddler="$:/temp/theory" field="parent" placeholder="Parent theories and concepts" class="tc-edit-texteditor" tag="input" size="44"/>|
+|<$tiddler tiddler="$:/temp/theory">{{||$:/core/ui/EditTemplate/tags}}</$tiddler>|
+|<$edit-text tiddler="$:/temp/theory" field="text" placeholder="Content" class="tc-edit-texteditor" tag="textarea"/>|
+| |
+| <<trad "Edit tiddler">>:   <<editSelector "theory">>|
+
+</div>

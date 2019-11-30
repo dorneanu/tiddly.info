@@ -1,0 +1,11 @@
+created: 20181005113915887
+creator: boru
+modified: 20191128165536439
+modifier: boru
+name: Microservices in Golang
+note: Implement microservices in golang using mongodb, grpc, docker
+tags: Golang Bookmark
+title: Microservices in Golang
+tmap.id: af56e140-ef17-4fc4-b170-ee839f9b871e
+type: text/vnd.tiddlywiki
+url: https://ewanvalentine.io/microservices-in-golang-part-1/

@@ -1,0 +1,15 @@
+about: color tabs
+created: 20140722112112180
+creator: Alberto Molina Pérez
+description: Change the color of the tabs
+modified: 20191128165529831
+modifier: Alberto Molina Pérez
+order: 6
+parent: $:/_tw-scholars/tab/howTo
+tags: $:/_type/doc
+title: $:/_tw-scholars/doc/howTo/changeColor
+type: text/vnd.tiddlywiki
+
+By default, tabs are blue. To have them in other colors, like here, add to your tiddler the field `tabs_color` and set the color you want. Available colors are `blue`, `red` and `yellow`. If you want to add another one, edit [[$:/_tw-scholars/css/mytabs]].
+
+If you don't like the colors here and want to define your own blue, red, and yellow colors, edit [[$:/_tw-scholars/colors]].

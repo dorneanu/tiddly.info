@@ -1,0 +1,13 @@
+created: 20141115093902561
+creator: Tobias Beer
+list: Welcome Solutions Plugins Developer Core References Markup
+modified: 20191128165532568
+modifier: Tobias Beer
+tags: $:/tags/TopLeftBar
+title: $:/vd/ui/TopLeftBar
+type: text/vnd.tiddlywiki
+
+<$list filter="[list[$:/.tb/ui/TopLeftBar/config]]">
+<$link>
+<$transclude field=menu-icon/>{{!!caption}}</$link>
+</$list>

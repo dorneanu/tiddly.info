@@ -1,0 +1,11 @@
+created: 20181128145703919
+creator: boru
+modified: 20191128165535749
+modifier: boru
+name: h2ik/go-sqs-poller
+note: GoLang SQS Queue Poller using the AWS SDK
+tags: Golang AWS Bookmark
+title: h2ik/go-sqs-poller
+tmap.id: e692805d-c059-45b9-aa1b-50f64c1ca8f0
+type: text/vnd.tiddlywiki
+url: https://github.com/h2ik/go-sqs-poller

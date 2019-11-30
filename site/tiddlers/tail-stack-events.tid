@@ -1,0 +1,11 @@
+created: 20190410100647937
+creator: boru
+modified: 20191128165539461
+modifier: boru
+name: tail-stack-events
+note: CLI script for tailing AWS CloudFormation stack events
+tags: AWS Tool Bookmark
+title: tail-stack-events
+tmap.id: 1f6a8880-f4ff-414e-a9ce-4a6f10aa2dd7
+type: text/vnd.tiddlywiki
+url: https://github.com/tmont/tail-stack-events

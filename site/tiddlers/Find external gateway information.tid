@@ -1,0 +1,15 @@
+created: 20191128113638604
+modified: 20191128165536121
+tags: Network HowTo
+title: Find external gateway information
+type: text/vnd.tiddlywiki
+
+```shell
+$ curl -w"\n" -s zx2c4.com/ip
+```
+
+alternative:
+
+```shell
+$ curl ifconfig.me/all
+```

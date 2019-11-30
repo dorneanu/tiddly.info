@@ -1,0 +1,38 @@
+created: 20190507071048098
+creator: boru
+modified: 20191128165533258
+modifier: boru
+tags: AWS
+title: AWS CLI
+tmap.id: 24a8b26c-fae3-46dc-8d4a-195272005a49
+type: text/vnd.tiddlywiki
+
+Some currated list of useful [[aws CLI|https://aws.amazon.com/cli/]] commands.  
+
+!! SSM
+
+|table-lines|k
+|desc|command|h
+|get parameter|`$ aws --profile default ssm get-parameter --with-decryption --name "<ssm path>"`|
+|put parameter|`$ aws ssm put-parameter --name <path> --value <value> --type SecureString --key-id <KMS key ID>`|
+
+!! Cloudformation
+
+|table-lines|k
+|desc|command|h
+|tail for CF events|`$tail-stack-events -f --die -n 5 --region <region> -s <stack name>`|
+
+!! SQS
+
+|table-lines|k
+|desc|command|h
+|receive one message|`$ aws sqs receive-message --queue-url <queue url> --region <region>`|
+|get attributes of queue|`$ aws sqs get-queue-attributes --queue-url <queue url> --region <region> --attribute-names All`|
+
+!! DynamoDB
+
+|table-lines|k
+|desc|command|h
+|put item|`aws dynamodb put-item --table-name tiddlers --item file://items.json --endpoint http://127.0.0.1:8000`|
+|list tables|`aws dynamodb list-tables --endpoint-url http://localhost:8000`|
+|scan|`aws dynamodb scan --table-name tiddlers --endpoint http://127.0.0.1:8000`|

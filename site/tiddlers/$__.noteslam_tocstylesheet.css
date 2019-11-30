@@ -1,0 +1,26 @@
+html body.tc-body .tc-table-of-contents li {padding-top:.0em;font-weight:bold;color:#222;font-size:10pt;}
+html body.tc-body .tc-table-of-contents a {font-weight:bold;color:#222;}
+html body.tc-body .tc-table-of-contents li a { font-weight: bold;}
+html body.tc-body .tc-table-of-contents li li {text-indent:1em;}
+html body.tc-body .tc-table-of-contents li li a { font-weight: normal;}
+html body.tc-body .tc-table-of-contents li li { font-weight: normal; font-style:none;}
+html body.tc-body .tc-table-of-contents li li li {text-indent:1em;}
+html body.tc-body .tc-table-of-contents li li li a { font-weight: normal;font-style:normal;}
+
+html body.tc-body .tocp .tc-tiddlylink {
+  color: #222;
+}
+
+html body.tc-body .bluetocbutton1 {padding: 0; margin: 0; background: none; border: none; cursor: pointer; color:#5778d8;font-weight:normal;}
+html body.tc-body .bluetocbutton2 {padding: 0; margin: 0; background: none; border: none; cursor: pointer; color:#5778d8;font-style:normal;}
+html body.tc-body .bluetocbutton3 {padding: 0; margin: 0; background: none; border: none; cursor: pointer; color:#5778d8;}
+
+{ padding: 0; margin: 0; background: none; border: none; cursor: pointer; }
+
+html body.tc-body .smallicons {font-size:.8em;}
+
+html body.tc-body .grayhide {
+    color: #f4f4f4;
+}
+
+html body.tc-body .bluelink {font-size:1.5em;color:#5778d8;}

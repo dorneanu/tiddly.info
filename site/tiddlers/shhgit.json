@@ -1,0 +1,14 @@
+[
+    {
+        "created": "20191118081306043",
+        "title": "shhgit",
+        "type": "text/vnd.tiddlywiki",
+        "text": "",
+        "modified": "20191128165539674",
+        "tags": "Tool Security [[Security Tool]] Bookmark",
+        "name": "shhgit",
+        "note": "Shhgit finds secrets and sensitive files across GitHub, GitLab and BitBucket code and Gists committed in near real time",
+        "tmap.id": "df4dcd16-1193-4c05-b745-fefcb6fc3283",
+        "url": "https://shhgit.darkport.co.uk/ "
+    }
+]

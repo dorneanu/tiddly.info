@@ -1,0 +1,11 @@
+created: 20181213080525187
+creator: boru
+modified: 20191128165534933
+modifier: boru
+name: Building a worker pool in Golang
+note: Uses workers, consumers, worker pool and channels
+tags: Golang Bookmark
+title: Building a worker pool in Golang
+tmap.id: 62ab23e2-85dd-4800-8051-063cbcb68e81
+type: text/vnd.tiddlywiki
+url: https://geeks.uniplaces.com/building-a-worker-pool-in-golang-1e6c0fdfd78c

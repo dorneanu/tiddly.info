@@ -1,0 +1,8 @@
+created: 20140625094128415
+modified: 20191128165530956
+title: $:/_tw-scholars/newHere/publication/table/book
+type: text/vnd.tiddlywiki
+
+|>|!<<trad "Title">> |<<input "publication" "title" "60">>|<|<|<|<|<|<|<|
+|>|!<<trad "Subtitle">> |<<input "publication" "subtitle" "60">>|<|<|<|<|<|<|<|
+|>|!<<trad "Publisher">>      |<<input "publication" "publisher" "18">>|<| !<<trad "Vol.">>|<<input "publication" "volume" "1">>| !<<trad "Edition">>|<<input "publication" "edition" "1">>| !<<trad "Year">>|<<input "publication" "date" "4">>|

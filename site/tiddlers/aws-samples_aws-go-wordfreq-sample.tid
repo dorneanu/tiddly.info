@@ -1,0 +1,11 @@
+created: 20181203135821030
+creator: boru
+modified: 20191128165533016
+modifier: boru
+name: aws-samples/aws-go-wordfreq-sample
+note: A sample micro service built with AWS SDK for Go using concurrency, and AWS services.
+tags: AWS Golang Bookmark
+title: aws-samples/aws-go-wordfreq-sample
+tmap.id: 3ff3a634-05a9-49d7-af41-6dac940ee4a4
+type: text/vnd.tiddlywiki
+url: https://github.com/aws-samples/aws-go-wordfreq-sample

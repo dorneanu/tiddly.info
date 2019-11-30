@@ -1,0 +1,11 @@
+created: 20190129135241221
+creator: boru
+modified: 20191128165538634
+modifier: boru
+name: roblaszczak/go-cleanarch
+note: Clean architecture validator for go, like a The Dependency Rule and interaction between packages in your Go projects.
+tags: Golang Bookmark
+title: roblaszczak/go-cleanarch
+tmap.id: b7bad228-bb2d-404e-ba3f-0ecd89fd7d6e
+type: text/vnd.tiddlywiki
+url: https://github.com/roblaszczak/go-cleanarch

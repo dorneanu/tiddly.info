@@ -1,0 +1,11 @@
+created: 20190513082434706
+creator: boru
+modified: 20191128165535865
+modifier: boru
+name: gitleaks
+note: Audit git repos for secrets 🔑
+tags: [[Security Tool]] Golang Security Tool Bookmark
+title: gitleaks
+tmap.id: 6b2b557c-c1a0-415e-bfc1-18112bad2372
+type: text/vnd.tiddlywiki
+url: https://github.com/zricethezav/gitleaks

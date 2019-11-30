@@ -1,0 +1,24 @@
+created: 20180926141040160
+creator: boru
+modified: 20191128165533141
+modifier: boru
+tags: 
+title: AWS Load Balancer
+tmap.id: 9ca95450-4aad-471e-9d62-a0a70fe647b7
+type: text/vnd.tiddlywiki
+
+DNS name: `<name>.<region>.elb.amazonaws.com`
+
+! Types
+
+* Application Load Balancers
+** operate at [[Layer 7]]
+
+* Network Balancers
+** operate at [[Layer 4]]
+
+* Classic Load Balancers
+** legacy ELB (Elastic Load Balancers)
+** operate at [[Layer 7]] (HTTP/HTTPS)
+*** `X-Forwarded-For` / sticky sessions
+** also [[Layer 4]] ([[TCP]])

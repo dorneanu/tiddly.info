@@ -1,0 +1,31 @@
+created: 20180927112541934
+creator: boru
+modified: 20191128165535741
+modifier: boru
+note: Mirrors, search engines, aggregators
+tags: Resource [[Security News]] News Security Bookmark
+title: Hackernews
+tmap.id: fcb8ff8c-3322-4e4f-84ca-fa89fd4bbf20
+type: text/vnd.tiddlywiki
+
+! Other UI's
+
+!! In-official mirrors
+
+* [[http://hckrnews.com]]
+* [[http://www.fullhn.com]]
+** everything on 1 page
+* [[https://www.hakaran.com/]]
+
+!! Search engines
+* [[http://hnapp.com]]
+* [[http://hnpaper.forge.partlab.io]]
+
+!! Aggregated News
+
+* [[http://serializer.io]]
+
+!! Dailies
+
+* [[https://www.daemonology.net/hn-daily/]]
+* [[https://hckrnews.com/]]

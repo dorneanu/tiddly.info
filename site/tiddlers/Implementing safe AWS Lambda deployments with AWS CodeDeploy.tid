@@ -1,0 +1,11 @@
+created: 20190115110626707
+creator: boru
+modified: 20191128165536308
+modifier: boru
+name: Implementing safe AWS Lambda deployments with AWS CodeDeploy
+note: AWS Lambda and AWS CodeDeploy recently made it possible to automatically shift incoming traffic between two function versions based on a preconfigured rollout strategy. This new feature allows you to gradually shift traffic to the new function. If there are any issues with the new code, you can quickly rollback and control the impact to your application.
+tags: AWS Lambda Bookmark
+title: Implementing safe AWS Lambda deployments with AWS CodeDeploy
+tmap.id: 6d079ea1-6b27-4256-a837-4d8b292852e2
+type: text/vnd.tiddlywiki
+url: https://aws.amazon.com/blogs/compute/implementing-safe-aws-lambda-deployments-with-aws-codedeploy/

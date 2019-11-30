@@ -1,0 +1,38 @@
+caption: <<trad "Menu">>
+created: 20140726110721017
+creator: Alberto Molina Pérez
+list-before: 
+modified: 20191128165530698
+modifier: Alberto Molina Pérez
+show: Recent
+title: $:/_tw-scholars/ui/SideBar/Menu/Recent
+type: text/vnd.tiddlywiki
+
+<div class="tc-menu-list-subitem">
+<$reveal type="nomatch" state="!!show" text={{$:/language/SideBar/Recent/Caption}}>
+    <$button set="!!show" setTo={{$:/language/SideBar/Recent/Caption}} class="tc-btn-invisible">
+        <small><small>{{$:/core/images/right-arrow}}</small></small>{{$:/language/SideBar/Recent/Caption}}
+    </$button>
+</$reveal>
+<$reveal type="match" state="!!show" text={{$:/language/SideBar/Recent/Caption}}>
+    <$button set="!!show" setTo="" class="tc-btn-invisible">
+        <small><small>{{$:/core/images/down-arrow}}</small></small>{{$:/language/SideBar/Recent/Caption}}
+    </$button>
+</$reveal>
+<$reveal type="match" state="!!show" text={{$:/language/SideBar/Recent/Caption}}>
+<$list filter="[!is[system]has[modified]!sort[modified]limit[100]eachday[modified]]">
+<$macrocall $name="accordion" 
+    caption="<$view field='modified' format='date' template={{$:/language/RecentChanges/DateFormat}}/>" 
+    alt-body="""
+                   <$list filter='[sameday{!!modified}!is[system]!sort[modified]]'>
+                       <div class='tc-menu-list-subitem'>
+                           <$link to={{!!title}}><$view field='title'/></$link>
+                       </div>
+                   </$list>""" 
+    heading="h4" 
+    format="date"
+    template={{$:/language/RecentChanges/DateFormat}}
+/>
+</$list>
+</$reveal>
+</div>

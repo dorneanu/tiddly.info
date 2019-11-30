@@ -1,0 +1,10 @@
+created: 20191119111407498
+modified: 20191128165535438
+origin: ttps://groups.google.com/forum/#!topic/tiddlywiki/vl5xBsE8AK8
+tags: HowTo Tiddlywiki
+title: converting standard Tiddlywiki to Node.js Tiddlywiki (and back)
+type: text/vnd.tiddlywiki
+
+<<<
+The easiest way to convert a TiddlyWIki standalone HTML file into the Node.js layout is to run the Node.js wiki in client-server mode, and then import the HTML file by drag and drop in the browser. (You can also use the --load command; see /bin/ginsu.sh in the TW5 repo).
+<<<

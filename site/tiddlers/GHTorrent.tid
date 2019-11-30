@@ -1,0 +1,11 @@
+created: 20181023073716939
+creator: boru
+modified: 20191128165536027
+modifier: boru
+name: GHTorrent
+note: GHTorrent monitors the Github public event time line. For each event, it retrieves its contents and their dependencies, exhaustively. It then stores the raw JSON responses to a MongoDB database, while also extracting their structure in a MySQL database.
+tags: Security Bookmark
+title: GHTorrent
+tmap.id: 2f125530-ac16-4e86-9668-4821bf2b166b
+type: text/vnd.tiddlywiki
+url: http://ghtorrent.org

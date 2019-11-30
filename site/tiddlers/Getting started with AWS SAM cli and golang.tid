@@ -1,0 +1,11 @@
+created: 20181126091335263
+creator: boru
+modified: 20191128165536034
+modifier: boru
+name: Getting started with AWS SAM cli and golang
+note: Introduction how to build with AWS SAM and golang and run your code locally
+tags: Lambda Golang AWS Bookmark
+title: Getting started with AWS SAM cli and golang
+tmap.id: 10a56de6-36cd-4257-9835-a7d5e8069c28
+type: text/vnd.tiddlywiki
+url: https://blog.rowanudell.com/getting-started-with-aws-sam-cli-and-golang/

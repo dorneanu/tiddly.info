@@ -1,0 +1,13 @@
+created: 20191108202608955
+modified: 20191128165536593
+tags: Productivity
+title: List of notes
+type: text/vnd.tiddlywiki
+
+<$list filter="[field:category/note/sort[title]]">
+{{||$:/_Template/note}}
+</$list>
+
+<$list filter="[field:category/publication/sort[title]]">
+{{||$:/_Template/publication}}
+</$list>

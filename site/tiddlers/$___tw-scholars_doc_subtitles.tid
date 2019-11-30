@@ -1,0 +1,15 @@
+about: subtitles
+created: 20140719121609815
+creator: Alberto Molina Pérez
+description: Custom subtitles
+modified: 20191128165529753
+modifier: Alberto Molina Pérez
+parent: $:/_tw-scholars/tab/features
+title: $:/_tw-scholars/doc/subtitles
+type: text/vnd.tiddlywiki
+
+The default subtitle (modifier + modified date) is disabled. But the fields `subtitle`, `publication_title` & `chapter_title` are displayed in view mode as big, grey subtitles. 
+
+Persons' tiddlers show their dates and places of birth and death.
+
+See [[$:/_tw-scholars/ViewTemplate/subtitle]].

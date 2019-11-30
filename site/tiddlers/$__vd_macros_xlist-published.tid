@@ -1,0 +1,13 @@
+created: 20191128130013834
+modified: 20191128165532623
+tags: $:/tags/Macro
+title: $:/vd/macros/xlist-published
+type: text/vnd.tiddlywiki
+
+\define xlist-published(tag)
+<<xlist
+filter:"[tag[$tag$]]"
+groups:"[tag[Topics]]"
+template: [[$:/vd/templates/xlist-topic]]
+sort:"[!sort[published]]">>
+\end

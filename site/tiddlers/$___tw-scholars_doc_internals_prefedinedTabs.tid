@@ -1,0 +1,19 @@
+about: tabs
+created: 20140722114845002
+creator: Alberto Molina Pérez
+description: Tabs in use
+modified: 20191128165529802
+modifier: Alberto Molina Pérez
+order: 3
+parent: $:/_tw-scholars/tab/internals
+tags: $:/_type/doc
+title: $:/_tw-scholars/doc/internals/prefedinedTabs
+type: text/vnd.tiddlywiki
+
+These are the tabs predefined in //~TiddlyWiki for Scholars//:
+
+<div class="deuxcolonnes">
+
+{{{ [all[tiddlers]prefix[$:/_tw-scholars/tab/]] +[sort[title]] }}}
+
+</div>

@@ -1,0 +1,11 @@
+created: 20190508074009316
+creator: boru
+modified: 20191128165538817
+modifier: boru
+name: Prefer table driven tests
+note: This post explores the how and why of writing a table driven test.
+tags: Golang Bookmark
+title: Prefer table driven tests
+tmap.id: 6f3992d7-fcf7-4688-834a-953d0c53a21f
+type: text/vnd.tiddlywiki
+url: https://dave.cheney.net/2019/05/07/prefer-table-driven-tests

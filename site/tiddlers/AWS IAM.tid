@@ -1,0 +1,23 @@
+created: 20180813073952451
+creator: boru
+modified: 20191128165533180
+modifier: boru
+tags: AWS
+title: AWS IAM
+tmap.id: 993e3cf5-9801-4511-a102-d490aea81408
+type: text/vnd.tiddlywiki
+
+; Identity and Access Management
+: It is global (regardless region)
+
+! Components
+
+* users
+* groups
+* policies
+
+!! Roles
+
+Used for access policies between AWS resources (e.g. EC2 -> S3)
+
+

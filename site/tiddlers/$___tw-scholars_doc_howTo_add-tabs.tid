@@ -1,0 +1,18 @@
+created: 20140717013916719
+creator: Alberto Molina Pérez
+description: Add a new tab (for an existing content type)
+modified: 20191128165529852
+modifier: Alberto Molina Pérez
+order: 2
+parent: $:/_tw-scholars/tab/howTo
+tags: $:/_type/doc
+title: $:/_tw-scholars/doc/howTo/add-tabs
+type: text/vnd.tiddlywiki
+
+For example, if you want a journal tab for books' tiddlers (to record your reading process):
+
+# Create a new tiddler with a title like `$:/_tab/journal`:
+#* Add the contents you want to show through this tab tiddler.
+#* Add a `caption` field with a value like `Journal`.
+
+# Edit the tiddler [[$:/_tw-scholars/tabs]] and add `$:/_tab/journal` to the list field `book`.

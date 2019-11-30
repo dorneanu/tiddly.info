@@ -1,0 +1,46 @@
+created: 20180822113523333
+creator: boru
+modified: 20191128165533155
+modifier: boru
+tags: [[AWS Compute]]
+title: AWS Lambda
+tmap.id: 66c7a07b-f615-49f1-90e0-a638f46fe0db
+type: text/vnd.tiddlywiki
+
+! Triggers
+
+Types:
+
+* API Gateway
+* AWS IoT
+* Alexa Skills Kit
+* Alexa Smart Home
+* [[AWS CloudFront]]
+* [[AWS CloudWatch]]
+** events
+** logs
+* CodeCommit
+* Cognito Sync Trigger
+* DynamoDB
+* Kinesis
+* [[AWS S3]]
+* SNS
+* SQS
+
+! Pricing
+
+* per ''requests''
+** first 1 million are ''free''
+** $0.2 per 1M requests
+* per ''duration''
+** max 5 min
+
+! Misc
+
+* Lambda scales out (not up) automatically
+* 1 event = 1 function call
+* Use AWS X-Ray for debugging
+
+! Serverless frameworks
+
+* [[serverless.com|https://github.com/serverless/examples]]

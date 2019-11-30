@@ -1,0 +1,17 @@
+created: 20140616154022572
+creator: Alberto Molina Pérez
+list-before: $:/_tw-scholars/ViewTemplate/tabs
+modified: 20191128165530563
+modifier: Alberto Molina Pérez
+tags: $:/tags/ViewTemplate
+title: $:/_tw-scholars/ViewTemplate/person/publications
+type: text/vnd.tiddlywiki
+
+<div class="tc-menu-list-item text-grey">
+    <$list filter="[all[current]listed[authors]tag[$:/_type/publication]] +[limit[1]]">
+       Publications :
+    </$list>
+    <div class="tc-menu-list-subitem">
+        <<publicationsList>>
+    </div>
+</div>

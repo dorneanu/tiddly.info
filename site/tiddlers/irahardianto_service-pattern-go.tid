@@ -1,0 +1,11 @@
+created: 20190205163031152
+creator: boru
+modified: 20191128165536248
+modifier: boru
+name: irahardianto/service-pattern-go
+note: Simple clean Go REST API architecture with dependency injection and mocking example, following SOLID principles.
+tags: Golang Bookmark
+title: irahardianto/service-pattern-go
+tmap.id: b4bc8449-fac7-4fcb-81a9-9c800fb63cb6
+type: text/vnd.tiddlywiki
+url: https://github.com/irahardianto/service-pattern-go

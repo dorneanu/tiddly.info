@@ -1,0 +1,9 @@
+created: 20190605102824100
+modified: 20191128165536149
+name: Exploring shared objects in Go
+note: Usage of plugins package, creating shared objects, library dependencies
+tags: Golang Bookmark
+title: Exploring shared objects in Go
+tmap.id: aa501bca-cf5b-465b-bb16-3a41f36aef46
+type: text/vnd.tiddlywiki
+url: https://blog.ksub.org/bytes/2017/02/12/exploring-shared-objects-in-go/

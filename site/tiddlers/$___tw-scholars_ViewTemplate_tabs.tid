@@ -1,0 +1,47 @@
+created: 20140617115750322
+creator: Alberto Molina Pérez
+modified: 20191128165530522
+modifier: Alberto Molina Pérez
+slider: show
+tags: $:/tags/ViewTemplate
+title: $:/_tw-scholars/ViewTemplate/tabs
+type: text/vnd.tiddlywiki
+
+\define resettab(state)
+<$reveal state=<<qualify $state$>> type="nomatch" text="">
+   <$tiddler tiddler=<<qualify $state$>>>
+      <span title="Close tabs" class="tc-tiddler-controls" style="position:relative;top:4px;">
+         <$button set={{!!title}} setTo="" class="tc-btn-invisible">{{$:/core/images/close-button}}</$button>
+      </span>
+   </$tiddler>
+</$reveal>
+\end
+
+\define scholarsTabs(field,this,state:"$:/state/tab",class:"mytabs",color:"blue")
+<<resettab "$state$">>
+<$macrocall $name="tabs" tabsList="$:/_tw-scholars/tab/info [list[$:/_tw-scholars/tabs!!$field$]] [[$(this)$]tags[]prefix[$:/_tw-scholars/tab/]]" state="$state$" class="$class$ $color$"/>
+\end
+\define tabsField(type,this)
+<$tiddler tiddler="$(this)$">
+    <$reveal type="nomatch" state="$:/_tw-scholars/tabs!!$type$" text="">
+    <$macrocall $name="scholarsTabs" field="$type$" class="mytabs" color={{!!tabs_color}}/>
+    </$reveal>
+    <$reveal type="match" state="$:/_tw-scholars/tabs!!$type$" text="">
+        <$macrocall $name="scholarsTabs" field={{!!$type$_type}} class="mytabs" color={{!!tabs_color}}/>
+    </$reveal>
+</$tiddler>
+\end
+
+
+<$list filter="[all[current]!tag[$:/_hide/tabs]]">
+    <$set name="this" value=<<currentTiddler>> >
+        <$reveal type="match" state="!!tabs_list" text="">
+            <$list filter="[all[current]tags[]removeprefix[$:/_type/]]">
+                <$macrocall $name="tabsField" type={{!!title}}/>
+            </$list>
+        </$reveal>
+        <$reveal type="nomatch" state="!!tabs_list" text="">
+            <$macrocall $name="tabsField" type={{!!tabs_list}}/>
+        </$reveal>
+    </$set>
+</$list>

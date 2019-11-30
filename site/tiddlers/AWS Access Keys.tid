@@ -1,0 +1,16 @@
+created: 20180808123613868
+creator: boru
+modified: 20191128165533275
+modifier: boru
+tags: 
+title: AWS Access Keys
+tmap.id: b1d43175-b7e6-4a1f-ae22-9070a36bba79
+type: text/vnd.tiddlywiki
+
+* use access keys to access [[AWS]] APIs
+* together with [[AWS Secret Access Keys]]
+
+2 types:
+
+* root based (not recommended)
+* [[IAM based|AWS IAM]] (users/groups)

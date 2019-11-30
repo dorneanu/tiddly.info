@@ -1,0 +1,22 @@
+created: 20190702082410710
+modified: 20191128165533223
+tags: [[AWS Management & Governance]] [[AWS Monitoring]] AWS
+title: AWS Config
+tmap.id: e21b896e-7b26-424d-83da-17dfae5f6d66
+type: text/vnd.tiddlywiki
+
+!! How it works
+
+[img[https://d1.awsstatic.com/Products/product-name/diagrams/product-page-diagram-Config_how-it-works.bd28728a9066c55d7ee69c0a655109001462e25b.png]]
+
+!! AWS Config Rules
+
+* powered by [[AWS Lambda]]
+* [[AWS SNS]] is used for the notifications
+* types:
+** managed
+** custom
+
+!! Supported resources
+
+* https://docs.aws.amazon.com/config/latest/developerguide/resource-config-reference.html

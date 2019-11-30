@@ -1,0 +1,11 @@
+created: 20140625090149353
+modified: 20191128165530949
+title: $:/_tw-scholars/newHere/publication/table/invariable
+type: text/vnd.tiddlywiki
+
+| |<|<|<|<|<|<|<|<|<|
+|>|!<<trad "Description">> |<$edit-text tiddler="$:/temp/publication" field="description" placeholder="a short description of the publication" class="tc-edit-texteditor" size="60"/>|<|<|<|<|<|<|<|
+|>|!<<trad "About">> / <<trad "Topics">> |<$edit-text tiddler="$:/temp/publication" field="about" placeholder="[[tag name]]" class="tc-edit-texteditor" size="60"/>|<|<|<|<|<|<|<|
+|>|!<<trad "Tags">> |<$tiddler tiddler="$:/temp/publication">{{||$:/core/ui/EditTemplate/tags}}</$tiddler>|<|<|<|<|<|<|<|
+|>|!<<trad "Abstract">> |<$edit-text tiddler="$:/temp/publication" class="tc-edit-texteditor" tag="textarea"/>|<|<|<|<|<|<|<|
+|>| !<<trad "Edit tiddler">>:   <<editSelector "publication">>|<|<|<|<|<|<|<|<|

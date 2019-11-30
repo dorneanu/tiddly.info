@@ -1,0 +1,26 @@
+created: 20140725170000948
+creator: Alberto Molina Pérez
+modified: 20191128165530666
+modifier: Alberto Molina Pérez
+title: $:/_tw-scholars/ui/SideBar/newIdea
+type: text/vnd.tiddlywiki
+
+<div>
+
+|invisible|k
+| |
+| New thought |
+| |
+|<$edit-text tiddler="$:/temp/idea" field="note_title" placeholder="Thought title" tag="input" class="tc-edit-texteditor" size="40"/>|
+| |
+|<$edit-text tiddler="$:/temp/idea" field="description" placeholder="Description" tag="input" class="tc-edit-texteditor" size="40"/>|
+|<$edit-text tiddler="$:/temp/idea" field="about" tag="input" placeholder="About: [[tag name]]" class="tc-edit-texteditor" size="40"/>|
+| |
+|<$tiddler tiddler="$:/temp/idea">{{||$:/core/ui/EditTemplate/tags}}</$tiddler>|
+| |
+|<$edit-text tiddler="$:/temp/idea" placeholder="Text of the thought" class="tc-edit-texteditor" tag="textarea"/>|
+| <<trad "Edit tiddler">>:   <<editSelector "idea">>|
+
+<<sideBar_button "idea">>
+
+</div>

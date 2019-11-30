@@ -1,0 +1,13 @@
+created: 20151006140933185
+modified: 20191128165538620
+tags: 
+title: Routing
+tmap.id: 03f7c1ba-f801-4cd9-8f3a-3ceb2181d873
+type: text/vnd.tiddlywiki
+
+!! Routing
+
+Has 2 main concepts
+
+* the process of routing forwards [[Layer 3]] packets, also called ''L3PDU'' (see [[TCP/IP - Encapsulation]]), based on the destination Layer 3 address in the packet
+* the routing process uses the data link layer to encapsulate the Layer 3 packets into [[Layer 2]] frames for transmission across a data link

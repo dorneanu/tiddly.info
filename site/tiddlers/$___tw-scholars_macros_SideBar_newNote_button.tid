@@ -1,0 +1,70 @@
+created: 20140802100820505
+creator: Alberto Molina Pérez
+modified: 20191128165529652
+modifier: Alberto Molina Pérez
+tags: $:/tags/Macro
+title: $:/_tw-scholars/macros/SideBar/newNote/button
+type: text/vnd.tiddlywiki
+
+\define sideBar_button2(type,icon:"$:/_images/note",note_title,about,description,text,tags,edit:"show",tempTiddler:"$:/temp/note",type="$:/_type/note",template:"$:/_template/note",label:"add",class,language)
+
+<$setfield set="!!icon" setTo="$icon$">
+
+<$setfield set="!!description" setTo="$description$">
+<$setfield set="$tempTiddler$!!description" setTo="">
+
+<$setfield set="!!about" setTo="$about$">
+<$setfield set="$tempTiddler$!!about" setTo="">
+
+<$setfield set="!!text" setTo="$text$">
+<$setfield set="$tempTiddler$!!text" setTo="">
+
+<$setfield set="$tempTiddler$!!tags" setTo="">
+
+<$setfield set="$tempTiddler$!!note_title" setTo="">
+
+<$set name="label" value={{$language$/myTabs##$label$}} >
+
+<$list filter="[[$tempTiddler$]note_title[]]">
+    <$maketid  title="$about$ - $type$" tags="$:/_type/$type$ $tags$" template="$template$" edit="$edit$" message="tm-set-field">
+        <$button message="tm-new-tiddler" class="$class$"><<trad "$label$">></$button>
+    </$maketid>
+</$list>
+
+<$list filter="[[$tempTiddler$]!note_title[]]">
+    <$maketid  title="$note_title$" tags="$:/_type/$type$ $tags$" template="$template$" edit="$edit$" message="tm-set-field">
+        <$button message="tm-new-tiddler" class="$class$"><<trad "$label$">></$button>
+    </$maketid>
+</$list>
+
+</$set>
+
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+\end
+
+\define sideBar_button(type:"note",label:"add",class)
+<$macrocall $name="sideBar_button2" 
+icon="$:/_images/$type$" 
+note_title={{$:/temp/$type$!!note_title}} 
+about={{$:/temp/$type$!!about}} 
+description={{$:/temp/$type$!!description}} 
+text={{$:/temp/$type$!!text}} 
+tags={{$:/temp/$type$!!tags}} 
+edit={{$:/temp/$type$!!edit}} 
+tempTiddler="$:/temp/$type$" 
+type="$type$" 
+template="$:/_template/$type$" 
+label="$label$" 
+class="$class$" 
+language={{$:/language}}/>
+\end
+
+<<sideBar_button "idea" "add">>

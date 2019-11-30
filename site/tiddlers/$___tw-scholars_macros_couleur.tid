@@ -1,0 +1,11 @@
+created: 20140718223716972
+creator: Alberto Molina Pérez
+modified: 20191128165529726
+modifier: Alberto Molina Pérez
+tags: $:/tags/Macro
+title: $:/_tw-scholars/macros/couleur
+type: text/vnd.tiddlywiki
+
+\define couleur(name)
+<$transclude tiddler="$:/_tw-scholars/palette" index="$name$"/>
+\end

@@ -1,0 +1,19 @@
+about: macros
+created: 20140719120227834
+creator: Alberto Molina Pérez
+description: Macros
+modified: 20191128165529774
+modifier: Alberto Molina Pérez
+parent: $:/_tw-scholars/tab/internals
+title: $:/_tw-scholars/doc/macros
+type: text/vnd.tiddlywiki
+
+<span style="margin-left: -100px;">
+
+<$list filter="[all[current]listed[parent]!has[draft.of]sort[description]]">
+
+<$macrocall $name="slider" caption={{!!description}} body={{!!title}} heading="h3" btn-style="margin-left:1em" state="slider"/>
+
+</$list>
+
+</span>

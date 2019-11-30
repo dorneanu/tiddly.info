@@ -1,0 +1,11 @@
+created: 20181203135821030
+creator: boru
+modified: 20191128165539588
+modifier: boru
+name: SQS Consumer Design
+note: Achieving High Scalability while managing concurrency in Go
+tags: Patterns AWS Golang Bookmark
+title: SQS Consumer Design: Achieving High Scalability while managing concurrency in Go
+tmap.id: dc626408-9d97-4cbe-8ebe-6cd13a527821
+type: text/vnd.tiddlywiki
+url: https://medium.com/@questhenkart/sqs-consumer-design-achieving-high-scalability-while-managing-concurrency-in-go-d5a8504ea754

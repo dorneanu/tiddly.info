@@ -1,0 +1,18 @@
+created: 20140627001811293
+creator: Alberto Molina Pérez
+icon: $:/_images/system
+modified: 20191128165529623
+modifier: Alberto Molina Pérez
+tags: $:/tags/Macro
+title: $:/_tw-scholars/macros/table
+type: text/vnd.tiddlywiki
+
+\define editSelector(type:"publication")
+<$radio tiddler="$:/temp/$type$" field="edit" value="yes"> <<trad "yes">></$radio>&nbsp;&nbsp;
+<$radio tiddler="$:/temp/$type$" field="edit" value="no"> <<trad "no">></$radio>&nbsp;&nbsp;
+<$radio tiddler="$:/temp/$type$" field="edit" value="show"> <<trad "show">> (<<trad "default">>)</$radio>
+\end
+
+\define input(type:"publication",field,size:"60",placeholder:"") <$edit-text tiddler="$:/temp/$type$" field="$type$_$field$" placeholder="$placeholder$" class="tc-edit-texteditor" size="$size$"/>
+
+\define page(type:"publication",field,size:"6",placeholder) <$edit-text tiddler="$:/temp/$type$" field="page_$field$" placeholder="$placeholder$" class="tc-edit-texteditor" size="$size$"/>

@@ -1,0 +1,7 @@
+created: 20140714182703348
+modified: 20191128165532023
+tags: $(tags)$ $:/Note
+title: $:/Template/NewImage
+type: text/vnd.tiddlywiki
+
+<img src="" width="100%">

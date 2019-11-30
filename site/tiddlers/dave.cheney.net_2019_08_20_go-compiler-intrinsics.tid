@@ -1,0 +1,9 @@
+created: 20190902102408143
+modified: 20191128165535328
+name: dave.cheney.net/2019/08/20/go-compiler-intrinsics
+note: Go allows authors to write functions in assembly if required. This is called a stub or forward declaration.
+tags: Golang Bookmark
+title: dave.cheney.net/2019/08/20/go-compiler-intrinsics
+tmap.id: 5f81d743-0977-441b-ba26-aaed3d432dee
+type: text/vnd.tiddlywiki
+url: https://dave.cheney.net/2019/08/20/go-compiler-intrinsics

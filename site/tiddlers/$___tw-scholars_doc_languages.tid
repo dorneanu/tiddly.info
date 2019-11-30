@@ -1,0 +1,19 @@
+about: languages
+created: 20140719121840138
+creator: Alberto Molina Pérez
+description: Internationalization
+modified: 20191128165529781
+modifier: Alberto Molina Pérez
+parent: $:/_tw-scholars/tab/features
+title: $:/_tw-scholars/doc/languages
+type: text/vnd.tiddlywiki
+
+<div class="yellow-box">
+
+It is possible to select the language of most of the user interface elements specific to //~TiddlyWiki for Scholars//.
+
+For example, if you change the current language in the control panel to french, you will see the tabs captions and headings translated into french, as well as the rest of the UI.
+
+This is done via the macro `<<trad>>` ([[$:/_tw-scholars/macros/language]]) which seeks the translation (if any) in the dictionary (if any) corresponding to the current UI language ([[$:/languages/fr-FR/myTabs]]).
+
+</div>

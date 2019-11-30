@@ -1,0 +1,11 @@
+created: 20181123152533400
+creator: boru
+modified: 20191128165533024
+modifier: boru
+name: aws-lambda-go
+note: Libraries, samples and tools to help Go developers develop AWS Lambda functions.
+tags: AWS Golang Lambda Bookmark
+title: aws-lambda-go
+tmap.id: 5422461d-be06-406f-bcf2-6678251f8a32
+type: text/vnd.tiddlywiki
+url: https://github.com/aws/aws-lambda-go

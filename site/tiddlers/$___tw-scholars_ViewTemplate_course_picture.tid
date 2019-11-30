@@ -1,0 +1,22 @@
+created: 20140718083232565
+creator: Alberto Molina Pérez
+list-before: $:/core/ui/ViewTemplate/body
+modified: 20191128165530617
+modifier: Alberto Molina Pérez
+tags: $:/tags/ViewTemplate
+title: $:/_tw-scholars/ViewTemplate/course/picture
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]tag[$:/_type/course]]">
+<$reveal type="nomatch" state="!!picture_file" text="">
+
+<table class="logo">
+<tr>
+<td><$reveal type="nomatch" state="!!picture_source" text=""><a href={{!!picture_source}} target="_blank"><$image source={{!!picture_file}} tooltip={{!!picture_tooltip}} class="logo-picture"/></a></$reveal><$reveal type="match" state="!!picture_source" text=""><$image source={{!!picture_file}} tooltip={{!!picture_tooltip}} class="logo-picture"/></$reveal></td>
+</tr>
+<caption>{{!!picture_caption}}</caption>
+</table>
+
+</$reveal>
+</$list>
+

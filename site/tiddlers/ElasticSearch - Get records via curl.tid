@@ -1,0 +1,29 @@
+created: 20191120105404645
+modified: 20191128165535033
+origin: Slack/Ralph
+tags: ElasticSearch HowTo
+title: ElasticSearch - Get records via curl
+type: text/vnd.tiddlywiki
+
+```
+GET infinity-*/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {"term": {"method.keyword": "POST"}},
+        {"term": {"http_status" : "200"}},
+        {"term": {"uri.keyword": "/sso/login"}}
+      ],
+    "filter": {
+        "terms": {
+          "service-name.keyword": [
+            "pro-sso"
+          ]
+        }
+      }
+    }
+  },
+  "_source" : ["x-forwarded-for"]
+}
+```

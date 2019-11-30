@@ -1,0 +1,15 @@
+created: 20140625125906805
+modified: 20191128165531058
+title: $:/_tw-scholars/newHere/publication/macro/button/commonInfo
+type: text/vnd.tiddlywiki
+
+<$setfield set="!!description" setTo={{$:/temp/publication!!description}}>
+<$setfield set="$:/temp/publication!!description" setTo="">
+
+<$setfield set="!!about" setTo={{$:/temp/publication!!about}}>
+<$setfield set="$:/temp/publication!!about" setTo="">
+
+<$setfield set="$:/temp/publication!!tags" setTo="">
+
+<$setfield set="!!text" setTo={{$:/temp/publication!!text}}>
+<$setfield set="$:/temp/publication!!text" setTo="">

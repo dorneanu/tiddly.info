@@ -1,0 +1,157 @@
+about: macros
+created: 20140719122145804
+creator: Alberto Molina Pérez
+description: Slider and accordion
+modified: 20191128165529767
+modifier: Alberto Molina Pérez
+parent: $:/_tw-scholars/doc/macros
+title: $:/_tw-scholars/doc/macros/slider_accordion
+type: text/vnd.tiddlywiki
+
+<div class="">
+
+<div class="important">
+
+The code of the macros have changed and this documentation is no longer up to date.
+
+It will be updated soon.
+
+</div>
+
+! Introduction
+
+The [[slider and accordion macros|$:/_tw-scholars/macros/slider+accordion]] hide or show their content when clicked.The only difference is their behaviour when using several sliders on the same page:
+
+* The `<<slider>>` macro creates one state tiddler for each new slider, so they can be opened/closed independently of one another;
+* The `<<accordion>>` macro uses a single state tiddler for all the sliders on the same page, thus only one can be open at a time.
+
+They also show next to the caption a link `…` to the original tiddler (if there's one).
+
+! Content and Attributes
+
+The content of the `<<slider>>` and `<<accordion>>` macros is displayed according to the rules given above.
+
+<!--
+|!Attribute |!Description |
+|caption |The slider caption |
+|body |The contents to be shown or hidden. If it is a tiddlers' title, its content is transcluded, else it is displayed as is |
+|heading |The heading level of the slider (defaults to "h1") |
+|tooltip1 |Show tooltip (defaults to "Click to show the contents of this slider") |
+|tooltip2 |Hide tooltip (defaults to "Click to hide") |
+|tooltip3 |Edit tooltip (defaults to "Edit this section") |
+|state |Set to "popup" to delete the state tiddler on each startup (defaults to "slider") |
+|retain |Set to "yes" to force the content to be retained even when hidden (defaults to "no")|
+|animate |Set to "yes" to animate opening and closure (defaults to "no") |
+|btn-class |The div class to be applied to the slider button (defaults to "invisible") |
+|btn-style |The span style to be applied to the slider button (defaults to "") |
+|body-class |The div class to be applied to the body (defaults to "") |
+|body-style |The span class to be applied to the slider button (defaults to "") |
+|aria-label-show |Optional Accessibility label for the show button (defaults to "") |
+|aria-label-hide |Optional Accessibility label for the hide button (defaults to "") |
+|aria-label-link |Optional Accessibility label for the link (defaults to "") |
+-->
+
+<table>
+    <thead>
+        <tr>
+            <td>Attribute</td>
+            <td>Description</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>caption</td>
+            <td>The slider caption</td>
+        </tr>
+        <tr>
+            <td>body</td>
+            <td>The contents to be shown or hidden</td>
+        </tr>
+        <tr>
+            <td>heading</td>
+            <td>Optional heading level of the slider (defaults to "h1")</td>
+        </tr>
+        <tr>
+            <td>tooltip1</td>
+            <td>Optional show tooltip (defaults to "Click to show the contents of this slider")</td>
+        </tr>
+        <tr>
+            <td>tooltip2</td>
+            <td>Optional hide tooltip (defaults to "Click to hide")</td>
+        </tr>
+        <tr>
+            <td>tooltip3</td>
+            <td>Optional edit tooltip (defaults to "Edit this section")</td>
+        </tr>
+        <tr>
+            <td>state</td>
+            <td>Set to "popup" to delete the state tiddler on each startup (defaults to "slider")</td>
+        </tr>
+        <tr>
+            <td>retain</td>
+            <td>Set to "yes" to force the content to be retained even when hidden (defaults to "no")</td>
+        </tr>
+        <tr>
+            <td>animate</td>
+            <td>Set to "yes" to animate opening and closure (defaults to "no")</td>
+        </tr>
+        <tr>
+            <td>btn-class</td>
+            <td>Optional div class to be applied to the slider button (defaults to "")</td>
+        </tr>
+        <tr>
+            <td>btn-style</td>
+            <td>Optional span style to be applied to the slider button (defaults to "")</td>
+        </tr>
+        <tr>
+            <td>body-class</td>
+            <td>Optional div class to be applied to the body (defaults to "")</td>
+        </tr>
+        <tr>
+            <td>body-style</td>
+            <td>Optional span class to be applied to the slider button (defaults to "")</td>
+        </tr>
+        <tr>
+            <td>aria-label-show</td>
+            <td>Optional Accessibility label for the show button (defaults to "")</td>
+        </tr>
+        <tr>
+            <td>aria-label-hide</td>
+            <td>Optional Accessibility label for the hide button (defaults to "")</td>
+        </tr>
+        <tr>
+            <td>aria-label-link</td>
+            <td>Optional Accessibility label for the link (defaults to "")</td>
+        </tr>
+    </tbody>
+</table>
+
+Retaining the content when hidden can give poor performance since the hidden content requires refresh processing even though it is not displayed. On the other hand, the content can be revealed much more quickly. Note that setting ''animate="yes"'' will also force ''retain="yes"''.
+
+
+! Examples
+
+!!Example 1
+
+```
+<<slider "How are you?" "Fine, thanks!" "h3" >>
+```
+Gives this:
+
+<<slider "How are you?" "Fine, thanks!" "h3" >>
+
+!!Example 2
+
+The first level sliders on the "Features" tab are created with the following code (see [[tiddler|$:/_tw-scholars/tab/features]]) :
+
+```
+!Features
+
+<$list filter="[[$:/_tw-scholars/tab/features]listed[parent]!has[draft.of]sort[description]]">
+
+<$macrocall $name="accordion" caption={{!!description}} body={{!!title}} heading="h2" state="popup"/>
+
+</$list>
+```
+
+</div>

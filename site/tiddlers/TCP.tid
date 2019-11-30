@@ -1,0 +1,25 @@
+created: 20151008155539937
+creator: boru
+modified: 20191128165539451
+modifier: boru
+tags: [[Layer 4]]
+title: TCP
+tmap.id: 60a310df-fb99-4958-aa4c-1cf29fe0c425
+type: text/vnd.tiddlywiki
+
+; Definition
+: Transmision Control Protocol
+
+!! Features
+
+<<ximg "TCP - Features.png">>
+
+* Uses [[Multiplexing]]
+
+!! Header
+
+<<ximg "TCP - Header.png">>
+
+!! Three-way handshake
+
+<<ximg "TCP - three-way handshake.png">>

@@ -1,0 +1,11 @@
+created: 20181127104604792
+creator: boru
+modified: 20191128165533032
+modifier: boru
+name: aws-doc-sdk-examples/go/example_code/sqs
+note: Examples how to use SQS in Golang
+tags: AWS Golang Bookmark
+title: aws-doc-sdk-examples/go/example_code/sqs
+tmap.id: a67cf8d1-a82c-4751-8fdf-fefa7696cd33
+type: text/vnd.tiddlywiki
+url: https://github.com/awsdocs/aws-doc-sdk-examples/tree/master/go/example_code/sqs

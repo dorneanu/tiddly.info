@@ -1,0 +1,11 @@
+author: JoaoBolila
+core-version: >=5.0.0
+created: 20191128165532277
+dependents: 
+description: Highlight.js: syntax highlighting
+list: readme usage howto license
+modified: 20191128165532277
+plugin-type: plugin
+title: $:/plugins/tiddlywiki/highlight
+type: application/json
+version: 5.1.21

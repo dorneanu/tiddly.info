@@ -1,0 +1,30 @@
+created: 20140721081903220
+creator: Alberto Molina Pérez
+modified: 20191128165529580
+modifier: Alberto Molina Pérez
+title: $:/_tw-scholars/macros/tabs/tabsList
+type: text/vnd.tiddlywiki
+
+\define scholarsTabs(field,this) <$list filter="[list[$:/_tw-scholars/tabs!!$field$]] [[$(this)$]tags[]prefix[$:/_tw-scholars/tab/]]"/>
+\define tabsField(type,this)
+<$reveal type="nomatch" state="$:/_tw-scholars/tabs!!$type$" text="">
+    <$macrocall $name="scholarsTabs" field="$type$"/>
+</$reveal>
+<$reveal type="match" state="$:/_tw-scholars/tabs!!$type$" text="">
+    <$tiddler tiddler="$(this)$">
+        <$macrocall $name="scholarsTabs" field={{!!$type$_type}}/>
+    </$tiddler>
+</$reveal>
+\end
+\define tabsList()
+<$set name="this" value=<<currentTiddler>> >
+    <$reveal type="match" state="!!tabs_list" text="">
+        <$list filter="[all[current]tags[]removeprefix[$:/_type/]]">
+            <$macrocall $name="tabsField" type={{!!title}}/>
+        </$list>
+    </$reveal>
+    <$reveal type="nomatch" state="!!tabs_list" text="">
+        <$macrocall $name="tabsField" type={{!!tabs_list}}/>
+    </$reveal>
+</$set>
+\end

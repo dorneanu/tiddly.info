@@ -1,0 +1,35 @@
+created: 20180808115540145
+creator: boru
+modified: 20191128165534593
+modifier: boru
+tags: Public [[Cloud Computing]]
+title: Cloud Technology Roadmap
+tmap.id: 8cea1dbd-9cf5-4fbd-b6d6-520630dacb49
+type: text/vnd.tiddlywiki
+
+Helps cloud providers develop industry-recommended, secure, and interoperable identify, access and compliance management configurations and practices. 
+
+Provides guidance and recommendations
+
+! Requirements 
+
+* interoperability
+** easily change cloud service providers (flexibility and costs)
+
+* portability
+** ease with which application components are moved and reused elsewhere regardless of the provider, platform, os infraa, location, storage or the format of data or APIs
+* availability
+** defines success or failure of a cloud-based service
+* ''security''
+** ability to measure, obtain assurance and integrate contractual obligations
+** cloud providers provide minimal levels of security
+** NDAs
+* privacy
+* resiliency
+** ability of cloud provider (incl. components) to continue operating in the event of a disruption
+
+* perfomance
+* governance
+* SLAs
+* auditability
+* regulatory

@@ -1,0 +1,11 @@
+created: 20190110151353404
+creator: boru
+modified: 20191128165533148
+modifier: boru
+name: AWS Lambda Permissions Model
+note: Which resources need policies, which not
+tags: AWS Bookmark
+title: AWS Lambda Permissions Model
+tmap.id: 4757a26a-915d-4f75-bdf9-cddc7edb695f
+type: text/vnd.tiddlywiki
+url: https://docs.aws.amazon.com/lambda/latest/dg/intro-permission-model.html

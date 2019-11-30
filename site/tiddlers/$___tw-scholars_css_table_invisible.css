@@ -1,0 +1,19 @@
+html body.tc-body .invisible {
+     border-color:#fff;
+     border-width:0px
+}
+
+html body.tc-body .invisible th {
+     border-color:#fff;
+     border-width:0px;
+}
+
+html body.tc-body .invisible tr {
+     border-color:#fff;
+     border-width:0px;
+}
+
+html body.tc-body .invisible td {
+     border-color:#fff;
+     border-width:0px;
+}

@@ -1,0 +1,11 @@
+created: 20181210141826705
+creator: boru
+modified: 20191128165535424
+modifier: boru
+name: Creating a Microservice Boilerplate in Go
+note: Example how to use viper (config file and environment variables)
+tags: Golang Bookmark
+title: Creating a Microservice Boilerplate in Go
+tmap.id: 7f2dfaa2-fcf2-49e0-ac5a-ce772a621ee9
+type: text/vnd.tiddlywiki
+url: https://www.netlify.com/blog/2016/09/06/creating-a-microservice-boilerplate-in-go/

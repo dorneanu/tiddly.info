@@ -1,0 +1,58 @@
+created: 20180926150333131
+creator: boru
+modified: 20191128165533217
+modifier: boru
+tags: TODO AWS
+title: AWS Databases
+tmap.id: 036a1fea-98a7-4430-9a2c-76f84257f178
+type: text/vnd.tiddlywiki
+
+! Relational ([[AWS RDS]])
+
+; OLTP based
+
+* SQL server
+* MariaDB
+* Oracle
+* MySQL
+* PostgreSQL
+* Aurora
+
+! Non-relational
+
+Consist of:
+
+* collection (=table)
+* document (=row)
+* key value pairs (=fields)
+
+! OLTP
+
+; Online Transaction Processing
+
+* pull in specific records (e.g. by id)
+
+! OLAP
+
+; Online Analytics Processing
+
+* pulls in large numbers of records
+* uses different type of architecture
+** from a DB/infra perspective
+* examples: AWS RedShift
+
+! Misc
+
+''Important'': Pay attention when client and server in different [[AWS Security Group]]s:
+
+* server must allow `INBOUND` connections for clients security group
+
+! Backups
+
+* automated backups (by default)
+** saved on S3
+* DB snapshots
+** always user initiated
+** stored even after you delete the RDS instance
+
+When restoring backups, a new DNS name is needed. 

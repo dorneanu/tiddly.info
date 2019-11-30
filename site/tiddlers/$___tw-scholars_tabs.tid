@@ -1,0 +1,23 @@
+article: $:/_tw-scholars/tab/authors $:/_tw-scholars/tab/chapters $:/_tw-scholars/tab/comments $:/_tw-scholars/tab/notes $:/_tw-scholars/tab/ideas $:/_tw-scholars/tab/quotes
+author: $:/_tw-scholars/tab/biography $:/_tw-scholars/tab/publications $:/_tw-scholars/tab/comments $:/_tw-scholars/tab/notes $:/_tw-scholars/tab/quotes $:/_tw-scholars/tab/ideas
+book: $:/_tw-scholars/tab/notes  $:/_tw-scholars/tab/quotes
+book_old: $:/_tw-scholars/tab/authors $:/_tw-scholars/tab/chapters $:/_tw-scholars/tab/comments $:/_tw-scholars/tab/notes $:/_tw-scholars/tab/ideas $:/_tw-scholars/tab/quotes
+chapter: $:/_tw-scholars/tab/comments $:/_tw-scholars/tab/notes $:/_tw-scholars/tab/ideas $:/_tw-scholars/tab/quotes
+comment: $:/_tw-scholars/tab/comments $:/_tw-scholars/tab/notes $:/_tw-scholars/tab/ideas
+concept: $:/_tw-scholars/tab/authors $:/_tw-scholars/tab/publications $:/_tw-scholars/tab/comments $:/_tw-scholars/tab/notes $:/_tw-scholars/tab/ideas $:/_tw-scholars/tab/quotes
+course: $:/_tw-scholars/tab/course/students $:/_tw-scholars/tab/comments $:/_tw-scholars/tab/course/toDo $:/_tw-scholars/tab/course/done $:/_tw-scholars/tab/course/ressources $:/_tw-scholars/tab/journal
+created: 20140711200254375
+creator: Alberto Molina Pérez
+discipline: $:/_tw-scholars/tab/authors $:/_tw-scholars/tab/publications $:/_tw-scholars/tab/comments $:/_tw-scholars/tab/notes $:/_tw-scholars/tab/ideas $:/_tw-scholars/tab/quotes
+domaine: $:/_tw-scholars/tab/authors $:/_tw-scholars/tab/publications $:/_tw-scholars/tab/comments $:/_tw-scholars/tab/notes $:/_tw-scholars/tab/ideas $:/_tw-scholars/tab/quotes
+idea: $:/_tw-scholars/tab/comments $:/_tw-scholars/tab/notes $:/_tw-scholars/tab/ideas
+intro: $:/_tw-scholars/tab/howTo $:/_tw-scholars/tab/features $:/_tw-scholars/tab/internals $:/_tw-scholars/tab/journal $:/_tw-scholars/tab/releases $:/_tw-scholars/tab/issues
+journal: $:/_tw-scholars/tab/comments
+modified: 20191128165530727
+modifier: Alberto Molina Pérez
+note: $:/_tw-scholars/tab/comments $:/_tw-scholars/tab/notes $:/_tw-scholars/tab/ideas
+quote: $:/_tw-scholars/tab/comments $:/_tw-scholars/tab/notes $:/_tw-scholars/tab/ideas
+student: $:/_tw-scholars/tab/journal $:/_tw-scholars/tab/comments $:/_tw-scholars/tab/notes
+theory: $:/_tw-scholars/tab/authors $:/_tw-scholars/tab/publications $:/_tw-scholars/tab/comments $:/_tw-scholars/tab/notes $:/_tw-scholars/tab/ideas $:/_tw-scholars/tab/quotes
+title: $:/_tw-scholars/tabs
+type: text/vnd.tiddlywiki

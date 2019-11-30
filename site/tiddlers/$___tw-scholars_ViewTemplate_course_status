@@ -1,0 +1,16 @@
+<$list filter="[all[current]tag[$:/_type/course]!is[system]]">
+
+<$reveal type="match" state="!!date_alpha" text="">
+<$button set="!!date_alpha" setTo=<<dateTime "YYYY-0MM-0DD">> class="tc-btn-big grey"><<trad "not started">></$button>
+</$reveal>
+
+<$reveal type="nomatch" state="!!date_alpha" text="">
+    <$reveal type="match" state="!!date_omega" text="">
+        <$button set="!!date_omega" setTo=<<dateTime "YYYY-0MM-0DD">> class="tc-btn-big green"><<trad "started">></$button>
+    </$reveal>
+    <$reveal type="nomatch" state="!!date_omega" text="">
+        <$button set="!!date_omega" setTo="" class="tc-btn-big red"><<trad "ended">></$button>
+    </$reveal>
+</$reveal>
+
+</$list>

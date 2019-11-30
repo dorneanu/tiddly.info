@@ -1,0 +1,15 @@
+.sidebar-menu-recent {
+	line-height: 1.5em;
+	padding: 0em 0em;
+}
+
+.sidebar-menu-recent .button {
+	background: none;
+	border: none;
+}
+
+.sidebar-menu-recent .button-pressed {
+}
+
+.sidebar-menu-newHere {
+}

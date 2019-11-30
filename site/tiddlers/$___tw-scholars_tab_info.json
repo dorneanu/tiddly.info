@@ -1,0 +1,15 @@
+[
+    {
+        "created": "20140513210436573",
+        "title": "$:/_tw-scholars/tab/info",
+        "text": "<div class=\"tc-tab-content\">\n\n<div class=\"tab-content-blue deuxcolonnes\">\n<div class=\"tc-menu-list-item\">\n<div class=\"text-grey\">\nChildren of this tiddler:\n</div>\n<div class=\"tc-menu-list-subitem\">\n<$list filter=\"[all[current]listed[source]] [all[current]listed[parent]] +[!is[system]!has[draft.of]]\" emptyMessage=\"@@.text-grey none@@\">\n<$link><$view field=\"title\"/></$link><br>\n</$list>\n</div>\n\n<div class=\"text-grey\">\nAbout this tiddler:\n</div>\n<div class=\"tc-menu-list-subitem\">\n<$list filter=\"[all[current]listed[about]!is[system]!has[draft.of]]\" emptyMessage=\"@@.text-grey none@@\">\n<$link><$view field=\"title\"/></$link><br>\n</$list>\n</div>\n\n<div class=\"text-grey\">\nTagging:\n</div>\n<div class=\"tc-menu-list-subitem\">\n<$list filter=\"[all[current]tagging[]!is[system]!has[draft.of]]\" emptyMessage=\"@@.text-grey none@@\">\n<$link><$view field=\"title\"/></$link><br>\n</$list>\n</div>\n\n</div>\n</div>\n\n</div>",
+        "creator": "Alberto Molina Pérez",
+        "modified": "20191128165530815",
+        "modifier": "Alberto Molina Pérez",
+        "tags": "$:/_type/tab",
+        "type": "text/vnd.tiddlywiki",
+        "caption": "+ {{$:/_images/info}} ",
+        "color": "#d3d3d3",
+        "list-before": ""
+    }
+]

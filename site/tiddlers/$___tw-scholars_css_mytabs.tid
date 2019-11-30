@@ -1,0 +1,99 @@
+created: 20140620142406356
+creator: Alberto Molina Pérez
+list-after: 
+modified: 20191128165529940
+modifier: Alberto Molina Pérez
+tags: $:/tags/Stylesheet
+title: $:/_tw-scholars/css/mytabs
+type: text/vnd.tiddlywiki
+
+<pre>
+.mytabs {
+	margin: 0px 0px -42px 0px;
+}
+
+.tc-tab-divider {
+	display: none;
+}
+
+.mytabs div.tc-tab-buttons {
+	text-align: right;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 14px 0px;
+	font-size: 100%;
+}
+
+
+.mytabs .tc-tab-buttons button:not(.tc-tab-selected):hover {
+	color: <<color foreground>>;
+	font-weight: bold;
+	font-size: 125%;
+	padding: 2px;
+	position: relative;
+	bottom: 2px;
+}
+
+.mytabs .tc-tab-buttons button.tc-tab-selected {
+	color: <<color foreground>>;
+	background-color: <<color background>>;
+	font-weight: bold;
+	font-size: 125%;
+	margin-left: 3px;
+	margin-right: 3px;
+	margin-bottom: -4px;
+	border-radius: 10px 10px 0px 0px;
+	box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+.mytabs .tc-tab-buttons.blue button.tc-tab-selected {
+	background-color: {{$:/_tw-scholars/colors##tab-content-blue}};
+	border-bottom: 4px solid {{$:/_tw-scholars/colors##tab-content-blue}};
+}
+
+.mytabs .tc-tab-buttons.red button.tc-tab-selected {
+	background-color: {{$:/_tw-scholars/colors##tab-content-red}};
+	border-bottom: 4px solid {{$:/_tw-scholars/colors##tab-content-red}};
+}
+
+.mytabs .tc-tab-buttons.yellow button.tc-tab-selected {
+	background-color: {{$:/_tw-scholars/colors##tab-content-yellow}};
+	border-bottom: 4px solid {{$:/_tw-scholars/colors##tab-content-yellow}};
+}
+
+.mytabs .tc-tab-buttons button:not(.tc-tab-selected) {
+	padding: 0px 2px 0px 2px;
+	background-color: <<color background>>;
+	color:  #c0c0c0;
+	border-left: <<color background>>;
+	border-right: <<color background>>;
+	border-top: <<color background>>;
+}
+
+
+.mytabs .tc-tab-content {
+	background-color: <<color background>>;
+	margin: -14px -42px 0px -42px;
+	padding: 14px 42px 28px 42px;
+}
+
+
+.mytabs  .blue .tc-tab-content {
+	background-color: {{$:/_tw-scholars/colors##tab-content-blue}};
+	border-top: 1px solid <<colour tiddler-info-border>>;
+	border-bottom: 1px solid <<colour tiddler-info-border>>;
+	box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1) inset;
+}
+.mytabs .red .tc-tab-content {
+	background-color: {{$:/_tw-scholars/colors##tab-content-red}};
+	border-top: 1px solid <<colour tiddler-info-border>>;
+	border-bottom: 1px solid <<colour tiddler-info-border>>;
+	box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+.mytabs .yellow .tc-tab-content {
+	background-color: {{$:/_tw-scholars/colors##tab-content-yellow}};
+	border-top: 1px solid <<colour tiddler-info-border>>;
+	border-bottom: 1px solid <<colour tiddler-info-border>>;
+	box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1) inset;
+}
+</pre>

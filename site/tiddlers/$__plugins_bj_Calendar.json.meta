@@ -1,0 +1,13 @@
+author: JeffreyWilkinson
+core-version: >=5.1.11
+created: 20180606152924574
+dependents: 
+description: calendar with date formatter addons
+list: readme license
+modified: 20191128165532405
+plugin-type: plugin
+source: https://github.com/buggyj/TW5-tools
+tags: bjcalendar
+title: $:/plugins/bj/Calendar
+type: application/json
+version: 1.11.0

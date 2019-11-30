@@ -1,0 +1,42 @@
+created: 20180810075316204
+creator: boru
+modified: 20191128165534609
+modifier: boru
+tags: Public [[Cloud Security]]
+title: Cloud Infrastructure Security
+tmap.id: 1e70a20d-602d-415f-bc5d-741c4e049b5e
+type: text/vnd.tiddlywiki
+
+Management of 
+
+* Identification
+* Authentication
+* Authorization
+
+! Definitions
+
+; identity provider
+: An identity provider offers user authentication as a service
+
+; relying party
+: Relying party applications, such as web applications, outsource the user authentication step to a trusted identity provider. Such a relying party application is said to be federated, that is, it consumes federated identity.
+
+! Identification
+* in cloud computing identity can be [[federated|https://en.wikipedia.org/wiki/Federated_identity]] across multiple collaborating parties. 
+* protocols:
+** Security Assertion Markup Language ([[SAML]])
+** WS-Federation
+* Examples
+** public cloud world: OpenID, OAuth
+** corporate: Microsoft AD
+
+! Authentication
+
+* process of establishing with adequate certainty the identify of an entity
+* function of the identity provider
+
+! Authorization
+
+* process of granting access to resources
+* this can be based on identities, attributes of identities such as role and contextual information such as location and time of day
+* the relying party enforces authorization

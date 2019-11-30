@@ -1,0 +1,13 @@
+created: 20140804194223141
+creator: Alberto Molina Pérez
+icon: $:/_images/system
+modified: 20191128165529594
+modifier: Alberto Molina Pérez
+tags: $:/tags/Macro
+title: $:/_tw-scholars/macros/tabs/tabFilter
+type: text/vnd.tiddlywiki
+
+\define tabFilter(type)
+[all[current]listed[authors]tag[$:/_type/publication]listed[source]] [all[current]listed[authors]tag[$:/_type/publication]listed[about]] [all[current]listed[source]] [all[current]listed[about]] [all[current]listed[parent]] +[tag[$:/_type/$type$]!title{!!title}!is[system]!has[draft.of]nsort[page_alpha]]
+\end
+

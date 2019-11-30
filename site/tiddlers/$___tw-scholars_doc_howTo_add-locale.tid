@@ -1,0 +1,17 @@
+about: language
+created: 20140719204820450
+creator: Alberto Molina Pérez
+description: Add a new UI language
+modified: 20191128165529859
+modifier: Alberto Molina Pérez
+order: 7
+parent: $:/_tw-scholars/tab/howTo
+tags: $:/_type/doc
+title: $:/_tw-scholars/doc/howTo/add-locale
+type: text/vnd.tiddlywiki
+
+If you want //~TiddlyWiki for Scholars// in your own language: 
+
+# duplicate the french dictionary [[$:/languages/fr-FR/myTabs]], 
+# change its title to match your UI current language (`$:/languages/ja-JP/myTabs` for Japanese),
+# translate its content.

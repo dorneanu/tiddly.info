@@ -1,0 +1,35 @@
+created: 20140430190143854
+creator: Alberto Molina
+list-after: $:/core/ui/ViewTemplate/title
+modified: 20191128165530531
+modifier: Alberto Molina Pérez
+tags: $:/tags/ViewTemplate
+title: $:/_tw-scholars/ViewTemplate/subtitle
+type: text/vnd.tiddlywiki
+
+\define subtitle(type)
+    <$list filter="[all[current]!is[system]has[$type$]!$type$[]]">
+    <div class="my-subtitle">
+        {{!!$type$}}
+
+    </div>
+</$list>
+\end
+
+\define author_subtitle()
+<$list filter="[all[current]tag[$:/_type/person]person_type[author]!is[system]!birthdate[]] [all[current]tag[$:/_type/person]!is[system]!deathdate[]]">
+    <div class="tc-subtitle">
+        {{!!birthplace}} {{!!birthdate}} – {{!!deathplace}} {{!!deathdate}}
+    </div>
+</$list>
+\end
+
+<$list filter="[all[current]!tag[$:/_show/modifier]!tag[$:/_hide/subtitle]]">
+<<subtitle "subtitle">>
+<<subtitle "publication_subtitle">>
+<<subtitle "chapter_title">>
+<<author_subtitle>>
+</$list>
+<$list filter="[all[current]tag[$:/_show/modifier]]">
+{{||$:/core/ui/ViewTemplate/subtitle}}
+</$list>

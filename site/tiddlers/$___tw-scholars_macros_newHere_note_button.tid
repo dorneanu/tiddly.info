@@ -1,0 +1,96 @@
+created: 20140624152420247
+creator: Alberto Molina Pérez
+modified: 20191128165529697
+modifier: Alberto Molina Pérez
+tags: $:/tags/Macro
+title: $:/_tw-scholars/macros/newHere/note/button
+type: text/vnd.tiddlywiki
+
+\define newHere_button2(type,icon:"$:/_images/note",note_title,source,about,chapter,page_alpha,page_omega,description,text,tags,edit:"show",tempTiddler:"$:/temp/note",type="$:/_type/note",template:"$:/_template/note",label:"add",class,language)
+
+<$setfield set="!!icon" setTo="$icon$">
+<$setfield set="!!chapter" setTo="$chapter$">
+<$setfield set="$tempTiddler$!!chapter" setTo="">
+
+<$setfield set="!!page_alpha" setTo="$page_alpha$">
+<$setfield set="$tempTiddler$!!page_alpha" setTo="">
+
+<$setfield set="!!page_omega" setTo="$page_omega$">
+<$setfield set="$tempTiddler$!!page_omega" setTo="">
+
+<$setfield set="!!description" setTo="$description$">
+<$setfield set="$tempTiddler$!!description" setTo="">
+
+<$setfield set="!!about" setTo="$about$">
+<$setfield set="$tempTiddler$!!about" setTo="">
+
+<$setfield set="!!source" setTo="[[$source$]]">
+<$setfield set="$tempTiddler$!!source" setTo="">
+
+<$setfield set="!!text" setTo="$text$">
+<$setfield set="$tempTiddler$!!text" setTo="">
+
+<$setfield set="!!tabs" setTo="$:/_tw-scholars/tabs!!$type$">
+
+<$setfield set="$tempTiddler$!!tags" setTo="">
+
+<$setfield set="$tempTiddler$!!note_title" setTo="">
+
+<$set name="label" value={{$language$/myTabs##$label$}} >
+
+<$list filter="[[$tempTiddler$]note_title[]]">
+    <$maketid  title="$source$ - $type$" tags="$:/_type/$type$ $tags$" template="$template$" edit="$edit$" message="tm-set-field">
+        <$button message="tm-new-tiddler" class="$class$"><<trad "$label$">></$button>
+    </$maketid>
+</$list>
+
+<$list filter="[[$tempTiddler$]!note_title[]]">
+    <$maketid  title="$note_title$" tags="$:/_type/$type$ $tags$" template="$template$" edit="$edit$" message="tm-set-field">
+        <$button message="tm-new-tiddler" class="$class$"><<trad "$label$">></$button>
+    </$maketid>
+</$list>
+
+</$set>
+
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+\end
+
+\define newHere_button(type:"note",label:"add",class)
+<$macrocall $name="newHere_button2" 
+source={{!!title}} 
+icon="$:/_images/$type$" 
+note_title={{$:/temp/$type$!!note_title}} 
+about={{$:/temp/$type$!!about}} 
+chapter={{$:/temp/$type$!!chapter}} 
+page_alpha={{$:/temp/$type$!!page_alpha}} 
+page_omega={{$:/temp/$type$!!page_omega}} 
+description={{$:/temp/$type$!!description}} 
+text={{$:/temp/$type$!!text}} 
+tags={{$:/temp/$type$!!tags}} 
+edit={{$:/temp/$type$!!edit}} 
+tempTiddler="$:/temp/$type$" 
+type="$type$" 
+template="$:/_template/$type$" 
+label="$label$" 
+class="$class$" 
+language={{$:/language}}/>
+\end
+
+<<newHere_button>>

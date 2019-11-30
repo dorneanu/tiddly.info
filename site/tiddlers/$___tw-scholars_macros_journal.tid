@@ -1,0 +1,50 @@
+created: 20140717141011804
+creator: Alberto Molina Pérez
+modified: 20191128165529719
+modifier: Alberto Molina Pérez
+tags: $:/tags/Macro
+title: $:/_tw-scholars/macros/journal
+type: text/vnd.tiddlywiki
+
+\define new-journal(type:"journal",about:"Journal",dateTitle,tags,description,text,dateTime,edit)
+<$setfield set="!!datetime" setTo="$dateTime$" >
+<$setfield set="!!about" setTo="[[$about$]]" >
+
+<$setfield set="!!description" setTo="$description$" >
+<$setfield set="$:/temp/$type$!!description" setTo="">
+
+<$setfield set="!!text" setTo="$text$" >
+<$setfield set="$:/temp/$type$!!text" setTo="">
+
+
+<$setfield set="$:/temp/$type$!!tags" setTo="">
+
+
+<$maketid  title="$dateTitle$" tags="$:/_type/journal $tags$" template="$:/_template/$type$" edit="$edit$" message="tm-set-field">
+<$button message="tm-new-tiddler"><<trad "add">></$button>
+</$maketid>
+
+
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+\end
+
+\define journalHere()
+<$macrocall $name="new-journal" 
+   type="journal" 
+   about={{!!title}} 
+   dateTitle=<<dateTime '0DD-0MM-YYYY 0hh:0mm'>> 
+   tags={{$:/temp/journal!!tags}} 
+   description={{$:/temp/journal!!description}} 
+   text={{$:/temp/journal!!text}} 
+   dateTime=<<dateTime 'YYYY0MM0DD0hh0mm0ss'>>
+   edit={{$:/temp/journal!!edit}}
+   />
+\end
+
+<<journalHere>>

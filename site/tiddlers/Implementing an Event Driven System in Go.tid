@@ -1,0 +1,9 @@
+created: 20191015134952415
+modified: 20191128165536315
+name: Implementing an Event Driven System in Go
+note: We are going to imagine a fictional application where we want to send out events for when a new account is created and another for when an account is deleted.
+tags: Golang Bookmark
+title: Implementing an Event Driven System in Go
+tmap.id: 434f450f-569d-49c4-bfea-efbe06018640
+type: text/vnd.tiddlywiki
+url: https://stephenafamo.com/blog/implementing-an-event-driven-system-in-go/

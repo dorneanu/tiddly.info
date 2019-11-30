@@ -1,0 +1,11 @@
+created: 20191115124134330
+modified: 20191128165534105
+tags: Topics TableOfContents
+title: Books
+type: text/vnd.tiddlywiki
+
+<$list filter="[tag[$:/_type/publication]]">
+<<.>> <$link to=<<currentTiddler>>>{{!!title}}
+</$link>
+{{||$:/_tw-scholars/ViewTemplate/tags}}
+</$list>

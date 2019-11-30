@@ -1,0 +1,31 @@
+created: 20180827140502523
+creator: boru
+modified: 20191128165537463
+modifier: boru
+tags: AppSec
+title: OAUTH
+tmap.id: 37d1ee9d-6236-41fa-9cbd-f115d8f1b31a
+type: text/vnd.tiddlywiki
+
+! Roles
+
+Example: Spotify and Facebook
+
+* client (spotify app)
+* resource server (Fb)
+* auth server (Fb)
+* resource owner (user)
+
+! Flows
+
+* auth code (PKCE)
+* implicit
+* ...
+
+! Protocol 
+
+<<ximg "OAUTH.jpg">>
+
+! RFCs
+
+* [[RFC 6749|https://tools.ietf.org/html/rfc6749]]

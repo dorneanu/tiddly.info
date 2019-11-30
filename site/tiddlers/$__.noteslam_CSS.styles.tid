@@ -1,0 +1,18 @@
+created: 20180507135936208
+modified: 20191128165530483
+title: $:/.noteslam/CSS.styles
+type: text/vnd.tiddlywiki
+
+When editing a tiddler, select text and use the wrap button ({{$:/.noteslam/wrap.ico}}) to wrap the selected text with a 'span'. It will look like this:
+
+`<span class="">The text you selected</span>`
+
+Insert one of the following color classes between the quotation marks in the span class.
+
+''Colors''
+
+<span class="red">red</span> <span class="green">green</span> <span class="blue">blue</span> <span class="orange">orange</span> <span class="dkgrn">dkgrn</span> <span class="pink">pink</span> <span class="purple">purple</span> <span class="gray">gray</span> <span class="wine">wine</span> <span class="brown">brown</span> <span class="gold">gold</span> white <span class="yellow">yellow</span>
+
+''Backgrounds''
+
+<span class="greenbk">greenbk</span> <span class="bluebk">bluebk</span> <span class="orangebk">orangebk</span> <span class="pinkbk">pinkbk</span> <span class="purplebk">purplebk</span> <span class="graybk">graybk</span> <span class="tanbk">tanbk</span> <span class="yellowbk">yellowbk</span> <span class="turqbk">turqbk</span>

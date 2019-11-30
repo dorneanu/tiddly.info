@@ -1,0 +1,17 @@
+about: tags
+created: 20140719121438252
+creator: Alberto Molina Pérez
+description: Custom tags bar
+modified: 20191128165529739
+modifier: Alberto Molina Pérez
+parent: $:/_tw-scholars/tab/features
+tags: $:/_type/doc
+title: $:/_tw-scholars/doc/TagsBar
+type: text/vnd.tiddlywiki
+
+System tags (with prefix `$:/`) are hidden in view mode for regular tiddlers and displayed for system and shadow tiddlers.
+
+The contents of the list fields `authors`, `source`, `parent` & `about` are displayed as tags in view mode before the "regular" tags.
+
+See [[$:/_tw-scholars/ViewTemplate/tags]].
+

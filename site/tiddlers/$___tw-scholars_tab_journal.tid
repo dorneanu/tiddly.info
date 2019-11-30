@@ -1,0 +1,49 @@
+caption: <span title="Journal">{{$:/_images/agenda}}</span>
+created: 20140712090657267
+creator: Alberto Molina Pérez
+modified: 20191128165530794
+modifier: Alberto Molina Pérez
+tags: $:/_type/tab
+title: $:/_tw-scholars/tab/journal
+type: text/vnd.tiddlywiki
+
+\define tabJournal()
+<$reveal type="nomatch" state="!!slider" text="show">
+<span title="add a new tiddler" style="float:right;position:relative;top:14px;"  class="tc-tiddler-controls">
+<$button set="!!slider" setTo="show" class="tc-btn-invisible">{{$:/core/images/new-button}}</$button>
+</span>
+</$reveal>
+
+<$reveal type="match" state="!!slider" text="show">
+
+<span title="Cancel adding new tiddler." style="float:right;position:relative;top:10px;"><$button class="tc-btn-invisible" set="!!slider" setTo="hide">{{$:/core/images/cancel-button}}</$button></span>
+
+!<<trad "New journal">>
+
+{{||$:/_tw-scholars/newHere/journal/table}}
+
+<<journalHere>>
+
+<br><br><br><hr>
+
+</$reveal>
+\end
+<div class="tc-tab-content">
+
+<<tabJournal>>
+
+!{{$:/_images/agenda}}<<trad "Journal">>
+
+<$list filter="[all[current]listed[about]tag[$:/_type/journal]!has[draft.of]!nsort[datetime]]">
+
+<$macrocall $name="accordion" caption="datetime" body={{!!title}} alt-body="""
+{{{ [all[current]tags[]!is[system]]||tag }}}
+
+<h3>//{{!!description}}//</h3>
+
+""" heading="h2" format="date" template="DDth MMM YYYY" body-class="box grey"/>
+
+
+</$list>
+
+</div>

@@ -1,0 +1,11 @@
+created: 20190225071935369
+creator: boru
+modified: 20191128165533638
+modifier: boru
+name: An in-Depth look at our Docker and ECS stack for Golang
+note: Examples for good Makefile, how to use version information, ECS, compiler flags, smsjunk
+tags: Golang Bookmark
+title: An in-Depth look at our Docker and ECS stack for Golang
+tmap.id: e89b4274-1fa3-4533-8836-9d404b0d4815
+type: text/vnd.tiddlywiki
+url: https://medium.com/smsjunk/an-in-depth-look-at-our-docker-and-ecs-stack-for-golang-b89dfe7cff5c

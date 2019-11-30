@@ -1,0 +1,28 @@
+caption: <span title="ToDo">{{$:/_images/done}}?</span>
+color: #d3d3d3
+created: 20140718094521165
+creator: Alberto Molina Pérez
+modified: 20191128165530843
+modifier: Alberto Molina Pérez
+tags: $:/_type/tab
+title: $:/_tw-scholars/tab/course/toDo
+type: text/vnd.tiddlywiki
+
+\define isTask()
+"[[$(toDoList)$]tag[$(taskName)$]]"
+\end
+
+<div class="tc-tab-content">
+
+
+<$set name="toDoList" value=<<currentTiddler>> >
+
+<$list filter="[listed[about]tag[$:/_type/ToDo]tags[]!is[system]]">
+
+<$checkbox tiddler="done" tag={{!!title}}>{{!!title}}</$checkbox>
+
+</$list>
+
+</$set>
+
+</div>

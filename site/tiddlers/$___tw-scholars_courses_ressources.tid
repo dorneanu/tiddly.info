@@ -1,0 +1,18 @@
+created: 20140725141533020
+creator: Alberto Molina Pérez
+modified: 20191128165529976
+modifier: Alberto Molina Pérez
+title: $:/_tw-scholars/courses/ressources
+type: text/vnd.tiddlywiki
+
+<hr>
+<div>
+<$list filter="[tag[$:/_type/ressource]each[ressource_type]]">
+    <span style="text-transform:capitalize;">
+        <h1><$view field="ressource_type" style=""/></h1>
+    </span>
+    <$list filter="[{!!ressource_type}listed[ressource_type]!has[draft.of]]">
+        <h2><$link><$view field="title"/></$link> <small>(<$view field="courses"/>)</small></h2>
+    </$list>   
+</$list>
+</div>

@@ -1,0 +1,16 @@
+color: #e5d282
+created: 20180808123846428
+creator: boru
+icon: $:/fontawesome/glyph/aws
+modified: 20191128165533310
+modifier: boru
+tags: Topics [[Cloud Computing]]
+title: AWS
+tmap.id: 1bf071de-cec5-4bdd-bb99-c1ba01010683
+type: text/vnd.tiddlywiki
+
+Amazon Web Services
+
+! Resources
+
+* [[open-guides/aws|https://github.com/open-guides/og-aws]]

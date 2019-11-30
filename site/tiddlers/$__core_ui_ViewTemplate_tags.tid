@@ -1,0 +1,17 @@
+created: 20191121114408718
+modified: 20191128165531160
+tags: $:/tags/ViewTemplate MyMark
+title: $:/core/ui/ViewTemplate/tags
+type: text/vnd.tiddlywiki
+
+\define concatFilter(sub) [all[current]tags[]] $sub$ +[sort[title]]
+
+<$reveal type="nomatch" state=<<folded-state>> text="hide" tag="div" retain="yes" animate="yes">
+<$set name=subFilter value={{$:/vd/tagging/filter}}>
+<$set name=tagFilter value=<<concatFilter $(subFilter)$ >>>
+<div class="tc-tags-wrapper">
+<$list filter=<<tagFilter>> template="$:/core/ui/TagTemplate" storyview="pop"/>
+</div>
+</$set>
+</$set>
+</$reveal>

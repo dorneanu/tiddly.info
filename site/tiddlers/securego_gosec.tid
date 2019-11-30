@@ -1,0 +1,9 @@
+created: 20190611075932679
+modified: 20191128165538536
+name: securego/gosec
+note: Golang Security Checker - Inspects source code for security problems by scanning the Go AST.
+tags: Tool Golang Security [[Security Tool]] Bookmark
+title: securego/gosec
+tmap.id: c88d330c-8b03-4010-961e-405e7a95634f
+type: text/vnd.tiddlywiki
+url: https://github.com/securego/gosec

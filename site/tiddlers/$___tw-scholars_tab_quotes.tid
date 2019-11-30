@@ -1,0 +1,66 @@
+caption: {{$:/_images/quote}} <small><$count filter="[all[current]listed[authors]tag[$:/_type/publication]listed[source]] [all[current]listed[source]] +[tag[$:/_type/quote]!has[draft.of]]"/>/<$count filter={{$:/_tw-scholars/tab/quotes/caption/filter}}/></small>
+color: #d3d3d3
+created: 20140513173140647
+creator: Alberto Molina Pérez
+filter: 
+modified: 20191128165530756
+modifier: Alberto Molina Pérez
+slider: hide
+tags: $:/_type/tab
+title: $:/_tw-scholars/tab/quotes
+type: text/vnd.tiddlywiki
+
+\define newHere(addTooltip:"add a new quote",cancelTooltip:"Cancel adding new quote.",cancelLabel:{{$:/core/images/cancel-button}})
+<$reveal type="nomatch" state="!!slider" text="show">
+<span title="$addTooltip$" style="float:right;position:relative;top:10px;" class="tc-tiddler-controls">
+<$button set="!!slider" setTo="show" class="tc-btn-invisible">{{$:/core/images/new-button}}</$button>
+</span>
+</$reveal>
+<$reveal type="match" state="!!slider" text="show">
+
+<span title="$cancelTooltip$" style="float:right;position:relative;top:10px;"><$button class="tc-btn-invisible" set="!!slider" setTo="hide"><<trad "$cancelLabel$">></$button></span>
+
+{{||$:/_tw-scholars/newHere/quote}}
+
+<br><br><br><hr>
+
+</$reveal>
+\end
+<div class="tc-tab-content">
+
+<$reveal type="nomatch" state="!!publication_type" text="">
+<<newHere>>
+<h1>{{$:/_images/quote}} <<trad "Quotes">></h1>
+</$reveal>
+<$reveal type="match" state="!!person_type" text="author">
+<<newHere>>
+<h1>{{$:/_images/quote}} <<trad "Quotes">></h1>
+</$reveal>
+
+<$list filter="[all[current]listed[authors]tag[$:/_type/publication]listed[source]] [all[current]listed[source]] +[tag[$:/_type/quote]!has[draft.of]sort[created]sortan[title]]">
+
+!!{{!!description}}
+
+<$list filter="[all[current]list[!!about]!is[system]]" template="tag"/><$list filter="[all[current]tags[]!is[system]]" template="tag"/>
+
+{{!!text||$:/_tw-scholars/template/quote}}
+
+<hr>
+
+</$list>
+
+<$macrocall $name="slider" caption="{{$:/_images/quote}} Related quotes" heading="h1" alt-body="""
+<$list filter={{$:/_tw-scholars/tab/quotes/related/filter}} emptyMessage='none'>
+
+!!{{!!description}}
+
+<$list filter='[all[current]list[!!about]!is[system]]' template='tag'/><$list filter='[all[current]tags[]!is[system]]' template='tag'/>
+
+{{!!text||$:/_tw-scholars/template/quote}}
+
+<hr>
+
+</$list>
+""" link=""/>
+
+</div>

@@ -1,0 +1,11 @@
+caption: TOC
+created: 20190109213701491
+list-before: $:/core/ui/SideBar/Open
+modified: 20191128165530406
+tags: $:/tags/SideBar
+title: $:/bimlas/sidebar/locator/locator-view
+type: text/vnd.tiddlywiki
+
+<<locator-view baseTitle:"TableOfContents">>
+
+{{$:/bimlas/sidebar/locator/powered-by-locator}}

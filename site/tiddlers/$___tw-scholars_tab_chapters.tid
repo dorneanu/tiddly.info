@@ -1,0 +1,45 @@
+caption: {{$:/_images/chapter}} <small>{{||$:/_counter/chapters}}</small>
+color: #d3d3d3
+created: 20140513215751469
+creator: Alberto Molina Pérez
+modified: 20191128165530877
+modifier: Alberto Molina Pérez
+slider: hide
+tags: $:/_type/tab
+title: $:/_tw-scholars/tab/chapters
+type: text/vnd.tiddlywiki
+
+\define newHere(Cancel:{{$:/core/images/cancel-button}})
+<$reveal type="nomatch" state="!!slider" text="show">
+<span title="Add a new quote" style="float:right;position:relative;top:14px;">
+<$button class="tc-btn-invisible" set="!!slider" setTo="show"> {{$:/core/images/new-button}} </$button>
+</span>
+</$reveal>
+
+<$reveal type="match" state="!!slider" text="show">
+
+<span title="$cancelTooltip$" style="float:right;position:relative;top:10px;"><$button class="tc-btn-invisible" set="!!slider" setTo="hide"><<trad "$Cancel$">></$button></span>
+
+!<<trad "New chapter">>
+
+{{||$:/_tw-scholars/newHere/chapter/table}}
+{{||$:/_tw-scholars/newHere/chapter/button}}
+
+<br><br><br><hr>
+
+</$reveal>
+\end
+
+<div class="tc-tab-content">
+
+<<newHere>>
+
+<$list filter="[all[current]listed[]!is[system]tag[$:/_type/chapter]] [all[current]listed[source]!is[system]tag[$:/_type/chapter]] +[!has[draft.of]nsort[pages]nsort[order]]">
+
+<$link to={{!!title}}>{{$:/_images/chapter}} <<trad "Chapter">> {{!!order}} : {{!!chapter_title}}</$link>
+
+</$list>
+
+<br>
+
+</div>

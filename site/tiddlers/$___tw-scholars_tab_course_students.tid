@@ -1,0 +1,29 @@
+caption: {{$:/_images/person}}
+color: #d3d3d3
+created: 20140718081106427
+creator: Alberto Molina Pérez
+modified: 20191128165530850
+modifier: Alberto Molina Pérez
+tags: $:/_type/tab
+title: $:/_tw-scholars/tab/course/students
+type: text/vnd.tiddlywiki
+
+<div class="tc-tab-content">
+
+<$list filter="[all[current]listed[student_courses]!has[draft.of]]">
+
+<h1>{{$:/_images/person}} <$link><$view field="title"/></$link></h1>
+
+{{||$:/_tw-scholars/ViewTemplate/tags}}
+
+<$transclude/>
+
+{{||$:/_tw-scholars/ViewTemplate/person/publications}}
+
+{{||$:/_tw-scholars/ViewTemplate/tabs_bis}}
+
+<br>
+
+</$list>
+
+</div>

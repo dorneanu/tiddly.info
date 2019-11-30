@@ -1,0 +1,12 @@
+created: 20191126092721708
+fa-default-style: fas
+fa-label: Server
+fa-style-classes: fas
+fa-styles: solid
+fa-unicode: f233
+modified: 20191128165532465
+tags: computer cpu database hardware network solid
+title: $:/fontawesome/glyph/server
+type: text/vnd.tiddlywiki
+
+<i class='fas fa-server'></i>

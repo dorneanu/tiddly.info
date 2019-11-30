@@ -1,0 +1,13 @@
+created: 20151008163213084
+creator: boru
+modified: 20191128165535183
+modifier: boru
+tags: DNS [[Layer 7]]
+title: DNS
+tmap.id: dfae03a6-fa02-4757-a2f1-6fb6fde3d286
+type: text/vnd.tiddlywiki
+
+!! Sample requests
+
+<<ximg "DNS - Sample request.png">>
+

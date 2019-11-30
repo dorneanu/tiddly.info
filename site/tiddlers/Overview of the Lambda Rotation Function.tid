@@ -1,0 +1,11 @@
+created: 20190114101350480
+creator: boru
+modified: 20191128165538928
+modifier: boru
+name: Overview of the Lambda Rotation Function
+note: How to implement the Lambda rotation function when configuring automatic parameter store rotation in AWS SSM
+tags: AWS Bookmark
+title: Overview of the Lambda Rotation Function
+tmap.id: 024ddda5-a969-420c-a38f-3f9cf4505813
+type: text/vnd.tiddlywiki
+url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotating-secrets-lambda-function-overview.html

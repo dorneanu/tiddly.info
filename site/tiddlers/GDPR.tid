@@ -1,0 +1,72 @@
+created: 20180814133406234
+creator: boru
+modified: 20191128165536049
+modifier: boru
+tags: Public [[Data privacy]]
+title: GDPR
+tmap.id: 9679f21c-adbf-4557-b3ef-3a93fe6cd567
+type: text/vnd.tiddlywiki
+
+: EN: GDPR - General Data Protection Regulation
+: DE: DSVGO - Datenschutz Grundverordnung
+
+* [[full text|http://ec.europa.eu/justice/data-protection/reform/files/regulation_oj_en.pdf]] covers 99 articles
+** there are 8 rights for individuals
+** allow people to have access to the data companies hold about them
+** new fines
+** orgs have to get consent when holding PII information 
+* new data protection law
+** replaces previous 1995 data protection directive
+* Individuals, organisations, and companies that are either 'controllers' or 'processors' of personal data will be covered by the GDPR
+
+! For companies
+
+* For companies that have more than 250 employees, there's a need to have documentation of why people's information is being collected and processed, descriptions of the information that's held, how long it's being kept for and descriptions of technical security measures in place.
+
+; Subject Access Request (SAR)
+: allows an individual to ask company to provide data about them; companies will have to provide the data within one month
+
+! Fines
+
+If an organisation:
+
+* doesn't process an individual's data in the correct way
+* If it requires and doesn't have a data protection officer
+* if there's a security breach
+
+it can be fined.
+
+! For consumers
+
+!! Eight rights
+
+The GDPR provides individuals with 8 rights. The right:
+
+* to be informed
+* to access 
+* to rectification
+** If the individual discovers that the information an organisation holds on them is inaccurate or incomplete, they can request that it be updated
+* to erasure
+* to restrict processing
+* to data portability
+** Individuals are permitted to obtain and reuse their personal data for their own purposes across different services
+* to object
+** Individuals can object to the processing of personal data that is collected on the grounds of legitimate interests or the performance of a task in the interest/exercise of official authority
+* Rights related to automated decision making including profiling
+** The GDPR includes provisions for decisions made with no human involvement, such as profiling, which uses personal data to make calculated assumptions about individuals. There are strict rules about this kind of processing, and individuals are permitted to challenge and request a review of the processing if they believe the rules aren’t being followed.
+
+
+! Resources
+
+* [[Guide to GDPR|https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/]]
+
+! Infographics
+
+<<ximg "EU-GDPR.jpg">>  
+
+
+
+
+
+
+

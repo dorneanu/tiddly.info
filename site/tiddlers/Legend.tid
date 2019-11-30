@@ -1,0 +1,51 @@
+created: 20191106134634340
+modified: 20191128165536640
+tags: 
+title: Legend
+type: text/vnd.tiddlywiki
+
+&nbsp;&nbsp; 
+
+<<.>> This is task 1<br/>
+<<.>> This is task 2<br/>
+<<x>> This is already done<br/>
+<<la>> Waiting for some answer<br/>
+<<.>> Single task<br/>
+<<x>> Task no 2<br/>
+<<i>> Important &nbsp;&nbsp;<br/>
+<<ra>> Post-poned task<br>
+<<la>> Waiting for input <br/>
+<<q>> Need to find out more about this<br/>
+<<nostar>> Relevant but potentially poor quality &nbsp;&nbsp;<br/>
+<<star>>  Relevant and high quality &nbsp;&nbsp;<br/>
+
+<<rq>> Research question &nbsp;&nbsp; <br/>
+<<h>> Hypothesis &nbsp;&nbsp;<br/>
+<<d>> Definition &nbsp;&nbsp;<br/>
+<<t>> Theory&nbsp;&nbsp;<br/>
+
+<<m>> Methods &nbsp;&nbsp;<br/>
+<<r>> Results &nbsp;&nbsp;<br/>
+<<p>> Problem &nbsp;&nbsp;<br/>
+<<co>> Conclusion &nbsp;&nbsp;<br/>
+
+
+<!--- <<i>> Idea incorporate into important or future research--->
+<<f>> Future research &nbsp;&nbsp;<br/>
+
+<!--- <<n>> Note only note what's important--->
+<<c>> Comment &nbsp;&nbsp;<br/>
+
+<!--- <<t>> Tag tagging done in tiddly --->
+
+<<pot>> Potentially interesting reference &nbsp;&nbsp;
+
+<<fig>> Figure  &nbsp;&nbsp;<br/>
+<<tab>> Table &nbsp;&nbsp;<br/>
+<<ra>> Right arrow &nbsp;&nbsp;<br/> 
+<<s>> Summary&nbsp;&nbsp;
+
+<br>
+
+Check out the [[Editor's Legend]] to see how to typeset the icons in this legend. 
+

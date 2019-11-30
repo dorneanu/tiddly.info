@@ -1,0 +1,12 @@
+created: 20140817120032030
+creator: Alberto Molina Pérez
+description: change the title and subtitle of this TiddlyWiki
+modified: 20191128165529838
+modifier: Alberto Molina Pérez
+order: 8
+parent: $:/_tw-scholars/tab/howTo
+tags: $:/_type/doc
+title: $:/_tw-scholars/doc/howTo/change title
+type: text/vnd.tiddlywiki
+
+The title and subtitle of this TiddlyWiki can be changed from the tab "Basics" of the control panel. You open the control panel with the cog button {{$:/core/ui/Buttons/control-panel}} in the sidebar. 

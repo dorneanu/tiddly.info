@@ -1,0 +1,22 @@
+created: 20140711095914463
+creator: Alberto Molina Pérez
+list-before: $:/core/ui/ViewTemplate/body
+modified: 20191128165530578
+modifier: Alberto Molina Pérez
+tags: $:/tags/ViewTemplate
+title: $:/_tw-scholars/ViewTemplate/person/picture
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]tag[$:/_type/person]]">
+<$reveal type="nomatch" state="!!picture_file" text="">
+
+<table class="person">
+<tr>
+<td><$reveal type="nomatch" state="!!picture_source" text=""><a href={{!!picture_source}} target="_blank"><$image source={{!!picture_file}} tooltip={{!!picture_tooltip}} class="person-picture"/></a></$reveal><$reveal type="match" state="!!picture_source" text=""><$image source={{!!picture_file}} tooltip={{!!picture_tooltip}} class="person-picture"/></$reveal></td>
+</tr>
+<caption>{{!!picture_caption}}</caption>
+</table>
+
+</$reveal>
+</$list>
+

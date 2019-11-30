@@ -1,0 +1,21 @@
+created: 20140627091609783
+creator: Alberto Molina Pérez
+icon: $:/_images/system
+modified: 20191128165529675
+modifier: Alberto Molina Pérez
+tags: $:/tags/Macro
+title: $:/_tw-scholars/macros/publicationsList
+type: text/vnd.tiddlywiki
+
+\define publicationsList()
+
+\define title(type) {{$:/_images/$type$}} <$link to={{!!title}}><$reveal type="match" state="!!publication_type" text="article">“</$reveal><$view field="publication_title"/><$reveal type="match" state="!!publication_type" text="article">”</$reveal><$reveal type="nomatch" state="!!publication_date" text="">, <$view field="publication_date"/></$reveal></$link>
+
+<$list filter="[all[current]!is[system]tag[$:/_type/person]]">
+    <$list filter="[all[current]listed[]tag[$:/_type/publication]!has[draft.of]] [all[current]listed[authors]tag[$:/_type/publication]!has[draft.of]] +[sort[publication_date]]">
+        <div class="tc-menu-list-subitem">
+        <$macrocall $name="title" type={{!!publication_type}}/>
+        </div>
+    </$list>
+</$list>
+\end

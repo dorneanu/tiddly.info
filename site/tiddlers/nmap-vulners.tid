@@ -1,0 +1,9 @@
+created: 20190821134551399
+modified: 20191128165537517
+name: nmap-vulners
+note: NSE script based on Vulners.com API
+tags: Security [[Security Tool]] Bookmark
+title: nmap-vulners
+tmap.id: 02c285a8-c33b-4506-b05f-1cd4303e8f3a
+type: text/vnd.tiddlywiki
+url: https://github.com/vulnersCom/nmap-vulners

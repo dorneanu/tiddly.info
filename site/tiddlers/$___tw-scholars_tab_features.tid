@@ -1,0 +1,21 @@
+about: features
+caption: <span title="Features">{{$:/_images/ok}}</span>
+created: 20140717010939691
+creator: Alberto Molina Pérez
+modified: 20191128165530836
+modifier: Alberto Molina Pérez
+tags: $:/_type/tab
+title: $:/_tw-scholars/tab/features
+type: text/vnd.tiddlywiki
+
+<div class="tc-tab-content">
+
+!{{$:/_images/ok}}<<trad "Features">>
+
+<$list filter="[[$:/_tw-scholars/tab/features]listed[parent]!has[draft.of]sort[description]]">
+
+<$macrocall $name="accordion" caption="description" body={{!!title}} heading="h2" body-class="box yellow"/>
+
+</$list>
+
+</div>

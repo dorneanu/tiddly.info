@@ -1,0 +1,16 @@
+created: 20151006115842970
+creator: boru
+modified: 20191128165535633
+modifier: boru
+tags: [[Layer 2]]
+title: HDLC
+tmap.id: cff73cb7-b06c-4822-8054-485a5346f7f0
+type: text/vnd.tiddlywiki
+
+; Definition
+: High-Level Data Link Control. A bit-oriented synchronous data link layer protocol developed by the International Organization for Standardization (ISO).
+
+!! Header
+
+<<ximg "HDLC - Header.png">>
+

@@ -1,0 +1,14 @@
+caption: {{$:/_images/book}} +
+created: 20140606104144414
+modified: 20191128165531065
+modifier: Alberto Molina Pérez
+table_state: show person 2
+tags: $:/_tw-scholars/tab/publications
+title: $:/_tw-scholars/newHere/publication/book
+type: text/vnd.tiddlywiki
+
+!<<trad "New book">>
+
+<<newHere_pubTable "book">>
+
+<<newHere_pubButton "book">>

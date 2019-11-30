@@ -1,0 +1,64 @@
+created: 20180814124126038
+creator: boru
+modified: 20191128165535249
+modifier: boru
+tags: Public Cryptography
+title: Diffie-Hellmann Key Exchange (DH)
+tmap.id: f9310426-1faf-435b-8dcb-2a187ffa2d88
+type: text/vnd.tiddlywiki
+
+: Diffie–Hellman key exchange (DH) is a method of securely exchanging cryptographic keys over a public channel and was one of the first public-key protocols as originally conceptualized by Ralph Merkle and named after Whitfield Diffie and Martin Hellman. DH is one of the earliest practical examples of public key exchange implemented within the field of cryptography.
+
+
+! Principles
+
+<<ximg "Diffie Hellmann - Principles.png">>
+
+Example (with numbers):
+
+* Alice and Bob agree to use a modulus p = 23 and base g = 5 (which is a primitive root modulo 23).
+* Alice chooses a secret integer a = 4, then sends Bob A = g^^a^^ mod p
+```
+A = 5^4 mod 23 =4
+```
+* Bob chooses a secret integer b = 3, then sends Alice B = g^^b^^ mod p
+```
+B = 5^3 mod 23 = 10
+```
+* Alice computes s = B^^a^^ mod p
+```
+s = 10^4 mod 23 = 18
+```
+* Bob computes s = A^^b^^ mod p
+```
+s = 4^3 mod 23 = 18
+```
+
+Alice and Bob now share a secret (the number 18).
+
+! Vulnerabilities
+
+By design many DH implementations use the same pregenerated prime. It was considered to be secure, however using enough computational power the [[discrete log problem|https://en.wikipedia.org/wiki/Discrete_logarithm]] can be solved. 
+ 
+
+* [[Logjam|https://weakdh.org]]
+** MITM attack 
+** downgrade key exchange to 512 bit prime numbers
+
+! Recommendations
+
+* Use DH with 2048-bit primes
+* use [[EDH|https://en.wikipedia.org/wiki/Elliptic-curve_Diffie–Hellman]]
+* Compute own DH primes:
+
+```
+[root@host ~]# openssl dhparam -out foo 2048
+```
+
+!! SSH
+
+Change `/etc/ssh/moduli` to use only "good" prime numbers:
+
+```
+$ awk '$5 > 2000' /etc/ssh/moduli
+```

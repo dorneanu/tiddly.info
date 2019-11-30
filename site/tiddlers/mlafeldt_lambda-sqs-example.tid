@@ -1,0 +1,11 @@
+created: 20181127104604792
+creator: boru
+modified: 20191128165536416
+modifier: boru
+name: mlafeldt/lambda-sqs-example
+note: Lambda SQS Example in Go (just consuming)
+tags: [[AWS SQS]] Lambda AWS Golang Bookmark
+title: mlafeldt/lambda-sqs-example
+tmap.id: 9618b681-2974-4d22-b891-87e4f1434171
+type: text/vnd.tiddlywiki
+url: https://github.com/mlafeldt/lambda-sqs-example

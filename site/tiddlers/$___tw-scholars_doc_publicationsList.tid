@@ -1,0 +1,13 @@
+about: publications
+created: 20140719121648726
+creator: Alberto Molina Pérez
+description: Authors' publications list
+modified: 20191128165529760
+modifier: Alberto Molina Pérez
+parent: $:/_tw-scholars/tab/features
+title: $:/_tw-scholars/doc/publicationsList
+type: text/vnd.tiddlywiki
+
+The list of publications of an author (if any) is shown at the bottom of its tiddler.
+
+See [[$:/_tw-scholars/ViewTemplate/person/publications]]

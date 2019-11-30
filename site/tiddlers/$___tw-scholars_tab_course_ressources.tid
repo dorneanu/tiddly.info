@@ -1,0 +1,30 @@
+caption: <span title="Ressources">{{$:/_images/ressources}}</span>
+color: #d3d3d3
+created: 20140718094502525
+creator: Alberto Molina Pérez
+modified: 20191128165530857
+modifier: Alberto Molina Pérez
+tags: $:/_type/tab
+title: $:/_tw-scholars/tab/course/ressources
+type: text/vnd.tiddlywiki
+
+<div class="tc-tab-content">
+
+!{{$:/_images/ressources}}<<trad "Ressources">>
+
+<$list filter="[all[current]list[!!course]listed[courses]!has[draft.of]each[ressource_type]sort[title]]">
+
+<div class="tc-menu-list-item">
+<span style="text-transform:capitalize;">
+        <h2><$view field="ressource_type" style=""/></h2>
+    </span>
+    <$list filter="[{!!courses}listed[courses]] +[{!!ressource_type}listed[ressource_type]] +[!has[draft.of]]">
+<div class="tc-menu-list-subitem">
+<$link><$view field="title"/></$link>
+</div>
+</$list>  
+</div>
+
+</$list>
+
+</div>

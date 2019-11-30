@@ -1,0 +1,13 @@
+book: Originals
+created: 20190418212108792
+modified: 20191128165537431
+page: kindle://book?action=open&asin=B01626YWJ0&location=51
+source: [[Originals]]
+tags: $:/_type/quote
+title: Originals - Note 1
+tmap.id: 1a21ce62-8125-47d5-a847-97b5aceaf49c
+type: text/vnd.tiddlywiki
+
+I learned that great creators don’t necessarily have the deepest expertise but rather seek out the broadest perspectives.
+
+<$list filter="[all[current]tags[]]-[!is[system]]-[[$:/_type/quote]]+[sort[title]]" template="$:/core/ui/TagTemplate" storyview="pop"/>

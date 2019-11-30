@@ -1,0 +1,15 @@
+created: 20190408124653490
+creator: boru
+modified: 20191128165540063
+modifier: boru
+name: wireguard
+note: Fast VPN solution
+tags: Cryptography Bookmark
+title: wireguard
+tmap.id: b5b26fa1-d2c2-4da9-9ad8-ff3f101f25ac
+type: text/vnd.tiddlywiki
+url: https://www.wireguard.com
+
+<<<.block-quote
+WireGuard® is an extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography. It aims to be faster, simpler, leaner, and more useful than IPsec, while avoiding the massive headache. It intends to be considerably more performant than OpenVPN. WireGuard is designed as a general purpose VPN for running on embedded interfaces and super computers alike, fit for many different circumstances. Initially released for the Linux kernel, it is now cross-platform and widely deployable. It is currently under heavy development, but already it might be regarded as the most secure, easiest to use, and simplest VPN solution in the industry.
+<<<

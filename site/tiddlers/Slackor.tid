@@ -1,0 +1,9 @@
+created: 20190702094701158
+modified: 20191128165539642
+name: Slackor
+note: A Golang implant that uses Slack as a command and control server
+tags: Golang [[Security Tool]] Bookmark
+title: Slackor
+tmap.id: d08dc859-6402-4c59-89ad-54350d476438
+type: text/vnd.tiddlywiki
+url: https://github.com/Coalfire-Research/Slackor

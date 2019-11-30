@@ -1,0 +1,11 @@
+created: 20190513082434706
+creator: boru
+modified: 20191128165533623
+modifier: boru
+name: API Security Checklist
+note: Checklist of the most important security countermeasures when designing, testing, and releasing your API
+tags: AppSec API Security Bookmark
+title: API Security Checklist
+tmap.id: 562a30d6-c6fc-4c60-90ae-108133ac1837
+type: text/vnd.tiddlywiki
+url: https://github.com/shieldfy/API-Security-Checklist

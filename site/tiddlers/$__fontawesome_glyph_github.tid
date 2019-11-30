@@ -1,0 +1,12 @@
+created: 20191126092526365
+fa-default-style: fab
+fa-label: GitHub
+fa-style-classes: fab
+fa-styles: brands
+fa-unicode: f09b
+modified: 20191128165531078
+tags: octocat brands
+title: $:/fontawesome/glyph/github
+type: text/vnd.tiddlywiki
+
+<i class='fab fa-github'></i>

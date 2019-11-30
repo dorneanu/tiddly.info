@@ -1,0 +1,17 @@
+caption: {{$:/_images/comments-o}} <<tabCaption "comment">>
+color: #d3d3d3
+created: 20140517111844484
+creator: Alberto Molina Pérez
+modified: 20191128165530870
+modifier: Alberto Molina Pérez
+slider: hide
+tags: $:/_type/tab
+title: $:/_tw-scholars/tab/comments
+type: text/vnd.tiddlywiki
+
+<div class="tc-tab-content">
+
+<<tabSlider "comment" "New comment">>
+<<tabContents "comment" "Comments">>
+
+</div>

@@ -1,0 +1,19 @@
+about: type
+created: 20140722113746399
+creator: Alberto Molina Pérez
+description: Content types in use
+modified: 20191128165529794
+modifier: Alberto Molina Pérez
+order: 2
+parent: $:/_tw-scholars/tab/internals
+tags: $:/_type/doc
+title: $:/_tw-scholars/doc/internals/systemTags
+type: text/vnd.tiddlywiki
+
+These are the tiddlers contents types in use in //~TiddlyWiki for Scholars//:
+
+<div class="troiscolonnes">
+
+{{{ [all[tiddlers]tags[]prefix[$:/_type/]] +[sort[title]] }}}
+
+</div>

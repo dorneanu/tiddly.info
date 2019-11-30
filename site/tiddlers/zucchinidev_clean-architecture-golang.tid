@@ -1,0 +1,11 @@
+created: 20190131070557756
+creator: boru
+modified: 20191128165540012
+modifier: boru
+name: zucchinidev/clean-architecture-golang
+note: he domain, or business, of our shopping application is that of human beings shopping for stuff, or, in more formal terms, of customers adding items to orders. We need to represent these business entities and their rules as code in the innermost layer, the domain layer.
+tags: Golang Bookmark
+title: zucchinidev/clean-architecture-golang
+tmap.id: c6bc5a9a-ec9e-42b0-bb93-0917a4590861
+type: text/vnd.tiddlywiki
+url: https://github.com/zucchinidev/clean-architecture-golang

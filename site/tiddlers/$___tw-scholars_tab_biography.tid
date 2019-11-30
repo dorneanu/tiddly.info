@@ -1,0 +1,17 @@
+caption: {{$:/_images/person}}
+color: #d3d3d3
+created: 20140614182026228
+creator: Alberto Molina Pérez
+modified: 20191128165530884
+modifier: Alberto Molina Pérez
+slider: hide
+tags: $:/_type/tab
+title: $:/_tw-scholars/tab/biography
+type: text/vnd.tiddlywiki
+
+<div class="tc-tab-content">
+
+<<tabSlider "biography" "New biographical element">>
+<<tabContents "biography" "Biography">>
+
+</div>

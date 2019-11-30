@@ -1,0 +1,10 @@
+created: 20140628125308742
+creator: Alberto Molina Pérez
+icon: $:/_images/system
+modified: 20191128165529615
+modifier: Alberto Molina Pérez
+tags: $:/tags/Macro
+title: $:/_tw-scholars/macros/tabs/tabCaption
+type: text/vnd.tiddlywiki
+
+\define tabCaption(type) <small><$count filter=<<tabFilter "$type$">>/>/<$count filter="[all[current]tagging[]] [all[current]listed[source]listed[about]] [all[current]listed[source]listed[source]] [all[current]listed[source]listed[parent]] [all[current]listed[source]tagging[]] [all[current]listed[about]listed[about]] [all[current]listed[about]listed[parent]] [all[current]listed[about]tagging[]] [all[current]listed[parent]listed[about]] [all[current]listed[parent]listed[parent]] [all[current]listed[parent]tagging[]] +[tag[$:/_type/$type$]!title{!!title}!is[system]!has[draft.of]]"/></small>

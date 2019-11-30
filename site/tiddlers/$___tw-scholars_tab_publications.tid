@@ -1,0 +1,76 @@
+add: book
+caption: {{$:/_images/article}} <small><$count filter="[all[current]listed[authors]tag[$:/_type/publication]]"/>/<$count filter={{$:/_tw-scholars/tab/publications/caption/filter}}/></small>
+color: #d3d3d3
+created: 20140614181842614
+creator: Alberto Molina Pérez
+modified: 20191128165530780
+modifier: Alberto Molina Pérez
+slider: hide
+tags: $:/_type/tab
+title: $:/_tw-scholars/tab/publications
+type: text/vnd.tiddlywiki
+
+\define title(type)
+{{$:/_images/$type$}} <$link to={{!!title}}><$reveal type="match" state="!!publication_type" text="article">“</$reveal><$view field="publication_title"/><$reveal type="match" state="!!publication_type" text="article">”</$reveal><$reveal type="nomatch" state="!!publication_date" text="">, <$view field="publication_date"/></$reveal></$link>
+\end
+
+\define newHere()
+<$reveal type="nomatch" state="!!slider" text="show">
+<span title="Add a new publication" style="float:right;position:relative;top:10px;" class="tc-tiddler-controls">
+<$button set="!!slider" setTo="show" class="tc-btn-invisible">{{$:/core/images/new-button}}</$button>
+</span>
+</$reveal>
+
+<$reveal type="match" state="!!slider" text="show">
+
+<span title="Cancel addition" style="float:right;position:relative;top:42px;">
+<$button class="tc-btn-invisible" set="!!slider" setTo="hide">{{$:/core/images/cancel-button}}</$button>
+</span>
+
+{{||$:/_tw-scholars/newHere/publication}}
+
+<br><br><br><hr>
+
+</$reveal>
+\end
+<div class="tc-tab-content">
+
+<$reveal type="match" state="!!person_type" text="author">
+
+<<newHere>>
+
+!<<trad "Publications">>
+
+<$list filter="[all[current]listed[authors]tag[$:/_type/publication]!is[system]!has[draft.of]nsort[title]]" emptyMessage="none">
+
+!!<$macrocall $name="title" type={{!!publication_type}}/>
+
+<$list filter="[all[current]list[!!about]!is[system]]" template="tag"/><$list filter="[all[current]tags[]!is[system]]" template="tag"/>
+
+!!!{{!!description}}
+
+{{!!text}}
+
+<br>
+
+</$list>
+
+</$reveal>
+
+!<<trad "Related publications">>
+
+<$list filter={{$:/_tw-scholars/tab/publications/related/filter}} emptyMessage="none">
+
+!!<$macrocall $name="title" type={{!!publication_type}}/>
+
+<$list filter="[all[current]list[!!about]!is[system]]" template="tag"/><$list filter="[all[current]tags[]!is[system]]" template="tag"/>
+
+!!!{{!!description}}
+
+{{!!text}}
+
+<br>
+
+</$list>
+
+</div>

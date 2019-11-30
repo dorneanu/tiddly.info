@@ -1,0 +1,24 @@
+created: 20140717013737355
+creator: Alberto Molina Pérez
+description: Use TiddlyWiki for Scholars
+modified: 20191128165529845
+modifier: Alberto Molina Pérez
+order: 1
+parent: $:/_tw-scholars/tab/howTo
+tags: $:/_type/doc
+title: $:/_tw-scholars/doc/howTo/basic-use
+type: text/vnd.tiddlywiki
+
+Since this tiddlywiki is centered on authors and their publications, the best way to begin is by creating authors' tiddlers.
+
+# Open the tab `Create` in the right sidebar.
+# Click the button {{$:/_images/person}}+ and a form will show up.
+# Fill the form and click the big green button on the right.
+
+Then, go to one of the author's tiddler you've just created and click on the tabs bar in the bottom right corner of the tiddler. Choose, for instance, the publications tab with the following icon: {{$:/_images/article}} <small>0</small>
+
+# Next to the `Publications` heading, there's a `+` button on the right. Click on it.
+# Two radio buttons allows you to choose between `book` and `article`.
+# Fill the form and click the `add` button.
+
+Proceed the same way for adding biographical elements, notes, comments, thoughts, etc.

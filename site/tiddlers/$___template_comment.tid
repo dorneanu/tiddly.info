@@ -1,0 +1,13 @@
+chapter: 
+color: #daa520
+created: 20140518164858288
+creator: Alberto Molina
+description: 
+icon: $:/_images/comment
+modified: 20191128165530259
+modifier: Alberto Molina
+page_alpha: 
+page_omega: 
+tags: $:/_type/comment
+title: $:/_template/comment
+type: text/vnd.tiddlywiki

@@ -1,0 +1,18 @@
+created: 20140717081609368
+creator: Alberto Molina Pérez
+description: Install TiddlyWiki for Scholars
+modified: 20191128165529818
+modifier: Alberto Molina Pérez
+order: 0
+parent: $:/_tw-scholars/tab/howTo
+tags: $:/_type/doc
+title: $:/_tw-scholars/doc/howTo/installation
+type: text/vnd.tiddlywiki
+
+//~TiddlyWiki for Scholars// is not a plugin you can add to your own tiddlywiki and start working. The easiest way to start is by downloading an empty copy of this tiddlywiki:
+
+<$button message="tm-save-wiki" title={{$:/language/Buttons/SaveWiki/Hint}} aria-label={{$:/language/Buttons/SaveWiki/Caption}} class="tc-btn-big-green" style="margin-left:20px;">
+Download
+</$button>
+
+The hard way is to copy all the system tiddlers and the plugins to your own tiddlywiki. All the system tiddlers you need to copy share the prefix `$:/_tw-scholars/`. The plugins needed for contents creation are [[$:/plugins/matabele/maketid]] and [[$:/plugins/matabele/setfield]] from Matabele, and the macro [[$:/macros/skeeve/dateTime.js]] from Stephan Hradek.

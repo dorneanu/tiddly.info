@@ -1,0 +1,57 @@
+created: 20180926143207040
+creator: boru
+modified: 20191128165533104
+modifier: boru
+tags: [[AWS Network & Content Delivery]]
+title: AWS Route53
+tmap.id: b7ac7c03-817a-4116-b2cd-dbcb2cc9738d
+type: text/vnd.tiddlywiki
+
+* SOA records
+** name of the server that supplied data for the zone
+** zone admin
+** version of data file
+** # of seconds for the TTL file on resource files
+
+* Amazon is a domain register
+* `ALIAS` records
+** map resource record sets to [[AWS ELB]], [[AWS CloudFront]] or [[AWS S3]] buckets
+** difference to `CNAME`
+*** can't be used for naked domain names (without `A`-record, also zone as zone apex record)
+** map one DNS name to another DNS name
+** Route53 will automatically change response [[IP]]v4 for alias records
+** requests for `CNAME` will be charged
+*** use `ALIAS` instead
+
+! Routing policies
+
+!! Simple
+
+* single resource that performs a given function for the domain
+* round robbin
+
+!! Weighted
+
+* example:
+** send 20% of traffic to one region
+** send 80% of traffic to another region
+* split traffic based on assigned weights
+
+!! Latency 
+
+* route traffic based on the lowest network latency for the end user
+* have to define region
+
+!! Failover
+
+* when you want to create an active/passive setup
+
+!! Geolocation
+
+* routing based on the geographic location of the client
+
+!! Multivalue answer
+
+* route traffic randomly to multiple resources
+* example
+** web-servers get DNS responses containing list of available IP addresses for the web servers

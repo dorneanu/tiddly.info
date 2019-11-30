@@ -1,0 +1,11 @@
+created: 20181220153001987
+creator: boru
+modified: 20191128165539681
+modifier: boru
+name: sheerun/queue
+note: Lightweight, performant, thread-safe blocking FIFO queue based on auto-resizing circular buffer.
+tags: Golang Bookmark
+title: sheerun/queue
+tmap.id: 343fc806-b6d0-4e48-9e5a-52c93578e834
+type: text/vnd.tiddlywiki
+url: https://github.com/sheerun/queue

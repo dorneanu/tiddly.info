@@ -1,0 +1,11 @@
+created: 20191126092113575
+fa-default-style: fas
+fa-label: Lightbulb
+fa-style-classes: fas far
+fa-styles: solid regular
+fa-unicode: f0eb
+modified: 20191128165532488
+title: $:/fontawesome/glyph/lightbulb
+type: text/vnd.tiddlywiki
+
+<i class='far fa-lightbulb'></i>

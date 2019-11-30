@@ -1,0 +1,34 @@
+created: 20140718212707745
+creator: Alberto Molina Pérez
+modified: 20191128165529967
+modifier: Alberto Molina Pérez
+title: $:/_tw-scholars/courses/students
+type: text/vnd.tiddlywiki
+
+\define machin(course,student)
+<$list filter="[[$course$]listed[student_courses]person_name[$student$]limit[1]]">
+{{$:/_images/done}}
+</$list>
+\end
+<hr>
+<table class="agenda">
+    <tr>
+        <td></td>
+<$list filter="[tag[$:/_type/course]!has[draft.of]sort[title]]">
+        <td><$link><$view field="title"/></$link></td>
+</$list>
+    </tr>
+<$list filter="[tag[$:/_type/person]person_type[student]!has[draft.of]sort[title]]">
+<$set name="student" value={{!!title}}>
+    <tr>
+    <th style="text-align:left;padding:0.5em 0.5em 0.5em 0.5em;width:30%;">{{$:/_images/person}}  <$link><$view field="title"/></$link></th>
+<$list filter="[tag[$:/_type/course]!has[draft.of]sort[title]]">
+<$set name="course" value={{!!title}}>
+    <td><$macrocall $name="machin" course=<<course>> student=<<student>> /></td>
+</$set>
+</$list>
+    </tr>
+</$set>
+</$list>
+</table>
+

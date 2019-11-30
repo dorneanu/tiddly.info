@@ -1,0 +1,11 @@
+created: 20180926141648293
+creator: boru
+modified: 20191128165533171
+modifier: boru
+tags: [[AWS IAM]]
+title: AWS IAM Role
+tmap.id: 77b8e0c5-b936-4030-80e1-9497a6c685fd
+type: text/vnd.tiddlywiki
+
+* roles are global
+* you can attach IAM roles to running instances

@@ -1,0 +1,13 @@
+created: 20180815104822376
+creator: boru
+modified: 20191128165538854
+modifier: boru
+note: Definition of perfect security in terms of cryptography
+tags: Public Cryptography
+title: Perfect Security
+tmap.id: 30261aaa-cd7a-4e8c-bdb9-44bad40c19ff
+type: text/vnd.tiddlywiki
+
+: Our formal definition of perfect security expressly rules out the possibility that knowledge of the ciphertext increases the probability of guessing the encrypted message, or for that matter, determining any property of the message whatsoever
+
+*the only way to achieve perfect security is to have keys that are as long as messages. However, this is quite impractical: we would like to be able to encrypt a long message (say, a document of several megabytes) using a short key (say, a few hundred bits) 

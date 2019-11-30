@@ -1,0 +1,80 @@
+authors: 
+color: #769ee1
+created: 20140805165503445
+creator: Alberto Molina Pérez
+description: 
+icon: $:/_images/concept
+modified: 20191128165529667
+modifier: Alberto Molina Pérez
+parent: 
+source: 
+tags: $:/tags/Macro
+title: $:/_tw-scholars/macros/SideBar/newConcept/button
+type: text/vnd.tiddlywiki
+
+\define newConcept_button2(concept_name,description,authors,source,parent,tags,text,label,edit,class,language,color)
+
+<$setfield set="!!icon" setTo="$:/_images/concept">
+
+<$setfield set="!!color" setTo="$color$">
+
+<$setfield set="$:/temp/concept!!concept_name" setTo="">
+
+<$setfield set="$:/temp/concept!!tags" setTo="">
+
+<$setfield set="!!description" setTo="$description$">
+<$setfield set="$:/temp/concept!!description" setTo="">
+
+<$setfield set="!!authors" setTo="$authors$">
+<$setfield set="$:/temp/concept!!authors" setTo="">
+
+<$setfield set="!!source" setTo="$source$">
+<$setfield set="$:/temp/concept!!source" setTo="">
+
+<$setfield set="!!parent" setTo="$parent$">
+<$setfield set="$:/temp/concept!!parent" setTo="">
+
+<$setfield set="!!text" setTo="$text$">
+<$setfield set="$:/temp/concept!!text" setTo="">
+
+<$set name="label" value={{$language$/myTabs##$label$}} >
+
+    <$maketid  title="$concept_name$" tags="$:/_type/concept $tags$" edit="$edit$" message="tm-set-field">
+        <$button message="tm-new-tiddler" class="$class$"><<trad "$label$">></$button>
+    </$maketid>
+
+</$set>
+
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+</$setfield>
+\end
+
+\define newConcept_button(label:"add",class:"",color:"#769ee1",edit:"show")
+<$macrocall $name="newConcept_button2" 
+concept_name={{$:/temp/concept!!concept_name}} 
+description={{$:/temp/concept!!description}} 
+authors={{$:/temp/concept!!authors}} 
+source={{$:/temp/concept!!source}} 
+parent={{$:/temp/concept!!parent}} 
+edit={{$:/temp/concept!!edit}} 
+tags={{$:/temp/concept!!tags}} 
+text={{$:/temp/concept!!text}} 
+label="$label$" 
+class="$class$" 
+language={{$:/language}}
+color="$color$"/>
+\end
+
+<<newConcept_button>>

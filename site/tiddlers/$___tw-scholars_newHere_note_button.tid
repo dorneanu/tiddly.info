@@ -1,0 +1,48 @@
+created: 20191113193136815
+creator: Alberto Molina Pérez
+modified: 20191128165529544
+modifier: Alberto Molina Pérez
+tags: 
+title: $:/_tw-scholars/newHere/note/button
+type: text/vnd.tiddlywiki
+
+\define newNoteButton(source,about,authors_title,authors_list,current_title,publication_title,chapter,page_alpha,page_omega,pages,description,publication_date,text,tags,edit:"show",label:"add")
+
+<$wikify name="newtitle" text="""Note <<now "YYYY-0MM-0DD 0hh:0mm:0ss">>""">
+<$button>
+<$action-sendmessage 
+   $message="tm-new-tiddler" 
+   icon="$:/_images/note"
+   title=<<newtitle>>
+   tags="$:/_type/note $tags$"
+   about="$about$"
+   source="[[$current_title$]]"
+   description="$description$"
+   text="$text$"
+/>
+$label$
+</$button>
+</$wikify>
+\end
+
+
+\define newNote(label)
+<$macrocall $name="newNoteButton" 
+about={{$:/temp/note!!about}} 
+authors_title={{!!authors_title}} 
+authors_list={{!!authors}} 
+current_title={{!!title}} 
+description={{$:/temp/note!!description}} 
+text={{$:/temp/note!!text}} 
+tags={{$:/temp/note!!tags}} 
+edit={{$:/temp/note!!edit}} 
+page_alpha={{$:/temp/note!!page_alpha}} 
+page_omega={{$:/temp/note!!page_omega}} 
+label="$label$"/>
+\end
+
+<$set name="language" value={{$:/language}}>
+<$macrocall $name="newNote" label="add note" language=<<language>>>>
+<$/set>
+
+

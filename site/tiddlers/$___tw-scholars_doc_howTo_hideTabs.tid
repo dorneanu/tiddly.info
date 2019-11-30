@@ -1,0 +1,13 @@
+about: tabs
+created: 20140722101835766
+creator: Alberto Molina Pérez
+description: Hide the tabs bar
+modified: 20191128165529824
+modifier: Alberto Molina Pérez
+order: 5
+parent: $:/_tw-scholars/tab/howTo
+tags: $:/_type/doc
+title: $:/_tw-scholars/doc/howTo/hideTabs
+type: text/vnd.tiddlywiki
+
+Tiddlers tagged `$:/_hide/tabs` do not display the tabs bar.
