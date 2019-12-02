@@ -1,0 +1,23 @@
+created: 20191202090100709
+modified: 20191202090638078
+origin: https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF) https://www.owasp.org/index.php/SameSite
+tags: AppSec
+title: CSRF
+type: text/vnd.tiddlywiki
+
+; Cross-Site Request Forgery (CSRF)
+: Cross-Site Request Forgery (CSRF) is an attack that forces an end user to execute unwanted actions on a web application in which they're currently authenticated. CSRF attacks specifically target state-changing requests, not theft of data, since the attacker has no way to see the response to the forged request
+
+!! Mitigations
+
+!!! Cookies
+
+!!! `same-site`
+
+: SameSite prevents the browser from sending this cookie along with cross-site requests. The main goal is mitigate the risk of cross-origin information leakage. It also provides some protection against cross-site request forgery attacks. Possible values for the flag are lax or strict.
+
+The strict value will prevent the cookie from being sent by the browser to the target site in all cross-site browsing context, even when following a regular link. For example, for a GitHub-like website this would mean that if a logged-in user follows a link to a private GitHub project posted on a corporate discussion forum or email, GitHub will not receive the session cookie and the user will not be able to access the project. 
+
+
+ 
+

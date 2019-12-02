@@ -1,6 +1,6 @@
 created: 20190507071048098
 creator: boru
-modified: 20191128165533258
+modified: 20191202081959363
 modifier: boru
 tags: AWS
 title: AWS CLI
@@ -8,6 +8,12 @@ tmap.id: 24a8b26c-fae3-46dc-8d4a-195272005a49
 type: text/vnd.tiddlywiki
 
 Some currated list of useful [[aws CLI|https://aws.amazon.com/cli/]] commands.  
+
+!! API Gateway
+
+|table-lines|k
+|desc|command|h
+|get-domain-names|`$ aws apigatewayv2 get-domain-names`|
 
 !! SSM
 
