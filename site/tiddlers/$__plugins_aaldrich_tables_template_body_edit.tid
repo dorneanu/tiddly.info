@@ -1,0 +1,9 @@
+created: 20170209052300022
+modified: 20191203100726004
+tags: authors status publication_title isbn caption tbl-edit $:/tags/table/BodyTemplate
+title: $:/plugins/aaldrich/tables/template/body/edit
+type: text/vnd.tiddlywiki
+
+<td class="tbl-inpt-edit">
+  <$edit tiddler=<<currentRecord>> field=<<currentColumn>> />
+</td>

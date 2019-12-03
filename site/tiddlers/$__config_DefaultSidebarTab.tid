@@ -1,6 +1,6 @@
 created: 20191128074137732
-modified: 20191128165530392
+modified: 20191203103220426
 title: $:/config/DefaultSidebarTab
 type: text/vnd.tiddlywiki
 
-$:/plugins/telmiger/MyStory/tab
+$:/bimlas/sidebar/locator/locator-view
