@@ -1,5 +1,5 @@
 created: 20191203160456671
-modified: 20191203160628148
+modified: 20191205155823398
 origin: https://www.alfredapp.com/
 tags: TODO Productivity
 title: Alfred Workflows
@@ -12,5 +12,10 @@ type: text/vnd.tiddlywiki
 
 tbd
 
+!! Development with Golang
+
+* https://github.com/drgrib/alfred
+* [[Writing Alfred workflows in Go|https://medium.com/@nikitavoloboev/writing-alfred-workflows-in-go-2a44f62dc432]]
+* [[How I develop Workflows|https://wiki.nikitavoloboev.xyz/macos/macos-apps/alfred/making-workflows]]
 
 
