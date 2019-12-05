@@ -1,0 +1,10 @@
+created: 20191204093833858
+modified: 20191204093135481
+name: github.com/Arlen22/TiddlyServer
+note: A static file server that can also save files and mount TiddlyWiki folders
+tags: Tiddlywiki Bookmark
+title: github.com/Arlen22/TiddlyServer
+type: text/vnd.tiddlywiki
+url: https://github.com/Arlen22/TiddlyServer
+
+<<r>> https://arlen22.github.io/tiddlyserver/docs/serverconfig.html

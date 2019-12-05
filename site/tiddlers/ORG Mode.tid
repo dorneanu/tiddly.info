@@ -1,0 +1,20 @@
+created: 20191205134438385
+modified: 20191205140642012
+origin: https://github.com/jceb/vim-orgmode/blob/master/doc/orgguide.txt
+tags: Vim
+title: ORG Mode
+type: text/vnd.tiddlywiki
+
+!! Checkboxes
+
+|tables-lines|k
+|command|description|h
+|`<localleader>cc`|Toggle checkbox status or (with prefix arg) checkbox presence at point.|
+|`<localleader>cn`|Insert a new checkbox below current line.|
+|`<localleader>cN`|Insert a new checkbox above current line.|
+
+!! Tags
+
+|tables-lines|k
+|command|description|h
+|` <LocalLeader>st`|Enter new tags for the current headline|

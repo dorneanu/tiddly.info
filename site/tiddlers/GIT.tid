@@ -1,0 +1,32 @@
+created: 20191204131312341
+modified: 20191204130510844
+tags: TODO
+title: GIT
+type: text/vnd.tiddlywiki
+
+!! Solve conflicts
+
+ * Find all conflicting files
+
+```
+$ grep -lr '<<<<<<<' .
+```
+
+* accept local/our version
+
+```
+$ git checkout --ours PATH/FILE
+```
+
+* accept remote/theirs version
+
+```
+$ git checkout --theirs PATH/FILE
+```
+
+* for multiple files
+
+```
+$ grep -lr '<<<<<<<' . | xargs git checkout --ours
+```
+

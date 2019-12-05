@@ -1,0 +1,22 @@
+created: 20191204143445236
+modified: 20191204143547368
+tags: [[AWS Network & Content Delivery]] Network TODO
+title: VPN
+type: text/vnd.tiddlywiki
+
+!! Types
+
+!!! Site-to-Site
+
+<<image-pretty img:"https://openvpn.net/wp-content/uploads/vpn_server_resources/layer-3-routing-diagram.png" width:"99%" align:"center" caption:"[[Source|https://openvpn.net/wp-content/uploads/vpn_server_resources/layer-3-routing-diagram.png]]">>
+
+!!! AWS Client VPN
+
+<<image-pretty img:"
+https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/images/architecture.png" width:"99%" align:"center" caption:"[[Source|https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/images/architecture.png]]">>
+
+!!! AWS Site-to-Site VPN
+
+* single connection
+
+<<image-pretty img:"https://docs.aws.amazon.com/vpn/latest/s2svpn/images/VPN_Basic_Diagram.png" width:"99%" align:"center" caption:"[[Source|https://docs.aws.amazon.com/vpn/latest/s2svpn/images/VPN_Basic_Diagram.png]]">>

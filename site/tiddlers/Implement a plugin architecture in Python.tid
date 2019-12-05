@@ -1,5 +1,5 @@
 created: 20191125162549979
-modified: 20191128165536324
+modified: 20191204131634886
 origin: https://stackoverflow.com/questions/5189232/how-to-auto-register-a-class-when-its-defined/50099920#50099920
 tags: HowTo Python
 title: Implement a plugin architecture in Python
@@ -26,3 +26,7 @@ for p in PluginBase.plugins:
 ```
 
 In this example, `PluginBase.plugins` will contain a plain list of all subclasses in the entire inheritance tree. 
+
+!! Resources
+
+<<r>> https://desc0n0cid0.blogspot.com/2017/06/writing-plugins-in-python.html

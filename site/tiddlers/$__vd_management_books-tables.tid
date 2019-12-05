@@ -1,6 +1,6 @@
 created: 20191203092119666
-modified: 20191203100740868
-tags: 
+modified: 20191203163117612
+tags: MyMark
 tbl-add-records: 
 tbl-anything: 
 tbl-button-actions: 
@@ -13,7 +13,7 @@ tbl-checkbox-tag:
 tbl-checkbox-value-selected: 
 tbl-checkbox-value-unselected: 
 tbl-class: tbl-style-default
-tbl-columns: title tags caption authors isbn publication_title status
+tbl-columns: title authors isbn publication_title status year cover
 tbl-expand: 
 tbl-filter: [tag[$:/_type/publication]]
 tbl-limit: 40
