@@ -1,32 +1,93 @@
 created: 20191125162549979
-modified: 20191204131634886
-origin: https://stackoverflow.com/questions/5189232/how-to-auto-register-a-class-when-its-defined/50099920#50099920
+modified: 20191205152844645
+origin: https://gist.github.com/dorneanu/cce1cd6711969d581873a88e0257e312 https://stackoverflow.com/questions/5189232/how-to-auto-register-a-class-when-its-defined/50099920#50099920 https://desc0n0cid0.blogspot.com/2017/06/writing-plugins-in-python.html
 tags: HowTo Python
 title: Implement a plugin architecture in Python
 type: text/vnd.tiddlywiki
 
+Implementing a basic plugin architecture shouldn't be a complicated task. The solution described [[here|https://stackoverflow.com/questions/5189232/how-to-auto-register-a-class-when-its-defined/50099920#50099920]] is working but you still have to `import` every plugin (inheriting from the base class). This is my solution:
+
+* basic project structure
+
+```shell
+$ tree
+.
+├── main.py
+└── plugins
+    ├── __init__.py
+    ├── plugin_a.py
+    ├── plugin_b.py
+```
+
+* the base plugin
+
 ```python
-class PluginBase:
+$ cat plugins/__init__.py
+
+import os
+import traceback
+from importlib import util
+
+
+class Base:
+    """Basic resource class. Concrete resources will inherit from this one
+    """
     plugins = []
 
+    # For every class that inherits from the current,
+    # the class name will be added to plugins
     def __init_subclass__(cls, **kwargs):
         super().__init_subclass__(**kwargs)
         cls.plugins.append(cls)
 
-class Plugin(PluginBase):
-    def start(self):
-        print("1")
 
-class Plugin2(PluginBase):
-    def start(self):
-        print("2")
+# Small utility to automatically load modules
+def load_module(path):
+    name = os.path.split(path)[-1]
+    spec = util.spec_from_file_location(name, path)
+    module = util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
 
-for p in PluginBase.plugins:
-    p().start()
+
+# Get current path
+path = os.path.abspath(__file__)
+dirpath = os.path.dirname(path)
+
+for fname in os.listdir(dirpath):
+    # Load only "real modules"
+    if not fname.startswith('.') and \
+       not fname.startswith('__') and fname.endswith('.py'):
+        try:
+            load_module(os.path.join(dirpath, fname))
+        except Exception:
+            traceback.print_exc()
 ```
 
-In this example, `PluginBase.plugins` will contain a plain list of all subclasses in the entire inheritance tree. 
+* a sample plugin
 
-!! Resources
+```python
+$ cat plugins/plugin_a.py
+import plugins
 
-<<r>> https://desc0n0cid0.blogspot.com/2017/06/writing-plugins-in-python.html
+
+class PluginA(plugins.Base):
+
+    def __init__(self):
+        pass
+
+    def start(self):
+        print("Plugin A")
+```
+
+And now the `main.py`:
+
+```python
+$ cat main.py
+from plugins import Base
+
+if __name__ == '__main__':
+    for p in Base.plugins:
+        inst = p()
+        inst.start()
+```
