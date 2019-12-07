@@ -7,6 +7,12 @@
 - [ ] Web notes
 - [ ] Tiddler describing me
 
+## CI/CD
+
+- [ ] Activate Github actions
+- [ ] Add action to copy generated TW file to S3
+
+
 ## Serverless
 
 - [ ] Release serverless version of `widdly`
