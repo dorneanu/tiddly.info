@@ -1,10 +1,10 @@
 created: 20190228160315701
 creator: boru
-modified: 20191128165534631
+modified: 20191209085701967
 modifier: boru
 name: Clean architectures in Python: a step-by-step example
 note: DDD, TDD, Python
-tags: Python Bookmark
+tags: Architecture Python Bookmark
 title: Clean architectures in Python: a step-by-step example
 tmap.id: b0b472fc-c34c-480d-91f1-25bc418f39c1
 type: text/vnd.tiddlywiki
