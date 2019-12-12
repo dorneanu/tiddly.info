@@ -1,8 +1,9 @@
 created: 20191209101153541
-modified: 20191209101327106
+modified: 20191212112041435
 origin: https://wiki.python.org/moin/GlobalInterpreterLock
 tags: Python
 title: GIL
+tmap.id: 10397919-7d35-4846-b8c2-3163362aec5e
 type: text/vnd.tiddlywiki
 
 ; Global Interpreter Lock

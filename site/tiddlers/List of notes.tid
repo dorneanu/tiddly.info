@@ -1,7 +1,8 @@
 created: 20191108202608955
-modified: 20191128165536593
+modified: 20191212112043370
 tags: Productivity
 title: List of notes
+tmap.id: 60a144b2-afd6-409a-92f7-b5eccd070d27
 type: text/vnd.tiddlywiki
 
 <$list filter="[field:category/note/sort[title]]">

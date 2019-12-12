@@ -2,12 +2,13 @@
     {
         "created": "20191209161100992",
         "text": "",
+        "type": "text/vnd.tiddlywiki",
         "title": "Gramowskis Maschinen",
         "tags": "Bitcoin Bookmark Article [[Die Zeit]]",
-        "modified": "20191209161228811",
-        "type": "text/vnd.tiddlywiki",
-        "issue": "2019/48",
+        "modified": "20191212112043565",
         "url": "https://www.zeit.de/2019/48/bitcoin-geldautomaten-geldwaesche-kryptowaehrung-kriminalitaet",
-        "note": "In Einkaufszentren, Spielhallen und Tattoo-Studios stehen Geldautomaten für Bitcoin. Sie erleichtern kriminelle Finanzgeschäfte und sind womöglich illegal. Aber wer stellt sie auf?  "
+        "note": "In Einkaufszentren, Spielhallen und Tattoo-Studios stehen Geldautomaten für Bitcoin. Sie erleichtern kriminelle Finanzgeschäfte und sind womöglich illegal. Aber wer stellt sie auf?  ",
+        "issue": "2019/48",
+        "tmap.id": "2e6e132d-c770-4b25-83bb-25905454db71"
     }
 ]

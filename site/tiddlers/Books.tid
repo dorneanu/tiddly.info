@@ -1,7 +1,8 @@
 created: 20191115124134330
-modified: 20191128165534105
+modified: 20191212112042249
 tags: Topics TableOfContents
 title: Books
+tmap.id: e046a519-95a2-4564-ac3f-b453df4e9d4c
 type: text/vnd.tiddlywiki
 
 <$list filter="[tag[$:/_type/publication]]">

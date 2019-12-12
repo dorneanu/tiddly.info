@@ -1,8 +1,9 @@
 created: 20191210120502429
-modified: 20191210120650648
+modified: 20191212112041820
 origin: https://www.dmarcanalyzer.com/dmarc/
 tags: E-Mail
 title: DMARC
+tmap.id: 3750baab-9c7c-4a83-97c4-ad73165517b0
 type: text/vnd.tiddlywiki
 
 ; Domain-based Message Authentication Reporting and Conformance

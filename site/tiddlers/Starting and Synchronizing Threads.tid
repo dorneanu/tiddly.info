@@ -1,8 +1,9 @@
 created: 20191209084210495
-modified: 20191209084237781
+modified: 20191212112042668
 name: Starting and Synchronizing Threads
 note: Learn how threads in Python can help you develop better code
 tags: Python Bookmark
 title: Starting and Synchronizing Threads
+tmap.id: b601c46c-659d-4c23-a793-8d6eb5ae6e1b
 type: text/vnd.tiddlywiki
 url: https://www.pythonforthelab.com/blog/starting-and-synchronizing-threads/

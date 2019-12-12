@@ -1,8 +1,9 @@
 created: 20191119111206698
-modified: 20191202105031226
-origin: https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html https://blog.larapulse.com/security/prevent-xss-csrf-attacks https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html 
+modified: 20191212112043802
+origin: https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html https://blog.larapulse.com/security/prevent-xss-csrf-attacks https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html
 tags: AppSec
 title: XSS
+tmap.id: 8a599de4-3a97-4917-9057-3f0902524302
 type: text/vnd.tiddlywiki
 
 ; Cross-Site-Scripting (XSS)

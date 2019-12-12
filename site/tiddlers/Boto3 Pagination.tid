@@ -1,8 +1,9 @@
 created: 20191209134534741
-modified: 20191209134829646
+modified: 20191212112042234
 origin: https://operatingops.org/2019/07/29/how-to-paginate-in-boto3-use-collections-instead/ https://boto3.amazonaws.com/v1/documentation/api/latest/guide/collections.html
 tags: Python
 title: Boto3 Pagination
+tmap.id: 5b21418f-1077-41b5-bae2-47b8b69203b5
 type: text/vnd.tiddlywiki
 
 !! Using paginator

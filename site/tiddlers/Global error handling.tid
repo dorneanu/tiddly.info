@@ -1,8 +1,9 @@
 created: 20191126115237657
-modified: 20191128165535851
+modified: 20191212112043623
 origin: https://fangpenlin.com/posts/2012/08/26/good-logging-practice-in-python/
 tags: Python HowTo
 title: Global error handling
+tmap.id: 79c0917e-a994-4c38-8119-319a7a9e0de1
 type: text/vnd.tiddlywiki
 
 ```python

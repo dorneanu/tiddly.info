@@ -1,8 +1,9 @@
 created: 20191205134438385
-modified: 20191205140642012
+modified: 20191212112043269
 origin: https://github.com/jceb/vim-orgmode/blob/master/doc/orgguide.txt
 tags: Vim
 title: ORG Mode
+tmap.id: f7afd107-af23-406d-8706-6b0d3e5c5759
 type: text/vnd.tiddlywiki
 
 !! Checkboxes

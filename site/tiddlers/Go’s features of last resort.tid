@@ -1,8 +1,9 @@
 created: 20191120111857403
-modified: 20191128165535831
+modified: 20191212112043610
 name: Go’s features of last resort
 note: A “Feature of Last Resort” (FOLR) is a useful feature which solves certain otherwise hard-to-solve problems, but are often best avoided.
 tags: Golang Bookmark
 title: Go’s features of last resort
+tmap.id: 915b5c83-5289-4e47-a2fe-05d167d21dc7
 type: text/vnd.tiddlywiki
 url: https://www.arp242.net/go-last-resort.html

@@ -1,7 +1,8 @@
 created: 20191128135218575
-modified: 20191128165535602
+modified: 20191212112043536
 tags: HowTo TODO
 title: Host CFN with API Gateway and S3
+tmap.id: 29092ae2-0f98-41a6-8ea1-82f1aca7723d
 type: text/vnd.tiddlywiki
 
 * https://apimeister.com/2017/05/09/hosting-a-cloudfront-site-with-s3-and-api-gateway.html

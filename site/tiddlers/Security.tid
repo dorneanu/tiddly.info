@@ -1,8 +1,9 @@
 created: 20191108104909709
 icon: $:/fontawesome/glyph/shield-alt
-modified: 20191128165538529
+modified: 20191212112042806
 tags: Topics IT MyMark
 title: Security
+tmap.id: dfbba92d-2db1-4774-b603-cffbda74848f
 type: text/vnd.tiddlywiki
 
 <<tabs "Security/byTopic" "Security/byTopic">>

@@ -1,8 +1,9 @@
 created: 20191120111857403
-modified: 20191128165535913
+modified: 20191212112043642
 name: github.com/OWASP/Amass
 note: In-depth Attack Surface Mapping and Asset Discovery
 tags: Tool Golang Security Bookmark
 title: github.com/OWASP/Amass
+tmap.id: dda919d1-7894-4403-a690-f7944e7e6f35
 type: text/vnd.tiddlywiki
 url: https://github.com/OWASP/Amass

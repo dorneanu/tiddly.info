@@ -1,0 +1,9 @@
+created: 20191209085712262
+modified: 20191212112043213
+name: PathAuditor
+note: PathAuditor is a shared library that can be loaded into processes using LD_PRELOAD. It then hooks all filesystem related libc functions and checks if the access is safe.
+tags: AppSec Google Bookmark
+title: PathAuditor
+tmap.id: b55951ef-921b-4828-b865-6427ef6cc4bc
+type: text/vnd.tiddlywiki
+url: https://github.com/google/path-auditor

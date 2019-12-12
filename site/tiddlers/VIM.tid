@@ -1,6 +1,6 @@
 created: 20181129100102039
 creator: boru
-modified: 20191128165540219
+modified: 20191212091040403
 modifier: boru
 note: Personal collection of VIM tipps & tricks
 tags: Vim Public Coding
@@ -47,6 +47,8 @@ type: text/vnd.tiddlywiki
 |di"|Delete everything till next double quote|
 |*Ncgn{new name}`ESC`|Replace word. Use `n` to jump to next occurence and then `.` to apply the same|
 |:tabedit %|Edit buffer in new tab|
+|CTRL-R *|will insert in the contents of the clipboard |
+|CTRL-R "|(the unnamed register) inserts the last delete or yank. |
 
 ! Use cases
 

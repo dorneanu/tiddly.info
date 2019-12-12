@@ -1,9 +1,10 @@
 created: 20150709103412470
 creator: Florian Wanders
-modified: 20191128165536091
+modified: 20191212112041506
 modifier: Florian Wanders
 tags: general $:/tags/Macro
 title: Fontawesome Icons
+tmap.id: fba0b4e5-5021-41dd-8eee-6b9c62f232ec
 type: text/vnd.tiddlywiki
 
 \define icon-padding() 15px;

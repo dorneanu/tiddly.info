@@ -6,7 +6,7 @@ created: 20140422121311556
 creator: Alberto Molina
 description: One of the most powerful and influential tragedies in English literature
 icon: $:/_images/book
-modified: 20191128165539720
+modified: 20191212112042740
 modifier: Alberto Molina Pérez
 person1_name: William
 person1_surname: Shakespeare
@@ -20,6 +20,7 @@ publication_volume:
 slider: hide
 tags: $:/_type/publication Denmark Books
 title: Shakespeare (1599): Hamlet
+tmap.id: db0852e1-f732-4530-9094-5ff360252975
 type: text/vnd.tiddlywiki
 
 The Tragedy of Hamlet, Prince of Denmark, often shortened to Hamlet, is a tragedy written by William Shakespeare at an uncertain date between 1599 and 1602. Set in the Kingdom of Denmark, the play dramatizes the revenge Prince Hamlet is instructed to enact on his uncle Claudius. Claudius had murdered his own brother, Hamlet's father King Hamlet and then taken the throne, marrying his deceased brother's widow, Hamlet's mother Gertrude.

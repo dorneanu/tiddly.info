@@ -1,0 +1,10 @@
+[
+    {
+        "created": "20191212112043729",
+        "text": "\n",
+        "type": "text/vnd.tiddlywiki",
+        "title": "$:/plugins/felixhayashi/tiddlymap/graph/views/Live View/filter/edges",
+        "modified": "20191212112159442",
+        "filter": "-[prefix[_]]"
+    }
+]

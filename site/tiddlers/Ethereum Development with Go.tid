@@ -1,8 +1,9 @@
 created: 20191120111857403
-modified: 20191128165536185
+modified: 20191212112041609
 name: Ethereum Development with Go
 note: This little guide book is to serve as a general help guide for anyone wanting to develop Ethereum applications using the Go programming language. It's meant to provide a starting point if you're already pretty familiar with Ethereum and Go but don't know where to to start on bringing it all together
 tags: Golang Ethereum Blockchain Bookmark
 title: Ethereum Development with Go
+tmap.id: aff5f057-bcf2-4b62-9aee-03aec1c5c376
 type: text/vnd.tiddlywiki
 url: https://goethereumbook.org/en/

@@ -1,8 +1,9 @@
 caption: By Topic
 created: 20191128065132934
-modified: 20191128165538748
+modified: 20191212112043145
 tags: 
 title: Python/byTopic
+tmap.id: c83a7151-8441-458b-b5fd-e17b8a85d1e0
 type: text/vnd.tiddlywiki
 
 <<xlist-topics Python>>

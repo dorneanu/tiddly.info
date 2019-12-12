@@ -1,8 +1,9 @@
 created: 20191202090100709
-modified: 20191202090638078
+modified: 20191212112041949
 origin: https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF) https://www.owasp.org/index.php/SameSite
 tags: AppSec
 title: CSRF
+tmap.id: 8bf7f15d-3c20-48a0-b9b0-20e54a8bc1bf
 type: text/vnd.tiddlywiki
 
 ; Cross-Site Request Forgery (CSRF)

@@ -6,7 +6,7 @@ created: 20140422134954876
 creator: Alberto Molina
 description: What is love?
 icon: $:/_images/quote
-modified: 20191128165539697
+modified: 20191212112042708
 modifier: Alberto Molina
 page_alpha: 1
 page_omega: 2
@@ -16,6 +16,7 @@ source: [[Shakespeare (1599): Hamlet]]
 tabs: $:/_tw-scholars/tabs!!quote
 tags: $:/_type/quote
 title: Shakespeare 1599: 10-12 1
+tmap.id: 0c4b2867-11d0-4edd-8fc9-a77a526b5b88
 type: text/vnd.tiddlywiki
 
 hier und daa

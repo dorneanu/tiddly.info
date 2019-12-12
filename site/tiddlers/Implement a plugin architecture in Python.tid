@@ -1,8 +1,9 @@
 created: 20191125162549979
-modified: 20191205152844645
+modified: 20191212112043447
 origin: https://gist.github.com/dorneanu/cce1cd6711969d581873a88e0257e312 https://stackoverflow.com/questions/5189232/how-to-auto-register-a-class-when-its-defined/50099920#50099920 https://desc0n0cid0.blogspot.com/2017/06/writing-plugins-in-python.html
 tags: HowTo Python
 title: Implement a plugin architecture in Python
+tmap.id: ab16180d-c47c-410e-9057-b524fc97030b
 type: text/vnd.tiddlywiki
 
 Implementing a basic plugin architecture shouldn't be a complicated task. The solution described [[here|https://stackoverflow.com/questions/5189232/how-to-auto-register-a-class-when-its-defined/50099920#50099920]] is working but you still have to `import` every plugin (inheriting from the base class). This is my solution:

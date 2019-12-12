@@ -1,7 +1,8 @@
 created: 20191128113638604
-modified: 20191128165536121
+modified: 20191212112041580
 tags: Network HowTo
 title: Find external gateway information
+tmap.id: 1e4c39f0-98e1-419a-a2f1-e0f968933925
 type: text/vnd.tiddlywiki
 
 ```shell
