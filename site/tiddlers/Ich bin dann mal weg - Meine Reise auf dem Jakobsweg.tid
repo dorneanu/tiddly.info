@@ -5,9 +5,10 @@ creator: boru
 isbn: 9783890293127
 item_type: Ebook
 location: E-Book
-modified: 20191203163412513
+modified: 20191212162802323
 modifier: boru
 publication_title: Ich bin dann mal weg - Meine Reise auf dem Jakobsweg
+publication_type: book
 status: todo
 tags: $:/_type/publication Book Public Books
 title: Ich bin dann mal weg - Meine Reise auf dem Jakobsweg
