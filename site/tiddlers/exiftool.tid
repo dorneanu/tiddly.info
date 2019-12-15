@@ -1,0 +1,15 @@
+created: 20191214113351513
+modified: 20191214113744531
+origin: https://ninedegreesbelow.com/photography/exiftool-commands.html
+tags: Tool
+title: exiftool
+tmap.id: 5286b070-5843-44c3-b6fa-afaa1c3c7361
+type: text/vnd.tiddlywiki
+
+!! Rename files
+
+* Rename to this format `2017-08-31 13.56.27.jpg`:
+
+```shell
+$ exiftool -v "-filename<CreateDate" -d "%Y-%m-%d %H.%M.%S%%-c.%%le" -ext jpg .
+```

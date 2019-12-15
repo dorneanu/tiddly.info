@@ -4,11 +4,12 @@ created: 20190418212333434
 creator: boru
 isbn: 0875423205
 item_type: Ebook
-modified: 20191203163701237
+modified: 20191215204459413
 modifier: boru
-publication_title: Wheels of Life: A User's Guide to the Chakra System 
+publication_title: Wheels of Life: A User's Guide to the Chakra System
+publication_type: book
 status: todo
 tags: $:/_type/publication TODO Book Public Books
 title: Wheels of Life
-tmap.id: 006f9663-ca05-484d-a11f-6f3d96b30d80
+tmap.id: 59ea6a50-0cf7-47ea-b348-e24a4c80c4bd
 type: text/vnd.tiddlywiki

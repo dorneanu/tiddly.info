@@ -6,10 +6,11 @@ genre:
 isbn: 9783941193222
 item_type: Ebook
 location: 
-modified: 20191203163343097
+modified: 20191215105925467
 modifier: boru
 owner: 
 publication_title: Stoppt die Welt, ich will aussteigen! Kuriose Abenteuer einer Weltreise
+publication_type: book
 series: 
 status: todo
 tags: $:/_type/publication Book Public Books
@@ -17,3 +18,10 @@ title: Stoppt die Welt, ich will aussteigen! Kuriose Abenteuer einer Weltreise
 tmap.id: 77c1ee45-4433-4c4a-b9d6-396295383629
 type: text/vnd.tiddlywiki
 year: 2013
+
+<<<
+Wie fühlt es sich an, loszulassen und das Leben zu Leben, das man leben möchte? Martin Krengel nutzt seine Weltreise, um mit anderen Lebensstilen und Arbeitsformen zu experimentieren. Er betreibt Anti-Zeitmanagement auf Fiji, macht eine Digital-Detox-Diät auf Tahiti und zieht als digitaler Nomade durch Südamerika.
+Krengels spitzfindiger und facettenreicher Bericht zeigt: Reisen bewegt. Beine UND Kopf. 
+
+(Source: https://www.martinkrengel.com/reisen/)
+<<<
