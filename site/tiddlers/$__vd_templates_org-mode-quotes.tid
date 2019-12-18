@@ -1,0 +1,22 @@
+created: 20191218141604028
+modified: 20191218154101570
+tags: 
+title: $:/vd/templates/org-mode-quotes
+type: text/vnd.tiddlywiki
+
+\define concatFilter(sub) [all[current]tags[]] $sub$ +[sort[title]]
+
+<$set name=subFilter value={{$:/vd/tagging/filter}}>
+<$set name=tagFilter value=<<concatFilter $(subFilter)$ >>>
+
+<$list filter="[tag[$:/_type/quote]!!has[draft.of]]">
+`* `{{!!title}}`                              :`<$list filter=<<tagFilter>> variable=t ><<t>>:</$list>`:
+
+#+BEGIN_QUOTE
+  `{{!!text}}`
+#+END_QUOTE
+`
+
+</$list>
+</$set>
+</$set>

@@ -1,0 +1,11 @@
+created: 20191216100841147
+modified: 20191216101048590
+name: Creating CI tests with the Checks API
+note: This guide will introduce you to Github Apps and the Checks API, which you'll use to build a continuous integration (CI) server that runs tests.
+tags: GitHub Resource Bookmark
+title: Creating CI tests with the Checks API
+tmap.id: fd88ce6d-de14-4087-bd53-a9bb054cb3c0
+type: text/vnd.tiddlywiki
+url: https://developer.github.com/apps/quickstart-guides/creating-ci-tests-with-the-checks-api/#step-13-creating-a-check-run
+
+: A check suite is a group of check runs (individual CI tests)
