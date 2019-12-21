@@ -1,0 +1,9 @@
+created: 20191221075921610
+modified: 20191221083640851
+name: Deft for Emacs
+note: Deft is an Emacs mode for quickly browsing, filtering, and editing directories of plain text notes, inspired by Notational Velocity. It was designed for increased productivity when writing and taking notes by making it fast and simple to find the right file at the right time and by automating many of the usual tasks such as creating new files and saving files.
+tags: Emacs org-mode Bookmark
+title: Deft for Emacs
+tmap.id: 88548941-a3c8-4ef7-b4b4-d3d88814b373
+type: text/vnd.tiddlywiki
+url: https://jblevins.org/projects/deft/

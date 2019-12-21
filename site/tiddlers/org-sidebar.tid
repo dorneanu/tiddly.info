@@ -1,0 +1,9 @@
+created: 20191221075921610
+modified: 20191221083640593
+name: org-sidebar
+note: This package presents a helpful sidebar view for Org buffers. At the top is a chronological list of scheduled and deadlined tasks in the current buffer (similar to the Org agenda ,but without all its features), and below that is a list of all other non-done to-do items. If the buffer is narrowed, the sidebar only shows items in the narrowed portion; this allows seeing an overview of tasks in a subtree.
+tags: org-mode Bookmark
+title: org-sidebar
+tmap.id: 3ffffaf2-cae9-4e06-aa82-c768641ca76a
+type: text/vnd.tiddlywiki
+url: https://github.com/alphapapa/org-sidebar

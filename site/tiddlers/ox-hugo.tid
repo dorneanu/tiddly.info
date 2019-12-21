@@ -1,0 +1,9 @@
+created: 20191221075921610
+modified: 20191221083640517
+name: ox-hugo
+note: ox-hugo is an Org exporter backend that exports Org to Hugo-compatible Markdown (Blackfriday) and also generates the front-matter (in TOML or YAML format).
+tags: org-mode Bookmark
+title: ox-hugo
+tmap.id: b5c54f69-67aa-432f-a772-3d118106e34f
+type: text/vnd.tiddlywiki
+url: https://ox-hugo.scripter.co/

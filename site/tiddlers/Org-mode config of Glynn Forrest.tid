@@ -1,0 +1,9 @@
+created: 20191221075921610
+modified: 20191221083640736
+name: Org-mode config of Glynn Forrest
+note: Based on his comment at https://www.reddit.com/r/emacs/comments/2qwh8q/org_mode_one_massive_file_or_tons_of_small_ones/cnacdpl/
+tags: org-mode Bookmark
+title: Org-mode config of Glynn Forrest
+tmap.id: 7fd6c34a-bb0a-44ec-8a66-f2484c978d0d
+type: text/vnd.tiddlywiki
+url: https://github.com/glynnforrest/emacs.d/blob/master/site-lisp/setup-org.el

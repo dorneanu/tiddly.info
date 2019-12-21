@@ -1,22 +1,25 @@
 created: 20191218142924053
-modified: 20191218154254381
+modified: 20191219154125519
 tags: 
 title: $:/vd/templates/org-mode-bookmarks
 type: text/vnd.tiddlywiki
 
-\define concatFilter(sub) [all[current]tags[]] $sub$ +[sort[title]]
+\define concatFilter(sub) [all[current]tags[]lowercase[]] $sub$ +[sort[title]]
 
+`* Bookmarks`
 <$set name=subFilter value={{$:/vd/tagging/filter}}>
 <$set name=tagFilter value=<<concatFilter $(subFilter)$ >>>
 
 <$list filter="[tag[Bookmark]!!has[draft.of]]">
-`* `{{!!title}}`                                     :`<$list filter=<<tagFilter>> variable=t ><<t>>:</$list>`:
+`** `{{!!title}}`                            `:<$list filter="[all[current]tags[]]" variable=t><<t>>:</$list>`
 
-#+BEGIN_EXAMPLE
-  `{{!!url}}`
-  `{{!!note}}`
-#+END_EXAMPLE
+`{{!!url}}` 
+
+`{{!!note}}`
+
+
 `
+
 </$list>
 </$set>
 </$set>
