@@ -1,19 +1,20 @@
 created: 20191218141604028
-modified: 20191219154127368
+modified: 20191225110936711
 tags: 
 title: $:/vd/templates/org-mode-quotes
 type: text/vnd.tiddlywiki
 
-\define concatFilter(sub) [all[current]tags[]lowercase[]] $sub$ +[sort[title]]
+\define concatFilter(sub) [all[current]tags[]] $sub$ +[sort[title]]
 
-`* Quotes`
 <$set name=subFilter value={{$:/vd/tagging/filter}}>
 <$set name=tagFilter value=<<concatFilter $(subFilter)$ >>>
 
-<$list filter="[tag[$:/_type/quote]!has[draft.of]]">
-`** `{{!!title}}`                     `:<$list filter="[all[current]tags[]]" variable=t ><<t>>:</$list>`
+<$list filter="[tag[$:/_type/quote]!!has[draft.of]]">
+`* `{{!!title}}`                              :`<$list filter=<<tagFilter>> variable=t ><<t>>:</$list>`:
 
-`{{!!text}}`
+#+BEGIN_QUOTE
+  `{{!!text}}`
+#+END_QUOTE
 `
 
 </$list>
