@@ -1,11 +1,14 @@
 [
     {
         "created": "20191227211935298",
+        "text": "",
         "title": "Was kommt nach dem Fleisch",
-        "issue": "2019/39",
         "tags": "Bookmark Article [[Die Zeit]] Essen Vegan Umweltschutz",
-        "note": "Alternativen zu Steaks, Schnitzeln und Bratwürsten werden reif für den Massenmarkt. Das bedeutet weniger CO₂ und weniger Tierleid – aber auch mehr Macht für eine Handvoll Agrarkonzerne. ",
+        "modified": "20191229195244102",
+        "type": "text/vnd.tiddlywiki",
         "url": "https://www.zeit.de/2019/39/vegetarismus-fleischverzicht-massenmarkt-agrarkonzerne-macht/komplettansicht",
-        "modified": "20191227211935298"
+        "note": "Alternativen zu Steaks, Schnitzeln und Bratwürsten werden reif für den Massenmarkt. Das bedeutet weniger CO₂ und weniger Tierleid – aber auch mehr Macht für eine Handvoll Agrarkonzerne. ",
+        "issue": "2019/39",
+        "tmap.id": "ab85dff0-5a1f-431f-91ee-a35a7262c896"
     }
 ]

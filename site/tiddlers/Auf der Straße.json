@@ -1,11 +1,14 @@
 [
     {
         "created": "20191227210301728",
+        "text": "",
         "title": "Auf der Straße",
-        "issue": "2019/40",
         "tags": "Bookmark Article [[Die Zeit]] Mobility Umweltschutz",
-        "note": "Deutschlands Autoindustrie setzt auf Batteriefahrzeuge – und macht sich damit abhängig.  ",
+        "modified": "20191229194839711",
+        "type": "text/vnd.tiddlywiki",
         "url": "https://www.zeit.de/2019/40/autobatterien-elektroautos-northvolt-oekologie-nachhaltigkeit/komplettansicht",
-        "modified": "20191227210301728"
+        "note": "Deutschlands Autoindustrie setzt auf Batteriefahrzeuge – und macht sich damit abhängig.  ",
+        "issue": "2019/40",
+        "tmap.id": "41e094cf-82c9-420f-9098-6d95385d46af"
     }
 ]

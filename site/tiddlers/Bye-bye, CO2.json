@@ -1,11 +1,14 @@
 [
     {
         "created": "20191227211335368",
+        "text": "",
         "title": "Bye-bye, CO2",
-        "issue": "2019/39",
         "tags": "Bookmark Article [[Die Zeit]] Umweltschutz",
-        "note": "Bis 2050 will Deutschland klimaneutral sein: Es sollen nicht mehr Treibhausgase ausgestoßen werden, als die Natur aufnehmen kann. Welche Maßnahmen könnten helfen, das Ziel zu erreichen? ",
+        "modified": "20191229194839884",
+        "type": "text/vnd.tiddlywiki",
         "url": "https://www.zeit.de/2019/39/klimaschutz-co2-nutztiere-windraeder-massnahmen-klimaneutralitaet",
-        "modified": "20191227211335368"
+        "note": "Bis 2050 will Deutschland klimaneutral sein: Es sollen nicht mehr Treibhausgase ausgestoßen werden, als die Natur aufnehmen kann. Welche Maßnahmen könnten helfen, das Ziel zu erreichen? ",
+        "issue": "2019/39",
+        "tmap.id": "85541de7-4aca-497e-b7c1-ddfb9a502c2d"
     }
 ]
