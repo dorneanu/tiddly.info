@@ -1,42 +1,8 @@
-created: 20190918072109558
-modified: 20191209163107158
-tags: Magazines MyMark
+created: 20200104211159256
+modified: 20200104211649945
+tags: Magazines
 title: Die Zeit
-tmap.id: 5b95bbae-ef48-4a40-b73d-053ab022f4be
+tmap.id: ba711a7f-fe86-4167-af58-3e41e1a4be25
 type: text/vnd.tiddlywiki
 
-\define journalButton()
-<$button class=<<tv-config-toolbar-class>>>
-<$action-sendmessage
- $message="tm-new-tiddler" title=Titel tags="Bookmark Article [[Die Zeit]]" issue=<<now "YYYY/1">> url=URL note=Note/>
-
-<$list filter="[<tv-config-toolbar-icons>prefix[yes]]">
-{{$:/core/images/new-journal-button}}
-</$list>
-<$list filter="[<tv-config-toolbar-text>prefix[yes]]">
-</$list>
-</$button>
-
-\end
-
-<div align="right">
-<<journalButton>>
-</div>
-
-<!-- 
-!! Testing
-
-<$list filter="[tag[Die Zeit]]">
-<$link to=<<currentTiddler>>>{{!!issue}}</$link><br/>
-</$list>
-
--->
-
-!! Ausgaben
-
-Ein paar ausgewählte Artikel aus der [[Zeit|https://zeit.de]]. Einige Links erfordern einen Abonnenten-Account. 
-
-<$tiddler tiddler="Die Zeit">
-<<xlist each:issue>>
-</$tiddler>
-
+<<tabs "[[Die Zeit - Ausgaben]] [[Die Zeit - New Bookmark]]" "Die Zeit - Ausgaben">>

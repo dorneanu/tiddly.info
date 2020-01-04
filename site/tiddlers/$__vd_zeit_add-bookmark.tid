@@ -1,0 +1,85 @@
+caption: Add new Zeit Bookmark
+created: 20200104204334989
+modified: 20200104211009442
+tags: 
+title: $:/vd/zeit/add-bookmark
+type: text/vnd.tiddlywiki
+
+\define DefaultTag() Bookmark Article [[Die Zeit]]
+    Name:
+    <$edit-text
+        tiddler='$:/temp/ZeitArticle/NewBookmark'
+        field=name
+        class='tc-edit-texteditor'
+    />
+
+   Ausgabe:
+    <$edit-text
+        tiddler='$:/temp/ZeitArticle/NewBookmark'
+        field=issue
+        class='tc-edit-texteditor'
+    />
+
+    Note:
+    <$edit-text
+        tiddler='$:/temp/ZeitArticle/NewBookmark'
+        field=note
+        class='tc-edit-texteditor'
+    />
+
+    Text:
+    <$edit-text
+        tiddler='$:/temp/ZeitArticle/NewBookmark'
+        field=text
+        class='tc-edit-texteditor'
+    />
+
+    URL:
+    <$edit-text
+        tiddler='$:/temp/ZeitArticle/NewBookmark'
+        field=url
+        class='tc-edit-texteditor'
+    />
+
+    Tags:
+    <br>
+    <$tiddler
+        tiddler='$:/temp/ZeitArticle/NewBookmark'
+    >
+        {{||$:/plugins/inmysocks/Bookmarks/BookmarksAddTag}}
+    </$tiddler>
+
+    <$button>Add Bookmark
+        <$fieldmangler tiddler='$:/temp/ZeitArticle/NewBookmark' >
+            <$action-sendmessage
+                $message='tm-add-tag'
+                $param='Bookmark'
+            />
+        </$fieldmangler>
+        <$fieldmangler tiddler='$:/temp/ZeitArticle/NewBookmark' >
+            <$action-sendmessage
+                $message='tm-add-tag'
+                $param='Die Zeit'
+            />
+        </$fieldmangler>
+        <$fieldmangler tiddler='$:/temp/ZeitArticle/NewBookmark' >
+            <$action-sendmessage
+                $message='tm-add-tag'
+                $param='Article'
+            />
+        </$fieldmangler>
+        <$action-setfield
+            $tiddler='$:/temp/ZeitArticle/NewBookmark'
+            $field='title'
+            $value={{$:/temp/ZeitArticle/NewBookmark!!name}}
+        />
+        <$action-setfield
+            $tiddler='$:/temp/ZeitArticle/NewBookmark'
+            url=''
+            name=''
+            note=''
+            issue=''
+            text=''
+            tags=''
+        />
+    </$button>
