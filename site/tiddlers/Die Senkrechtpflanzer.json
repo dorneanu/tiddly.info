@@ -1,13 +1,15 @@
 [
     {
         "created": "20200105120326838",
-        "title": "Die Senkrechtpflanzer",
-        "modified": "20200105120350923",
-        "tags": "Nutrition Bookmark [[Die Zeit]] Article",
+        "text": "",
         "type": "text/vnd.tiddlywiki",
-        "name": "Die Senkrechtpflanzer",
-        "note": "Ackerfläche wird knapp, doch Salat lässt sich gestapelt in Schränken und Regalen züchten. Ist die Technologie schon reif für die Produktion in großen Mengen?  ",
+        "title": "Die Senkrechtpflanzer",
+        "tags": "Nutrition Bookmark [[Die Zeit]] Article",
+        "modified": "20200107201851770",
         "url": "https://www.zeit.de/2019/45/agrarindustrie-gewaechshaeuser-start-up-technologie/komplettansicht",
-        "issue": "2019/45"
+        "note": "Ackerfläche wird knapp, doch Salat lässt sich gestapelt in Schränken und Regalen züchten. Ist die Technologie schon reif für die Produktion in großen Mengen?  ",
+        "name": "Die Senkrechtpflanzer",
+        "issue": "2019/45",
+        "tmap.id": "a5a8e9cf-e8bd-43dd-aa78-84078d9cee73"
     }
 ]

@@ -1,13 +1,15 @@
 [
     {
         "created": "20200105121722502",
-        "title": "Das Sterben der Bäume",
-        "modified": "20200106182256844",
-        "tags": "[[Best Of]] Umweltschutz Oliven Bookmark [[Die Zeit]] Article",
+        "text": "",
         "type": "text/vnd.tiddlywiki",
+        "title": "Das Sterben der Bäume",
+        "tags": "[[Best Of]] Umweltschutz Oliven Bookmark [[Die Zeit]] Article",
+        "modified": "20200107201851633",
+        "url": "https://www.zeit.de/2019/44/olivenbaeume-italien-epidemie-existenz-olivenbauern-naturschuetzer/komplettansicht",
+        "note": "Sie haben Dürren und Stürme überlebt, Parasiten, Kriege, Kreuzzüge. Jetzt werden die Olivenbäume Süditaliens von einer Krankheit dahingerafft. Die Existenz von Tausenden Bauern ist bedroht. Kann es sein, dass Naturschützer schuld sind an der Epidemie? ",
         "name": "Das Sterben der Bäume",
         "issue": "2019/44",
-        "note": "Sie haben Dürren und Stürme überlebt, Parasiten, Kriege, Kreuzzüge. Jetzt werden die Olivenbäume Süditaliens von einer Krankheit dahingerafft. Die Existenz von Tausenden Bauern ist bedroht. Kann es sein, dass Naturschützer schuld sind an der Epidemie? ",
-        "url": "https://www.zeit.de/2019/44/olivenbaeume-italien-epidemie-existenz-olivenbauern-naturschuetzer/komplettansicht"
+        "tmap.id": "5ccce556-48e1-421c-8819-87b188aa326b"
     }
 ]
