@@ -1,14 +1,6 @@
-about: 
-chapter: 
-color: #ffa500
-created: 20140518165210353
-creator: Alberto Molina
-description: 
-icon: $:/_images/note
-modified: 20191128165530074
-modifier: Alberto Molina
-page_alpha: 
-page_omega: 
-tags: $:/_type/note
-title: $:/_template/note
+created: 20191108202647737
+modified: 20191128165530082
+title: $:/_Template/note
 type: text/vnd.tiddlywiki
+
+<<x>> <$link><$view field="date"/><$view field="caption"/></$link><br/>
